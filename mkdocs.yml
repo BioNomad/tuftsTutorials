@@ -51,6 +51,8 @@ extra_javascript:
 
 nav:
     - About : index.md
+    - HPC Tools: 
+        - "Conda": tools/conda.md
     - HPC User Guide : 
         - Introduction To The Cluster:
             - "What Is The Cluster?": hpc-user-guide/what-is-the-cluster.md
