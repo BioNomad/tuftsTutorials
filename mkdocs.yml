@@ -51,9 +51,6 @@ extra_javascript:
 
 nav:
     - About : index.md
-    - HPC Tools: 
-        - "R": tools/r-hpc.md
-        - "Conda": tools/conda.md
     - HPC User Guide : 
         - Introduction To The Cluster:
             - "What Is The Cluster?": hpc-user-guide/what-is-the-cluster.md
@@ -68,6 +65,13 @@ nav:
             - "Interactive Session": hpc-user-guide/interactive-session.md
             - "Submitting A Batch Job": hpc-user-guide/batch-job.md
             - "Checking Job Status": hpc-user-guide/job-status.md
+    - HPC Tools: 
+        - "Python": tools/python.md
+        - "Conda": tools/conda.md
+        - "R": tools/r-hpc.md
+        - "GitHub": tools/github.md
+        - "Containers": tools/containers.md
+        - "Parallel": tools/parallel.md 
     - Software Tutorials:
         - Intro To Unix: basic/intro-to-unix/unix.md
         - Intro To R: 
