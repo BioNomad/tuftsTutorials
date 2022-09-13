@@ -122,11 +122,19 @@ nav:
         - Analyzing One Categorial Variable:
             - "Binomial Test": stats/binomial-test.md
         - Analyzing Two Categorical Variables:
-            - "Binomial Test": stats/binomial-test.md
+            - "Fisher's Exact Test": stats/binomial-test.md
+            - "Odds Ratio": stats/binomial-test.md
+            - "Chi-Square Test": stats/binomial-test.md
         - Analyzing One Numeric Variable:
-            - "Binomial Test": stats/binomial-test.md
+            - "One Sample T-Test": stats/binomial-test.md
         - Analyzing Two Numeric Variables:
-            - "Binomial Test": stats/binomial-test.md
+            - "T-Test": stats/binomial-test.md
+            - "Correlation": stats/binomial-test.md
+        - Checking Assumptions:
+            - "Checking Normality": stats/binomial-test.md
+            - "Checking Equal Variances": stats/binomial-test.md
+        - Analyzing Two Or More Groups:
+            - "ANOVA": stats/binomial-test.md
     - Machine Learning: 
         - Introduction To Machine Learning: 
             - "Introduction To Machine Learning": machine-learning/intro-machine.md
