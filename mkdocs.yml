@@ -119,6 +119,14 @@ nav:
         - "Quantitative Variables": stats/quant.md
         - "Qualitative Variables": stats/qual.md
         - "Sampling": stats/sampling.md
+        - Analyzing One Categorial Variable:
+            - "Binomial Test": stats/binomial-test.md
+        - Analyzing Two Categorical Variables:
+            - "Binomial Test": stats/binomial-test.md
+        - Analyzing One Numeric Variable:
+            - "Binomial Test": stats/binomial-test.md
+        - Analyzing Two Numeric Variables:
+            - "Binomial Test": stats/binomial-test.md
     - Machine Learning: 
         - Introduction To Machine Learning: 
             - "Introduction To Machine Learning": machine-learning/intro-machine.md
