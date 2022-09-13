@@ -118,6 +118,7 @@ nav:
         - "Introduction To Biostatistics": stats/biostats.md
         - "Quantitative Variables": stats/quant.md
         - "Qualitative Variables": stats/qual.md
+        - "Sampling": stats/sampling.md
     - Machine Learning: 
         - Introduction To Machine Learning: 
             - "Introduction To Machine Learning": machine-learning/intro-machine.md
