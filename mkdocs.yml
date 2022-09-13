@@ -89,7 +89,7 @@ nav:
             - "Lists": basic/intro-to-python/lists.md
             - "Loops & Conditionals": basic/intro-to-python/loops-conditionals.md
             - "Functions & Scope": basic/intro-to-python/functions-scope.md
-    - NGS Tutorials:
+    - Omics Tutorials:
         - Intro To NGS: 
             - "Background": omics/intro-to-ngs/background.md
             - "Setup": omics/intro-to-ngs/01_Setup.md
