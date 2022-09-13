@@ -116,6 +116,8 @@ nav:
             - "Differential Abundance": omics/intro-to-16S/differential-abundance.md
     - Biostatistics:
         - "Introduction To Biostatistics": stats/biostats.md
+        - "Quantitative Variables": stats/quant.md
+        - "Qualitative Variables": stats/qual.md
     - Machine Learning: 
         - Introduction To Machine Learning: 
             - "Introduction To Machine Learning": machine-learning/intro-machine.md
