@@ -5,7 +5,7 @@
 Before getting started you will need:
 
 - Account on [Tufts HPC](https://access.tufts.edu/research-cluster-account){target=_blank}
-- [VPN](https://access.tufts.edu/vpn) if accessing the HPC from off campus
+- [VPN](https://access.tufts.edu/vpn){target=_blank} if accessing the HPC from off campus
 
 ## Navigate To The Cluster
 
