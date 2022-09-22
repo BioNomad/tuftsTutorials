@@ -1,5 +1,3 @@
-# R on the HPC
-
 ## Running R on the HPC cluster
 
 !!! note
