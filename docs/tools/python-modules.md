@@ -1,22 +1,22 @@
-# Python on the HPC
+## Python Interactive Session
 
-## Python Modules
+1. Login to the HPC cluster (new cluster Pax)
 
-Python is offered as a module on the Tufts HPC. You can look up different python modules with:
+     `ssh your_username@login.pax.tufts.edu`
 
-```bash
-module av python
-```
+2. From the login node, load the python module 
 
-```
------------------------------------------------------- /opt/shared/Modules/modulefiles-rhel6 -------------------------------------------------------
-python/2.6.5          python/2.7.3(default) python/2.7.4          python/2.7.6          python/3.5.0          python/3.6.0
---------------------------------------------------------- /cluster/tufts/hpc/tools/module ----------------------------------------------------------
-python/3.8.8
-```
+     `module load python/3.6.0`
+     
+!!! tip
+    To check out different python modules enter the command `module av python` 
 
-To load a specific version of python use:
+3. Allocate computing resources. Start an interactive session with your desired number of cores and memory, here we are using 2 cores with 4GB of memory 
 
-```bash
-module load python/3.6.0
-```
+     `srun -p interactive -n 2 --mem=4g --pty bash`
+
+     Note: Interactive partition has a default 4-hour time limit 
+
+     For more information on how to allocate resources on Tufts HPC cluster, please reference: [Pax User Guide](https://tufts.box.com/v/Pax-User-Guide)
+
+
