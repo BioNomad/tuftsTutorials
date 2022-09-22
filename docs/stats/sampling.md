@@ -49,4 +49,6 @@ $$\frac{\sigma}{\sqrt{N}}$$
 !!! tip "Math Tip"
     We can see that increasing the size of the sample, decreases the standard error of the mean.
 
+## References
 
+- [BIOL202 Tutorials](https://ubco-biology.github.io/BIOL202/desc_cat_Var.html)
