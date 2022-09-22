@@ -3,3 +3,9 @@
 Estimating the mean from a sample is going to have some fluctuation defined by the standard error. We can define a range or **confidence interval** 
 which we expect to contain the true mean. Often we report a 95% confidence interval. This interval is defined by plus or minus two standard error values:
 
+$$ -2\frac{\sigma}{\sqrt{N}} \le \mu  \le +2\frac{\sigma}{\sqrt{N}}$$
+
+- $\sigma$ Standard deviation of the sample
+- $N$ Number of observations in the sample
+- $\mu$ sample mean
+
