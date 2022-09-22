@@ -1,22 +1,11 @@
 # R on the HPC
 
-### Running R on the HPC cluster
+## Running R on the HPC cluster
 
-**NOTE: **
+!!! note
+    R version 3.5.0 is no longer usable on the new cluster Pax
 
-- R version 3.5.0 is no longer usable on the new cluster Pax
-
-- Please run **R/4.0.0** 
-
-  
-  
-  ----------------------- **Table of Content** ----------------------
-  
-  [TOC]
-
----------------------
-
-### R Interactive Session
+## R Interactive Session
 
 - 1. Login to the HPC cluster (new cluster Pax)
 
@@ -74,7 +63,7 @@
 
      `$ exit` 
 
-### R batch jobs
+## R batch jobs
 
 - 1. Login to the HPC cluster 
 
@@ -106,11 +95,14 @@
 
    
 
-### RStudio Interactive App on OnDemand
+## RStudio Interactive App on OnDemand
 
 1. Go to [OnDemand](https://ondemand.cluster.tufts.edu) Login with your username and password
 2. Go to `Interactive Apps` tab and select `RStudio`
 3. Select the time, number of cores, CPU memory you need, as well as the version of R you wish to run. 
+
+![](images/r-studio-pax.png)
+
 4. Load the module you need for your packages to run, if no additional modules are needed, leave it blank.
 5. Each user can only start one OnDemand RStudio session on one compute node at a time. If you need to start multiple RStudio sessions, please make sure you select a different nodename from your current running session. 
 6. Click "Launch" and wait for available resources
