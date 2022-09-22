@@ -1,4 +1,6 @@
-# Conda on the HPC
+## Conda on the HPC
+
+It is often desirable to download your own python packages into a conda environment. We will quickly go through how to create one and add packages to that conda environment.
 
 ## Allocate Resources
 
