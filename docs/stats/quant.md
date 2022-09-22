@@ -34,3 +34,18 @@ height.sum
   minimum median     mean max count       SD
 1     150    170 169.6768 196    99 9.875581
 ```
+
+Now that we know how to calculate our descriptive statistics, let's try and visualize our numeric data:
+
+```R
+ggplot(meta, aes(x=HEIGHT)) + 
+  geom_histogram(fill="lightpink")+
+  theme_bw()+
+  labs(
+    x="Height",
+    y="Frequency",
+    title=" Histogram of Height"
+  )
+```
+
+![](images/histogram.png)
