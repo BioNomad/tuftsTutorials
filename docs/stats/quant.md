@@ -52,3 +52,7 @@ ggplot(meta, aes(x=HEIGHT)) +
 ```
 
 ![](images/histogram.png)
+
+## References
+
+- [BIOL202 Tutorials](https://ubco-biology.github.io/BIOL202/desc_cat_Var.html)
