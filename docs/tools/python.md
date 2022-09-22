@@ -31,7 +31,7 @@ Often times you like to test your python code using an interactive development e
 
 ![](images/jupyter-lab.png)
 
-- now hit `Launch` and open your window when your JupyterLab session is ready
+- now hit `Launch` and then once your session is ready, click on the `Connect to JupyterLab` button
 
 
 ## Conda on the HPC
