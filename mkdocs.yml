@@ -66,7 +66,10 @@ nav:
             - "Submitting A Batch Job": hpc-user-guide/batch-job.md
             - "Checking Job Status": hpc-user-guide/job-status.md
     - HPC Tools: 
-        - "Python": tools/python.md
+        - Python: 
+            - "Python Modules": tools/python-modules.md
+            - "JupyterLab": tools/python-jupyter.md
+            - "Conda Environments": tools/python-conda.md
         - "R": tools/r-hpc.md
         - "GitHub": tools/github.md
         - "Containers": tools/containers.md
