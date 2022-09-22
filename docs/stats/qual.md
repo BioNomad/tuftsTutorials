@@ -5,7 +5,7 @@ When assessing qualitative variables it is useful to consider proportions:
 
 $$\frac{n_i}{N}$$
 
-- $n_i$ category of interest
+- $n_i$ number in category of interest
 - $N$ total number of observations
 
 
