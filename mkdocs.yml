@@ -67,7 +67,6 @@ nav:
             - "Checking Job Status": hpc-user-guide/job-status.md
     - HPC Tools: 
         - "Python": tools/python.md
-        - "Conda": tools/conda.md
         - "R": tools/r-hpc.md
         - "GitHub": tools/github.md
         - "Containers": tools/containers.md
