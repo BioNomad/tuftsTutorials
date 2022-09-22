@@ -1,8 +1,8 @@
 :root > * {
-  --md-primary-fg-color:        #194f96;
+  --md-primary-fg-color:        #283B59;
 }
 
 .md-header{
     background-color: white;
-    color: #194f96;
+    color: #283B59;
 }
