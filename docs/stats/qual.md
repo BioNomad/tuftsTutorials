@@ -55,6 +55,9 @@ ggplot(country_sum, aes(x=proportion,y=reorder(COUNTRY_OF_ORIGIN,+proportion))) 
 
 ![](images/barplot.png)
 
+!!! tip
+    Here we ensure that we reorder our countries with the `reorder()` function as `ggplot2` will not order our data for us.
+
 ## References
 
 - [BIOL202 Tutorials](https://ubco-biology.github.io/BIOL202/desc_cat_Var.html)
