@@ -67,11 +67,11 @@ nav:
             - "Checking Job Status": hpc-user-guide/job-status.md
     - HPC Tools: 
         - Python: 
-            - "Python Modules": tools/python-modules.md
+            - "Python Interactive Session": tools/python-modules.md
             - "JupyterLab": tools/python-jupyter.md
             - "Conda Environments": tools/python-conda.md
         - R: 
-            - "R interactive Session": tools/r-interactive.md
+            - "R Interactive Session": tools/r-interactive.md
             - "R Batch Jobs": tools/r-batch.md
             - "RStudio OnDemand": tools/r-rstudio.md
         - "GitHub": tools/github.md
