@@ -3,12 +3,12 @@
 Quantitaive variables are numerical data: so variables such as height, weight, age. We can describe these variables with the following terms:
 
 
-- **Minimum** 
-- **Median**
-- **Mean**
-- **Max**
-- **Count**
-- **Standard deviation**
+- **Minimum** : smallest value in your variable
+- **Median** : middle value in your variable
+- **Mean** : average value of your variable
+- **Max** : largest value in your variable
+- **Count** : how many values are in your variable
+- **Standard deviation** : measure of the spread of your variable
 
 Let's see how to do this in our code:
 
@@ -34,6 +34,9 @@ height.sum
   minimum median     mean max count       SD
 1     150    170 169.6768 196    99 9.875581
 ```
+
+!!! note
+    You'll note here that we explicitly remove `NA` values to calculate these descriptive statistics.
 
 Now that we know how to calculate our descriptive statistics, let's try and visualize our numeric data:
 
