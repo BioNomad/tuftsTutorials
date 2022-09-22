@@ -70,7 +70,10 @@ nav:
             - "Python Modules": tools/python-modules.md
             - "JupyterLab": tools/python-jupyter.md
             - "Conda Environments": tools/python-conda.md
-        - "R": tools/r-hpc.md
+        - R: 
+            - "R interactive Session": tools/r-interactive.md
+            - "R Batch Jobs": tools/r-batch.md
+            - "RStudio OnDemand": tools/r-rstudio.md
         - "GitHub": tools/github.md
         - "Containers": tools/containers.md
         - "Parallel": tools/parallel.md 
