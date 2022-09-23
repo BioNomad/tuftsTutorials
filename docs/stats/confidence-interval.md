@@ -1,9 +1,9 @@
 ## Confidence Intervals
 
 Estimating the mean from a sample is going to have some fluctuation defined by the standard error. We can define a range or **confidence interval** 
-which we expect to contain the true mean. Often we report a 95% confidence interval. This interval is defined by plus or minus two times the standard error:
+which we expect to contain the true mean. Often we report a 95% confidence interval. This interval is defined by plus or minus 1.96 times the standard error:
 
-$$ -2\frac{\sigma}{\sqrt{N}} \le \mu  \le +2\frac{\sigma}{\sqrt{N}}$$
+$$ -1.96\frac{\sigma}{\sqrt{N}} \le \mu  \le +1.96\frac{\sigma}{\sqrt{N}}$$
 
 - $\sigma$ Standard deviation of the sample
 - $N$ Number of observations in the sample
@@ -25,8 +25,8 @@ ages <- sample(meta$AGE,20)
 summary <- data.frame(
   Sample_Mean=mean(ages,na.rm = T),
   Standard_Error=sd(ages,na.rm = T)/sqrt(length(ages[!is.na(ages)])),
-  Lower_Bound_CI = mean(ages,na.rm = T) - 2*(sd(ages,na.rm = T)/sqrt(length(ages[!is.na(ages)]))),
-  Upper_Bound_CI = mean(ages,na.rm = T) + 2*(sd(ages,na.rm = T)/sqrt(length(ages[!is.na(ages)])))
+  Lower_Bound_CI = mean(ages,na.rm = T) - 1.96*(sd(ages,na.rm = T)/sqrt(length(ages[!is.na(ages)]))),
+  Upper_Bound_CI = mean(ages,na.rm = T) + 1.96*(sd(ages,na.rm = T)/sqrt(length(ages[!is.na(ages)])))
 )
 
 summary
@@ -35,11 +35,11 @@ summary
 
 ```
   Sample_Mean Standard_Error Lower_Bound_CI Upper_Bound_CI
-1        55.2       3.701778       47.79644       62.60356
+1       61.35       2.316162       56.81032       65.88968
 ```
 
 !!! note
-    So we are 95% confident that the true mean lies somewhere between `47.79644` and `62.60356`
+    So we are 95% confident that the true mean lies somewhere between `56.81032` and `65.88968`
 
 ## References
 
