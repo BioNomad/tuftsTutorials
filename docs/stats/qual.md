@@ -3,9 +3,9 @@
 Qualitative variables can be thought of as categories: so variables like eye color, gender, and race. 
 When assessing qualitative variables it is useful to consider proportions:
 
-$$\frac{n_i}{N}$$
+$$\frac{X}{N}$$
 
-- $n_i$ number in category of interest
+- $X$ number in category of interest
 - $N$ total number of observations
 
 So let's calculate some proportions in R!
