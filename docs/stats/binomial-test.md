@@ -18,7 +18,10 @@ So that the confidence interval is:
 
 $$1.96 \pm \sqrt{\frac{p^\prime(1-p^\prime)}{n + 4}}$$
 
+So let's use this formula to estimate the proportion of males in our sample:
 
+```R
+```
 
 ## Binomial Distribution
 
