@@ -21,6 +21,28 @@ $$1.96 \pm \sqrt{\frac{p^\prime(1-p^\prime)}{n + 4}}$$
 So let's use this formula to estimate the proportion of males in our sample:
 
 ```R
+library(tidyverse)
+library(binom)
+# load meta data
+meta <- read.table("./data/gbm_cptac_2021/data_clinical_patient.txt",
+                   header = T,
+                   sep="\t")
+#take our sample
+sex <- sample(meta$SEX,20)
+
+# define number of successes and number observations
+n = length(sex[!(is.na(sex))])
+males = length(sex[sex=="Male"])
+
+#calculate our confidence interval
+sex.confit <- binom.confint(x = males, n = n, conf.level = 0.95, methods = "ac")
+
+sex.confit
+```
+
+```
+         method  x  n mean     lower     upper
+1 agresti-coull 13 20 0.65 0.4315888 0.8200736
 ```
 
 ## Binomial Distribution
