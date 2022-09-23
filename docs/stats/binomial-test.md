@@ -8,7 +8,7 @@ $$SE_p = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
     - $SE_p$ standard error of the proportion
     - $\hat{p}$ sample proportion
     - $n$ number of observations
-    - $X$ number of category of interest out of $n$ observations (down below)
+    - $X$ number of successes out of $n$ observations (down below)
     
 However, there is an issue with this standard error estimate: When either the $n$ is small or our $\hat{p}$ is extreme (close to 0 or 1) the estimate is not reliable. To remedy this we use the Agresti-Coull interval:
 
