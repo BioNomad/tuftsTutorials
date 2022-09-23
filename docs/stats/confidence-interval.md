@@ -5,9 +5,10 @@ which we expect to contain the true mean. Often we report a 95% confidence inter
 
 $$ -1.96\frac{\sigma}{\sqrt{N}} \le \mu  \le +1.96\frac{\sigma}{\sqrt{N}}$$
 
-- $\sigma$ Standard deviation of the sample
-- $N$ Number of observations in the sample
-- $\mu$ sample mean
+!!! example "Term Definitions"
+    - $\sigma$ Standard deviation of the sample
+    - $N$ Number of observations in the sample
+    - $\mu$ sample mean
 
 Let's try this with our sample:
 
