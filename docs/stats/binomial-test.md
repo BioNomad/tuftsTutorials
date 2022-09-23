@@ -23,3 +23,8 @@ $$1.96 \pm \sqrt{\frac{p^\prime(1-p^\prime)}{n + 4}}$$
 ## Binomial Distribution
 
 ## Hypothesis Testing
+
+## References
+
+1. [Wilson score and Agresti-Coull intervals for binomial proportions](https://statisticaloddsandends.wordpress.com/2019/06/09/wilson-score-and-agresti-coull-intervals-for-binomial-proportions/)
+2. [BIOL - 202: Analyzing a single categorical variable](https://ubco-biology.github.io/BIOL202/estproportions.html)
