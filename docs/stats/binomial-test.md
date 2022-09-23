@@ -91,9 +91,17 @@ ggplot(sex.exact.prob, aes(x=X,y=probs)) +
 
 ## Hypothesis Testing
 
-In determining the p
+So we've determined the probability of `X` successes in `N` trials with a `p` probability of success per trial. What if we wanted to test a hypothesis that this is the behavior of the underlying population? First let's cover some hypothesis testing terms:
+
+- $H_0$ or null hypothesis states that any oberved differences are due to chance
+- $H_1$ or alternative hypohthesis that any oberved differences are not due to chance
+- $\alpha$ or probability where we reject the null (a.k.a hypothesis where any oberved differences are due to chance)
+- 
+
+
 
 ## References
 
 1. [Wilson score and Agresti-Coull intervals for binomial proportions](https://statisticaloddsandends.wordpress.com/2019/06/09/wilson-score-and-agresti-coull-intervals-for-binomial-proportions/)
 2. [BIOL - 202: Analyzing a single categorical variable](https://ubco-biology.github.io/BIOL202/estproportions.html)
+3. [A Guide to dbinom, pbinom, qbinom, and rbinom in R](https://www.statology.org/dbinom-pbinom-qbinom-rbinom-in-r/)
