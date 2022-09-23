@@ -91,6 +91,8 @@ ggplot(sex.exact.prob, aes(x=X,y=probs)) +
 
 ## Hypothesis Testing
 
+In determining the p
+
 ## References
 
 1. [Wilson score and Agresti-Coull intervals for binomial proportions](https://statisticaloddsandends.wordpress.com/2019/06/09/wilson-score-and-agresti-coull-intervals-for-binomial-proportions/)
