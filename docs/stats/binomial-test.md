@@ -51,6 +51,11 @@ What we have just calculated a confidence interval for a binary variable. Above 
 
 $$P = \binom{n}{X} p^X (1-p)^{N-X}$$
 
+Where:
+
+$$\binom{n}{X} = \frac{n!}{X!(n-X)!}$$
+
+
 ## Hypothesis Testing
 
 ## References
