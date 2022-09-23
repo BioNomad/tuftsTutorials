@@ -47,6 +47,10 @@ sex.confit
 
 ## Binomial Distribution
 
+What we have just calculated a confidence interval for a binary variable. Above we measured the interval we believe our true population proportion estimate of males to be between. Now let's switch gears and discuss the probability of $X$ number of males in $n$ independent observations would be:
+
+$$P = \binom{n}{X} p^X (1-p)^{N-X}$$
+
 ## Hypothesis Testing
 
 ## References
