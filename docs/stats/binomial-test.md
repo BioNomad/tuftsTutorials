@@ -82,6 +82,13 @@ ggplot(sex.exact.prob, aes(x=X,y=probs)) +
 
 ![](images/binom-prob-dist.png)
 
+!!! note
+    You'll note that we use `dbinom` (for the probability density function) - but there is also the option for `pbinom` (for the cumulative density function ). What do these options mean?
+    - **probability density function** probability of exactly X successes
+    - **cumulative density function** probability of less than or equal to X successes
+    
+    Here we are trying to determine the probability of exactly X successes which is why we use `dbinom`
+
 ## Hypothesis Testing
 
 ## References
