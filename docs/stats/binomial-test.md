@@ -118,6 +118,10 @@ probability of success
                   0.65 
 ```
 
+!!! info  "Explanation"
+    So here we have
+
+
 ## References
 
 1. [Wilson score and Agresti-Coull intervals for binomial proportions](https://statisticaloddsandends.wordpress.com/2019/06/09/wilson-score-and-agresti-coull-intervals-for-binomial-proportions/)
