@@ -91,7 +91,7 @@ ggplot(sex.exact.prob, aes(x=X,y=probs)) +
 
 ## Hypothesis Testing
 
-So we've determined the probability of `X` successes in `N` trials with a `p` probability of success per trial. What if we wanted to test a hypothesis that this is or is not the behavior of the underlying population? First let's cover some hypothesis testing terms:
+So we've determined the probability of $X$ successes in $N$ trials with a $p$ probability of success per trial. What if we wanted to test a hypothesis that this is or is not the behavior of the underlying population? First let's cover some hypothesis testing terms:
 
 - $H_0$ or null hypothesis states that any oberved differences are due to chance
 - $H_1$ or alternative hypohthesis that any oberved differences are not due to chance
