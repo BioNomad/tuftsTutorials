@@ -106,7 +106,16 @@ binom.res
 ```
 
 ```
-binom.res
+Exact binomial test
+
+data:  13 and 20
+number of successes = 13, number of trials = 20, p-value = 0.2632
+alternative hypothesis: true probability of success is not equal to 0.5
+95 percent confidence interval:
+ 0.4078115 0.8460908
+sample estimates:
+probability of success 
+                  0.65 
 ```
 
 ## References
