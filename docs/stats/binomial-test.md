@@ -91,17 +91,27 @@ ggplot(sex.exact.prob, aes(x=X,y=probs)) +
 
 ## Hypothesis Testing
 
-So we've determined the probability of `X` successes in `N` trials with a `p` probability of success per trial. What if we wanted to test a hypothesis that this is the behavior of the underlying population? First let's cover some hypothesis testing terms:
+So we've determined the probability of `X` successes in `N` trials with a `p` probability of success per trial. What if we wanted to test a hypothesis that this is or is not the behavior of the underlying population? First let's cover some hypothesis testing terms:
 
 - $H_0$ or null hypothesis states that any oberved differences are due to chance
 - $H_1$ or alternative hypohthesis that any oberved differences are not due to chance
 - $\alpha$ or probability where we reject the null (a.k.a hypothesis where any oberved differences are due to chance)
-- 
+- test statistic or numeric summary to help distinguish between the the null and the alternative hypothesis
 
+Here we will ask, is this proportion of males evidence that males are over-represented in glioblastoma patients? So if we wanted to test for this risk, we could specify the number of males in our samples, the total number of observations, and the probability under the null hypothesis(that there is a 50% probability of male patients and a 50% probability of female patients).
 
+```R
+binom.res <- binom.test(x = 13, n = 20, p = 0.5, alternative = "two.sided")
+binom.res
+```
+
+```
+binom.res
+```
 
 ## References
 
 1. [Wilson score and Agresti-Coull intervals for binomial proportions](https://statisticaloddsandends.wordpress.com/2019/06/09/wilson-score-and-agresti-coull-intervals-for-binomial-proportions/)
 2. [BIOL - 202: Analyzing a single categorical variable](https://ubco-biology.github.io/BIOL202/estproportions.html)
 3. [A Guide to dbinom, pbinom, qbinom, and rbinom in R](https://www.statology.org/dbinom-pbinom-qbinom-rbinom-in-r/)
+4. [Test Statistic](https://en.wikipedia.org/wiki/Test_statistic)
