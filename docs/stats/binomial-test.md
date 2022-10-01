@@ -125,8 +125,9 @@ probability of success
     - our hypothesis is that our true probability of success is not equal to 0.5
     - our p-value is above 0.05; so we do not have enough evidence to reject the null (a.k.a that our observed probability is due to chance)
     - our sample probability of success is 0.65
-        
-
+    
+!!! danger "Reportable Confidence Interval"
+    Remember to use the Agresti-Coull confidence interval, and not the confidence interval reported by `binom.test()`
 
 ## References
 
