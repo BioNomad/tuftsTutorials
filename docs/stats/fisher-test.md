@@ -97,4 +97,5 @@ odds ratio
 
 ## References
 
-1.[BIOL 202](https://ubco-biology.github.io/BIOL202/fishertest.html)
+1. [BIOL 202](https://ubco-biology.github.io/BIOL202/fishertest.html)
+2. [Fisher's Exact Test](https://en.wikipedia.org/wiki/Fisher%27s_exact_test)
