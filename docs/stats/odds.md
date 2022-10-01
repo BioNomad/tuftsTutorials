@@ -37,7 +37,7 @@ Male          44  10         54
 column_totals 77  20         97
 ```
 
-Here we can see that more patients are **not** lost to follow up. Let's calculate the odds now!
+Here we can have created what is called a **contingency table** or table that describes the frequency distribution of variables. We see that more patients are **not** lost to follow up. Let's calculate the odds now!
 
 ```R
 male <- table %>%
@@ -62,3 +62,4 @@ So here we see that the odds of losing a male to follow up are 0.23 to 1. An alt
 
 1. [BIOL - 202: Analyzing a single categorical variable](https://ubco-biology.github.io/BIOL202/estproportions.html)
 2. [Lost To Follow Up](https://en.wikipedia.org/wiki/Lost_to_follow-up)
+3. [Contingency Table](https://en.wikipedia.org/wiki/Contingency_table)
