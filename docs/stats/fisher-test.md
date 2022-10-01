@@ -71,6 +71,7 @@ odds ratio
 ```
 
 !!! info "Explanation of Results"
+
     Here we note:
     - our p-value is above 0.05 and thus not strong enough to reject the null (a.k.a the true odds ratio is equal to 1)
     - the 95% confidence interval reveals that our true odds ratio is somewhere between `0.4395952` and `4.0274603`
