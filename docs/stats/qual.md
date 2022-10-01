@@ -5,8 +5,10 @@ When assessing qualitative variables it is useful to consider proportions:
 
 $$\frac{n_i}{N}$$
 
-- $n_i$ number in category of interest
-- $N$ total number of observations
+!!! example "Explanation of Terms"
+
+    - $n_i$ number in category of interest
+    - $N$ total number of observations
 
 So let's calculate some proportions in R!
 
