@@ -2,13 +2,13 @@
 
 Quantitaive variables are numerical data: so variables such as height, weight, age. We can describe these variables with the following terms:
 
-
-- **Minimum** : smallest value in your variable
-- **Median** : middle value in your variable
-- **Mean** : average value of your variable
-- **Max** : largest value in your variable
-- **Count** : how many values are in your variable
-- **Standard deviation** : measure of the spread of your variable
+!!! example "Explanation of Terms"
+    - **Minimum** : smallest value in your variable
+    - **Median** : middle value in your variable
+    - **Mean** : average value of your variable
+    - **Max** : largest value in your variable
+    - **Count** : how many values are in your variable
+    - **Standard deviation** : measure of the spread of your variable
 
 Let's see how to do this in our code:
 
