@@ -7,7 +7,25 @@ Fisher's Exact Test has the following hypotheses:
 - $H_0$ or null hypothesis: there is no association between the group and event (Odds ratio = 1)
 - $H_a$ or alternative hypothesis: there is an association between the group and event (Odds ratio != 1)
 
-Let's assess the relationship between females and losing patients to follow up:
+We can calculate the probability given the following contingency table with:
+
+||group 1|group 2|
+|-|-|-|
+|Event |a |b |
+|No Event |c  |d |
+
+
+$$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!(a+b+c+d)!}$$
+
+!!! example "Explanation of Terms"
+
+    - $a$ number of members in group 1 with event
+    - $b$ number of members in group 2 with event
+    - $c$ number of members in group 1 without event
+    - $d$ number of members in group 2 without event
+    
+
+Let's assess the relationship between pathiet sex and losing patients to follow up:
 
 ```R
 library(tidyverse)
