@@ -107,6 +107,17 @@ Here we can guage from the relative risk that being a female patient increases t
 
 ## Odds Ratio
 
+The **odds ratio** of two events is also used as a measure to compare events between groups. However, the odds ratio is the ratio of odds of an event in one group versus another and is defined by:
+
+$$Odds\ Ratio = \frac{Odds_i}{Odds_j}}$$
+
+Where:
+
+$$Odds_i = \frac{n_i}{n_{not\ i}}$$
+
+$$Odds_j = \frac{n_j}{n_{not\ j}}$$
+
 1. [Relative Risk](https://en.wikipedia.org/wiki/Relative_risk)
 2. [Odds Ratio](https://en.wikipedia.org/wiki/Odds_ratio)
 3. [BIOL 202](https://ubco-biology.github.io/BIOL202/oddsratio.html)
+4. [Common pitfalls in statistical analysis: Odds versus risk](Common pitfalls in statistical analysis: Odds versus risk)
