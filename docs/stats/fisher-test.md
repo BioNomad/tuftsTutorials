@@ -48,8 +48,7 @@ Female 33  10
 Male   44  10
 ```
 
-Before we continue, note that the first columns is not losing patients to follow up! If we want to test for the event 
-of **losing** patients to follow up we need to put the "Yes", or Patients lost to follow up, column first.
+Before we continue, we need to make this table match the contingency table above. With the rows being the event and the columns being the group:
     
 ```R
 # Reorder so that we are assessing the odds ratio of losing patients to follow up
