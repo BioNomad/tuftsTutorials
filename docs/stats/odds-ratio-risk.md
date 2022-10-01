@@ -61,10 +61,10 @@ $$Risk_i = \frac{n_i}{N_i}$$
 $$Risk_j = \frac{n_j}{N_j}$$
 
 !!! example "Explanation of Terms"
-    - $n_i$ number of times event i happened
-    - $N_i$ total number of events when assessing event i
-    - $n_j$ number of times event j happened
-    - $N_j$ total number of events when assessing event j
+    - $n_i$ number of times event happens in group i
+    - $N_i$ total number of group i members
+    - $n_j$ number of times event happens in group j
+    - $N_j$ total number of group j members
     
     
 So let's calculate the relative risk of losing a female patient to follow up versus a male patient:
@@ -100,11 +100,6 @@ relative_risk
 
 Here we can guage from the relative risk that being a female patient increases the risk of losing the patient to follow up. 
 
-!!! tip "Relative Risk Interpretation"
-    - Relative Risk = 1 the factor does not affect the event
-    - Relative Risk < 1 the factor decreases the risk of the event (protective factor)
-    - Relative Risk > 1 the factor increases the risk of the event (risk factor)
-
 ## Odds Ratio
 
 The **odds ratio** of two events is also used as a measure to compare events between groups. However, the odds ratio is the ratio of odds of an event in one group versus another and is defined by:
@@ -116,6 +111,48 @@ Where:
 $$Odds_i = \frac{n_i}{n_{not\ i}}$$
 
 $$Odds_j = \frac{n_j}{n_{not\ j}}$$
+
+!!! example "Explanation of Terms"
+    - $Odds_i$ odds event happens in group i
+    - $Odds_j$ odds event happens in group j
+    - $n_i$ number of times event happens in group i
+    - $n_{not\ i}$ number of times event doesn't happen in group i
+    - $n_j$ number of times event happens in group j
+    - $n_{not\ j}$ number of times event doesn't happen in group j
+    
+So let's calculate the odds ratio of losing a female patients to follow up, versus male patients to follow up:
+
+```R
+odds <- table %>%
+  filter(rownames(.) != "column_totals") %>%
+  mutate(
+    odds = Yes/No)
+odds
+```
+
+```
+       No Yes row_totals odds_lost
+Female 33  10         43 0.3030303
+Male   44  10         54 0.2272727
+```
+
+Here we note that the odds of losing a female patient to follow up are higher than the odds of losing a female. The odds ratio would then be:
+
+```R
+odds_ratio <- odds$odds[rownames(odds)=="Female"]/odds$odds[rownames(odds)=="Male"]
+odds_ratio
+```
+
+```
+[1] 1.333333
+```
+
+Here we note that the odds of losing a female patient versus a male patient to follow up are 1.3 to 1. We can see that the odds ratio is similar to the relative risk, but the values are nonetheless different. 
+
+!!! tip "Relative Risk/Odds Ratio Interpretation"
+    - Odds Ratio/Relative Risk = 1 the factor does not affect the event
+    - Odds Ratio/Relative Risk < 1 the factor decreases the risk of the event (protective factor)
+    - Odds Ratio/Relative Risk > 1 the factor increases the risk of the event (risk factor)
 
 1. [Relative Risk](https://en.wikipedia.org/wiki/Relative_risk)
 2. [Odds Ratio](https://en.wikipedia.org/wiki/Odds_ratio)
