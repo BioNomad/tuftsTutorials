@@ -56,15 +56,16 @@ of **losing** patients to follow up we need to put the "Yes", or Patients lost t
 table <- as.data.frame.matrix(
   table(meta$SEX,meta$LOST_TO_FOLLOW_UP)
 ) %>%
-  select(c(Yes,No))
+  select(c(Yes,No)) %>%
+  t()
 
 table
 ```
 
 ```
-       Yes No
-Female  10 33
-Male    10 44
+    Female Male
+Yes     10   10
+No      33   44
 ```
 
 Now let's conduct our hypothesis test:
