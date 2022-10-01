@@ -98,7 +98,7 @@ So we've determined the probability of $X$ successes in $N$ trials with a $p$ pr
 - $\alpha$ or probability where we reject the null (a.k.a hypothesis where any oberved differences are due to chance)
 - test statistic or numeric summary to help distinguish between the the null and the alternative hypothesis
 
-Here we will ask, is this proportion of males evidence that males are over-represented in glioblastoma patients? So if we wanted to test for this risk, we could specify the number of males in our samples, the total number of observations, and the probability under the null hypothesis(that there is a 50% probability of male patients and a 50% probability of female patients).
+Here we will ask, is this proportion of males evidence that males are over-represented in glioblastoma patients? So if we wanted to test for this overrepresentation, we could specify the number of males in our samples, the total number of observations, and the probability under the null hypothesis(that there is a 50% probability of male patients and a 50% probability of female patients).
 
 ```R
 binom.res <- binom.test(x = 13, n = 20, p = 0.5, alternative = "two.sided")
@@ -109,17 +109,22 @@ binom.res
 Exact binomial test
 
 data:  13 and 20
-number of successes = 13, number of trials = 20, p-value = 0.2632
-alternative hypothesis: true probability of success is not equal to 0.5
+{==number of successes = 13, number of trials = 20, p-value = 0.2632==}
+alternative hypothesis: {==true probability of success is not equal to 0.5==}
 95 percent confidence interval:
  0.4078115 0.8460908
 sample estimates:
 probability of success 
-                  0.65 
+                  {==0.65==} 
 ```
 
 !!! info  "Explanation"
-    So here we have
+    So here we see that our hypothesis is that:
+        - we have 13 successes and 20 trials
+        - our hypothesis is that our true probability of success is not equal to 0.5
+        - our p-value is above 0.05; so we do not have enough evidence to reject the null (a.k.a that our observed probability is due to chance)
+        - our sample probability of success is 0.65
+        
 
 
 ## References
