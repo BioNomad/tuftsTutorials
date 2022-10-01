@@ -76,4 +76,6 @@ odds ratio
     - the 95% confidence interval reveals that our true odds ratio is somewhere between `0.4395952` and `4.0274603`
     - our odds ratio that patient sex is associated with losing the patient to follow up is about `1.3`
 
+## References
 
+1.[BIOL 202](https://ubco-biology.github.io/BIOL202/fishertest.html)
