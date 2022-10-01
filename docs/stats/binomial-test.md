@@ -120,10 +120,11 @@ probability of success
 
 !!! info  "Explanation"
     So here we see that our hypothesis is that:
-        - we have 13 successes and 20 trials
-        - our hypothesis is that our true probability of success is not equal to 0.5
-        - our p-value is above 0.05; so we do not have enough evidence to reject the null (a.k.a that our observed probability is due to chance)
-        - our sample probability of success is 0.65
+    
+    - we have 13 successes and 20 trials
+    - our hypothesis is that our true probability of success is not equal to 0.5
+    - our p-value is above 0.05; so we do not have enough evidence to reject the null (a.k.a that our observed probability is due to chance)
+    - our sample probability of success is 0.65
         
 
 
