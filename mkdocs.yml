@@ -130,7 +130,7 @@ nav:
             - "Binomial Test": stats/binomial-test.md
         - Analyzing Two Categorical Variables:
             - "Odds": stats/odds.md
-            - "Odds Ratio": stats/binomial-test.md
+            - "Odds Ratio": stats/odds-ratio-risk.md
             - "Fisher's Exact Test": stats/binomial-test.md
             - "Chi-Square Test": stats/binomial-test.md
         - Analyzing One Numeric Variable:
