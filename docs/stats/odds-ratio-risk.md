@@ -75,7 +75,19 @@ risks <- table %>%
   mutate(
     risk_lost = Yes/row_totals,
     risk_not_lost = No/row_totals)
+    
+risks
+```
 
+```
+       No Yes row_totals risk_lost risk_not_lost
+Female 33  10         43 0.2325581     0.7674419
+Male   44  10         54 0.1851852     0.8148148
+```
+
+Here we can eyeball that the risk of losing a female patient to follow up is greater than losing a  male patient. Let's see what the relative risk is:
+
+```R
 relative_risk <- risks$risk_lost["Female"]/risks$risk_lost["Male"]
 
 relative_risk
@@ -86,4 +98,15 @@ relative_risk
 1.255814 
 ```
 
-Here we see that risk of losing a female patient to follow up is greater than losing a male patient to follow up.
+Here we can guage from the relative risk that being a female patient increases the risk of losing the patient to follow up. 
+
+!!! tip "Relative Risk Interpretation"
+    - Relative Risk = 1 the factor does not affect the event
+    - Relative Risk < 1 the factor decreases the risk of the event (protective factor)
+    - Relative Risk > 1 the factor increases the risk of the event (risk factor)
+
+## Odds Ratio
+
+1. [Relative Risk](https://en.wikipedia.org/wiki/Relative_risk)
+2. [Odds Ratio](https://en.wikipedia.org/wiki/Odds_ratio)
+3. [BIOL 202](https://ubco-biology.github.io/BIOL202/oddsratio.html)
