@@ -43,8 +43,9 @@ Here we note that while similar to our true meta data mean, it is not exact. Whe
 
 $$\frac{\sigma}{\sqrt{N}}$$
 
-- $\sigma$ Standard deviation of the sample
-- $N$ Number of observations in the sample
+!!! example "Explanation of Terms"
+    - $\sigma$ Standard deviation of the sample
+    - $N$ Number of observations in the sample
 
 !!! tip "Math Tip"
     We can see that increasing the size of the sample, decreases the standard error of the mean.
