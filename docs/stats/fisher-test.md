@@ -30,9 +30,8 @@ Female 33  10
 Male   44  10
 ```
 
-!!! danger 
-    Before we continue, note that the first columns is not losing patients to follow up!
-    If we want to test for the event of **losing** patients to follow up we need to put the "Yes", or Patients lost to follow up, column first.
+Before we continue, note that the first columns is not losing patients to follow up! If we want to test for the event 
+of **losing** patients to follow up we need to put the "Yes", or Patients lost to follow up, column first.
     
 ```R
 # Reorder so that we are assessing the odds ratio of losing patients to follow up
