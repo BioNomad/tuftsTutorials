@@ -155,5 +155,13 @@ chisq.test(table*10)
 Pearson's Chi-squared test
 
 data:  table * 10
-X-squared = 24.197, df = 3, p-value = 2.272e-05
+{==X-squared = 24.197, df = 3, p-value = 2.272e-05==}
 ```
+
+Here we see that not only did the warning disappear but our p-value is below the canonical 0.05! So be aware that the Chi-Square test is very dependent on sample size. 
+
+## References
+
+1. [BIOL 202](https://ubco-biology.github.io/BIOL202/chisquare.html)
+2. [Chi-Square Distribution](https://en.wikipedia.org/wiki/Chi-squared_distribution)
+
