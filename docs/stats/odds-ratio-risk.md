@@ -67,7 +67,31 @@ $$Risk_j = \frac{n_j}{N_j}$$
     - $N_j$ total number of group j members
     
     
-So let's calculate the relative risk of losing a female patient to follow up versus a male patient:
+We will calculate the relative risk of losing a female patient to follow up versus a male patient. However, before we do so we will visualize 
+our data:
+
+```R
+# visualize risks:
+
+as.data.frame.matrix(
+  table(meta$SEX,meta$LOST_TO_FOLLOW_UP)) %>%
+  t() %>%
+  reshape2::melt() %>%
+  ggplot(.,aes(x=Var2,y=value,fill=Var1))+
+  geom_bar(stat = "identity",position="fill") +
+  scale_y_continuous(labels = scales::percent)+
+  theme_bw()+
+  scale_fill_manual(values=c("aquamarine3","lightpink3")) +
+  labs(
+    x="",
+    y="Frequency",
+    fill="Lost To Follow Up?"
+  )
+```
+
+![](images/risk-lost-to-follow.png)
+
+Here we see that females are slighly more prone to being lost to follow up. How does this translate to relative risk?
 
 ```R
 risks <- table %>%
