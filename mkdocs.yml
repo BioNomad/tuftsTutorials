@@ -132,7 +132,7 @@ nav:
             - "Odds": stats/odds.md
             - "Risk/Odds Ratio": stats/odds-ratio-risk.md
             - "Fisher's Exact Test": stats/fisher-test.md
-            - "Chi-Square Test": stats/binomial-test.md
+            - "Chi-Square Test": stats/chi-square.md
         - Analyzing One Numeric Variable:
             - "One Sample T-Test": stats/binomial-test.md
         - Analyzing Two Numeric Variables:
