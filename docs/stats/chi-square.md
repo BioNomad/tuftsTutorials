@@ -123,6 +123,9 @@ chisq.test(table)
 
 data:  table
 {==X-squared = 2.4197, df = 3, p-value = 0.49==}
+
+Warning message:
+In chisq.test(table) : Chi-squared approximation may be incorrect
 ```
 
 !!! info "Explanation of Results"
@@ -133,3 +136,13 @@ data:  table
     - The degrees of freedom is `3`
     - Our p-value is `0.49` and is greater than 0.05:
         - indicating there is not enough evidence to reject the null hypothesis (a.k.a there is no association between the two categorical values)
+    - Our test assumptions might not be correct!
+
+## Assumptions
+
+The Chi-Square test is not free of assumptions:
+
+- categories shouldn't have an expected frequency less than one
+- 20% of the categories should not have an expected frequency less than 5
+
+In the table above we note that some frequency values are indeed less than 5! Now how does our test change
