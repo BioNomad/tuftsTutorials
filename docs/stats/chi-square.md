@@ -145,4 +145,15 @@ The Chi-Square test is not free of assumptions:
 - categories shouldn't have an expected frequency less than one
 - 20% of the categories should not have an expected frequency less than 5
 
-In the table above we note that some frequency values are indeed less than 5! Now how does our test change
+In the table above we note that some frequency values are indeed less than 5! Now how does our test change if our values are increased ten-fold?
+
+```R
+chisq.test(table*10)
+```
+
+```
+Pearson's Chi-squared test
+
+data:  table * 10
+X-squared = 24.197, df = 3, p-value = 2.272e-05
+```
