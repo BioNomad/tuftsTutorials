@@ -18,7 +18,9 @@ $$d.f. = (r-1)(c-1)$$
     - $d.f.$ degrees of freedom
     - $r$ number of rows
     - $c$ number of columns
-    
+
+## Chi-Square Distribution 
+
 This $\chi^2$ value is then compared to a probability distriubtion. In our [Binomial Test Topic Note](binomial-test.md), we described that 
 probability distributions help us determine the probability of an event given some parameter. In the [Binomial Test Topic Note](binomial-test.md),
 that parameter was the number of successes, but here it is our degrees of freedom. We won't cover the math of this probability distribution function
@@ -59,6 +61,8 @@ Now, what you might have guessed from the equation above, but we are testing the
 - $H_0$ or null hypothesis that there is no association between the two categorical values
 - $H_a$ or alternative hypothesis that there is an association between the two categorical values
 
+## Visualizing Data
+
 Here we will test the association between losing a patient to follow up and their country of origin. Let's try visualizing this first:
 
 ```R
@@ -76,6 +80,18 @@ table <- as.data.frame.matrix(
 ) %>%
   select(c(China,Poland,Russia, `United States`))
 
+table
+```
+
+```
+    China Poland Russia United States
+No     21     14     16            16
+Yes     9      2      3             5
+```
+
+Now let's see this plotted!
+
+```R
 #plot our data
 table %>% 
   t() %>% 
@@ -94,3 +110,26 @@ table %>%
 ```
 
 ![](images/chi-square-lost-to-follow.png)
+
+## Running the Chi-Square Test
+
+```R
+# run the chi-square test
+chisq.test(table)
+```
+
+```
+	Pearson's Chi-squared test
+
+data:  table
+{==X-squared = 2.4197, df = 3, p-value = 0.49==}
+```
+
+!!! info "Explanation of Results"
+
+    Here we note that:
+    
+    - Our chi-square test statistic is `2.4197`
+    - The degrees of freedom is `3`
+    - Our p-value is `0.49` and is greater than 0.05:
+        - indicating there is not enough evidence to reject the null hypothesis (a.k.a there is no association between the two categorical values)
