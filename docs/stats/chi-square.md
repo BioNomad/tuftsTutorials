@@ -54,3 +54,43 @@ ggplot(chi.sq.df,
 
 ![](images/chi-square-dist.png)
 
+Now, what you might have guessed from the equation above, but we are testing the following hypotheses:
+
+- $H_0$ or null hypothesis that there is no association between the two categorical values
+- $H_a$ or alternative hypothesis that there is an association between the two categorical values
+
+Here we will test the association between losing a patient to follow up and their country of origin. Let's try visualizing this first:
+
+```R
+# load meta data
+meta <- read.table("./data/gbm_cptac_2021/data_clinical_patient.txt",
+                   header = T,
+                   sep="\t")
+
+
+# generate a table of losing a patient to follow up
+# by their country of origin
+# removing zero count countries
+table <- as.data.frame.matrix(
+  table(meta$LOST_TO_FOLLOW_UP,meta$COUNTRY_OF_ORIGIN)
+) %>%
+  select(c(China,Poland,Russia, `United States`))
+
+#plot our data
+table %>% 
+  t() %>% 
+  reshape2::melt() %>%
+  ggplot(.,aes(x=Var1,y=value,fill=Var2))+
+  geom_bar(stat = "identity",position="fill") +
+  scale_y_continuous(labels = scales::percent)+
+  theme_bw()+
+  scale_fill_manual(values=c("aquamarine3","lightpink3")) +
+  labs(
+    x="",
+    y="Frequency",
+    fill="Lost To Follow Up?"
+  )
+
+```
+
+![](images/chi-square-lost-to-follow.png)
