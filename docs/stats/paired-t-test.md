@@ -54,7 +54,7 @@ $$\mu \pm t \frac{\sigma}{\sqrt{n}}$$
     - $\sigma$ : standard deviation of the differences
     - $n$ :  sample size
 
-## Running the One-Sample T-Test
+## Running the Paired T-Test
 
 Seeing as our glioblastoma data does not have a paired observation (essentially a before-after comparison), we are going to need to generate some 
 dummy data to apply our paired-test to:
@@ -150,7 +150,6 @@ Given our p-value is **above** 0.05 we do not have enough evidence to reject the
 
 ## References
 
-1. [BIOL 202 - One-Sample T-Test](https://ubco-biology.github.io/BIOL202/onesamp_t_test.html)
-2. [One-Sample T-test in R](http://www.sthda.com/english/wiki/one-sample-t-test-in-r)
+1. [BIOL 202 - Paired T-Test](https://ubco-biology.github.io/BIOL202/paired-t-test.html)
+2. [Paired Samples T-test in R]([http://www.sthda.com/english/wiki/one-sample-t-test-in-r](http://www.sthda.com/english/wiki/paired-samples-t-test-in-r))
 3. [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
-4. [One-Sample T-Test using SPSS Statistics](https://statistics.laerd.com/spss-tutorials/one-sample-t-test-using-spss-statistics.php)
