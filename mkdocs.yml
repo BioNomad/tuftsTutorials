@@ -140,9 +140,6 @@ nav:
             - "Two Sample T-Test": stats/two-t-test.md
         - Analyzing Two Numeric Variables:
             - "Correlation": stats/binomial-test.md
-        - Checking Assumptions:
-            - "Checking Normality": stats/binomial-test.md
-            - "Checking Equal Variances": stats/binomial-test.md
         - Analyzing Two Or More Groups:
             - "ANOVA": stats/binomial-test.md
     - Machine Learning: 
