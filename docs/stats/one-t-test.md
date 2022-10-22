@@ -30,3 +30,54 @@ $$d.f. = n - 1$$
     - $n$ : sample size
     - $d.f.$ : degrees of freedom
     
+Using our glioblastoma data, we are going to ask: Does the mean age of our patients equal the theoretical mean of the U.S. population (Let's say the avearage age is 32)? Before we do so, we need to ask; what probability function are we comparing our test statistic to? For a numeric variable we often compare our test statistic to a Gaussian or normal distribution. The probability density function for the normal distribution has the following formula:
+
+$$f(x) = \frac{1}{(\sigma\sqrt{2 \pi})} e^{-(\frac{(x - \mu)^2}{2 \sigma^2})}$$
+
+!!! example "Explanation of Terms"
+    - $\sigma$ : standard deviation of our sample
+    - $\mu$ : mean of our sample
+    
+When e
+Putting this all together let's test whether or not the mean of our sample is equal to the theoretical mean of our population, 32:
+
+```R
+#one-sample t-test
+library(tidyverse)
+# load meta data
+meta <- read.table("./data/gbm_cptac_2021/data_clinical_patient.txt",
+                   header = T,
+                   sep="\t")
+
+# run the one-sample t-test to determine if the
+# mean of our sample is equal to 32
+t.test(x = meta$AGE,
+       mu = 32,
+       alternative = "two.sided")
+```
+
+```
+	One Sample t-test
+
+data:  meta$AGE
+t = {==20.621, df = 98, p-value < 2.2e-16==}
+{==alternative hypothesis: true mean is not equal to 32==}
+95 percent confidence interval:
+ {==55.39750 60.38028==}
+sample estimates:
+mean of x 
+ {==57.88889==} 
+```
+
+!!! info "Explanation"
+    - our test statistic is `20.621`
+    - our d.f. is `98`
+    - The pvalue is below `2.2e-16`
+    - our alternative hypothesis is that the true mean is not equal to 32
+    - our sample mean is `57.88889` 
+    - the 95% confidence interval for our mean is `55.39750` to `60.38028`
+    
+    
+
+## References
+
