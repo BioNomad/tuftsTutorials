@@ -104,8 +104,11 @@ So now that we have conducted our test, we should assess the test's assumptions:
 - there are no signficant outliers
 - the data are normally distributed
 
+Our data are age, which is indeed a continuous variable. The data are also independent of one another (the age of our patients should not be dependent on the age of another patient). We can identify outliers 
+
 ## References
 
 1. [BIOL 202 - One-Sample T-Test](https://ubco-biology.github.io/BIOL202/onesamp_t_test.html)
 2. [One-Sample T-test in R](http://www.sthda.com/english/wiki/one-sample-t-test-in-r)
 3. [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
+4. [One-Sample T-Test using SPSS Statistics](https://statistics.laerd.com/spss-tutorials/one-sample-t-test-using-spss-statistics.php)
