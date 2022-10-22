@@ -134,8 +134,8 @@ nav:
             - "Fisher's Exact Test": stats/fisher-test.md
             - "Chi-Square Test": stats/chi-square.md
         - Analyzing One Numeric Variable:
-            - "One Sample T-Test": stats/binomial-test.md
-        - Analyzing Two Numeric Variables:
+            - "One Sample T-Test": stats/one-t-test.md
+        - Analyzing Numeric Variable With Two Groups:
             - "T-Test": stats/binomial-test.md
             - "Correlation": stats/binomial-test.md
         - Checking Assumptions:
