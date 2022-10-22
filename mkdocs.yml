@@ -137,7 +137,7 @@ nav:
             - "One Sample T-Test": stats/one-t-test.md
         - Analyzing Numeric Variable With Two Groups:
             - "Paired T-Test": stats/paired-t-test.md
-            - "Two Sample T-Test": stats/binomial-test.md
+            - "Two Sample T-Test": stats/two-t-test.md
         - Analyzing Two Numeric Variables:
             - "Correlation": stats/binomial-test.md
         - Checking Assumptions:
