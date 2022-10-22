@@ -104,7 +104,16 @@ So now that we have conducted our test, we should assess the test's assumptions:
 - there are no signficant outliers
 - the data are normally distributed
 
-Our data are age, which is indeed a continuous variable. The data are also independent of one another (the age of our patients should not be dependent on the age of another patient). We can identify outliers 
+Our data are age, which is indeed a continuous variable. The data are also independent of one another (the age of our patients should not be dependent on the age of another patient). We can identify outliers using the rosner test in the `EnvStats` package. But to use this test we need to identify how many outliers we think there are. Let's estimate this visually by plotting our data:
+
+```R
+# plot our data and see if we notice any outliers
+ggplot(meta, aes(x=AGE)) +
+  geom_histogram(fill ="lightpink") +
+  theme_bw()
+```
+
+![](images/one-t-test-data.png)
 
 ## References
 
