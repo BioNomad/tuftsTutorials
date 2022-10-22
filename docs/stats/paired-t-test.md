@@ -145,8 +145,7 @@ data:  difference
 W = 0.94613, {==p-value = 0.3121==}
 ```
 
-Here we see that there is not enough evidence to reject the null hypothesis that the data are not normally distributed given the p-value is above 0.05.
-In other words, if the p-value is above 0.05 your data are normally distributed.
+Given our p-value is **above** 0.05 we do not have enough evidence to reject the null hypothesis of the Shapiro-Wilk Test; that the data are normally distributed. In other words, if the p-value is above 0.05 your data are normally distributed.
 
 
 ## References
