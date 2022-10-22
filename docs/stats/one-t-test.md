@@ -3,13 +3,13 @@
 When we deal with numeric variables we often examine the mean of that variable. The one-sample t-test can help answer the following questions about our 
 numeric variable:
 
-- Does the mean of our sample, $\mu$, equal the theoretical mean of our population, $\mu_0$?
+- **Does the mean of our sample, $\mu$, equal the theoretical mean of our population, $\mu_0$?**
     - $H_0: \mu = \mu_0$
     - $H_a: \mu \neq \mu_0$
-- Is the mean of our sample, $\mu$, less than the theoretical mean of our population, $\mu_0$?
+- **Is the mean of our sample, $\mu$, less than the theoretical mean of our population, $\mu_0$?**
     - $H_0: \mu \le \mu_0$
     - $H_a: \mu > \mu_0$
-- Is the mean of our sample, $\mu$, greater than the theoretical mean of our population, $\mu_0$?
+- **Is the mean of our sample, $\mu$, greater than the theoretical mean of our population, $\mu_0$?**
     - $H_0: \mu \ge \mu_0$
     - $H_a: \mu  \mu_0$
 
