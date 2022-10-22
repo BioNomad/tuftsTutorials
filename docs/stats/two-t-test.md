@@ -160,12 +160,12 @@ shapiro.test(meta$AGE[meta$SEX == "Female"])
 	Shapiro-Wilk normality test
 
 data:  meta$AGE[meta$SEX == "Male"]
-W = 0.98809, p-value = 0.8604
+W = 0.98809, {==p-value = 0.8604==}
 
 	Shapiro-Wilk normality test
 
 data:  meta$AGE[meta$SEX == "Female"]
-W = 0.95578, p-value = 0.09048
+W = 0.95578, {==p-value = 0.09048==}
 ```
 
 Given our p-value is **above** 0.05 we do not have enough evidence to reject the null hypothesis of the Shapiro-Wilk Test; that the data are normally distributed. In other words, if the p-value is above 0.05 your data are normally distributed. However, it should be noted that the Shapiro-Wilk test p-value for female ages is rather close to 0.05 so there does seem to be some skey in female ages. 
