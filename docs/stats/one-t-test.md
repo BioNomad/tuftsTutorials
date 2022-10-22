@@ -11,7 +11,7 @@ numeric variable:
     - $H_a: \mu > \mu_0$
 - **Is the mean of our sample, $\mu$, greater than the theoretical mean of our population, $\mu_0$?**
     - $H_0: \mu \ge \mu_0$
-    - $H_a: \mu  \mu_0$
+    - $H_a: \mu < \mu_0$
 
 !!! tip
     When we ask if the sample mean is equal to the population mean we are conducting a **two-sided test**. When we ask if the sample mean is less than 
