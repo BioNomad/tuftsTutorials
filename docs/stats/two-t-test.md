@@ -11,7 +11,7 @@ two unpaired groups we will use the two-sample t-test. The two-sample t-test can
     - $H_a: \mu_1 > \mu_2$
 - **Is the mean of group 1, $\mu_1$, greater than the mean of group 2, $\mu_2$?**
     - $H_0: \mu_1 \ge \mu_2$
-    - $H_a: \mu_1  \mu_2$
+    - $H_a: \mu_1 < \mu_2$
 
 !!! tip
     When we ask if mean of group 1 is equal to the mean of group 2 we are conducting a **two-sided test**. When we ask if the mean of group 1 is less than or greater than the mean of group 2, we are conducting a **one-sided test**.
