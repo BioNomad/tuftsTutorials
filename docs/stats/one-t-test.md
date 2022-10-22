@@ -115,6 +115,42 @@ ggplot(meta, aes(x=AGE)) +
 
 ![](images/one-t-test-data.png)
 
+Given we don't see any drastic outliers let's say we might have 5 outliers:
+
+```R
+# run the rosner test and identify whether or not
+# we do have outliers
+library(EnvStats)
+ros.test <- rosnerTest(x = meta$AGE, k = 5)
+ros.test$all.stats
+```
+
+```
+  i   Mean.i     SD.i Value Obs.Num    R.i+1 lambda.i+1 {==Outlier==}
+1 0 57.88889 12.49154    24      86 2.712947   3.380651   {==FALSE==}
+2 1 58.23469 12.07007    88      81 2.466042   3.377176   {==FALSE==}
+3 2 57.92784 11.74224    30      99 2.378408   3.373658   {==FALSE==}
+4 3 58.21875 11.44709    31      92 2.377788   3.370097   {==FALSE==}
+5 4 58.50526 11.15641    34      34 2.196519   3.366490   {==FALSE==}
+```
+
+Here we see that the last column in the output above indicates that our 5 possible outliers are probably not outliers! Now let's check if our data are normally distributed using the Shapiro-Wilk Test:
+
+
+```R
+# run the shapiro-wilk test on our data
+shapiro.test(meta$AGE)
+```
+
+```
+	Shapiro-Wilk normality test
+
+data:  meta$AGE
+W = 0.98784, {==p-value = 0.5038==}
+```
+
+Given our p-value is **above** 0.05 we have enough evidence to reject the null hypothesis of the Shapiro-Wilk Test; that the data are not normally distributed. In other words, if the p-value is above 0.05 your data are normally distributed.
+
 ## References
 
 1. [BIOL 202 - One-Sample T-Test](https://ubco-biology.github.io/BIOL202/onesamp_t_test.html)
