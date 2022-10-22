@@ -35,10 +35,19 @@ Using our glioblastoma data, we are going to ask: Does the mean age of our patie
 $$f(x) = \frac{1}{(\sigma\sqrt{2 \pi})} e^{-(\frac{(x - \mu)^2}{2 \sigma^2})}$$
 
 !!! example "Explanation of Terms"
-    - $\sigma$ : standard deviation of our sample
-    - $\mu$ : mean of our sample
+    - $\sigma$ : standard deviation
+    - $\mu$ : mean
     
-When e
+Just like our proportion tests, we also have a confidence interval around our sample parameter, in this case the sample mean. So for a test statistic, $t$, at an $\alpha$ level of 0.05, our confidence interval would be:
+
+$$\mu \pm t \frac{\sigma}{\sqrt{n}}$$
+
+!!! example "Explanation of Terms"
+    - $\mu$ : sample mean
+    - $t$ : test statistic for an $\alpha$ of 0.05
+    - $\sigma$ : sample standard deviation
+    - $n$ :  sample size
+    
 Putting this all together let's test whether or not the mean of our sample is equal to the theoretical mean of our population, 32:
 
 ```R
@@ -76,8 +85,12 @@ mean of x
     - our alternative hypothesis is that the true mean is not equal to 32
     - our sample mean is `57.88889` 
     - the 95% confidence interval for our mean is `55.39750` to `60.38028`
+    - So we see that we have enough evidence to reject the null hypothesis that the true mean of our sample is equal to 32
     
     
 
 ## References
 
+1. [BIOL 202 - One-Sample T-Test](https://ubco-biology.github.io/BIOL202/onesamp_t_test.html)
+2. [One-Sample T-test in R](http://www.sthda.com/english/wiki/one-sample-t-test-in-r)
+3. [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
