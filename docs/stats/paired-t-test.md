@@ -49,9 +49,9 @@ Similarily to our [one-sample t-test topic note](one-t-test.md) our confidence i
 $$\mu \pm t \frac{\sigma}{\sqrt{n}}$$
 
 !!! example "Explanation of Terms"
-    - $\mu$ : sample mean
+    - $\mu$ : sample mean difference
     - $t$ : test statistic for an $\alpha$ of 0.05
-    - $\sigma$ : sample standard deviation
+    - $\sigma$ : standard deviation of the differences
     - $n$ :  sample size
 
 ## Running the One-Sample T-Test
