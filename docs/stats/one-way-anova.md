@@ -122,4 +122,45 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 Like any statistical test, we make assumptions. The assumptions made by the one-way ANOVA are:
 
-- The residuals 
+- The residuls are normally distributed
+- The variances of each group are equal (Homoscedasticity)
+
+!!! note
+    The residuals for a One-Way ANOVA are calculated by taking each value and subtracting the mean of the group that value belongs to
+    
+To test the normality of the residuals we will use the Shapiro-Wilk test:
+
+```R
+# use the shapiro-wilk test to determine the normality of the residuals
+shapiro.test(x = residuals(anova_res))
+```
+
+```
+	Shapiro-Wilk normality test
+
+data:  residuals(anova_res)
+W = 0.98732, {==p-value = 0.5527==}
+```
+
+Given our p-value is above 0.05 we do not have enough evidence to reject the null hypothesis of the Shapiro-Wilk Test; that the data are normally distributed. In other words, if the p-value is above 0.05 your data are normally distributed. To determine the homoscedasticity of our data we will use the Levene test:
+
+```R
+# apply the levene test to our data
+library(car)
+leveneTest(AGE ~ COUNTRY_OF_ORIGIN, data = countries_ages)
+```
+
+```
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group  3  0.1514 0.9285
+      84  
+```
+
+Here we note that the p-value is above 0.05, indicating we don't have enough evidence to say that there is a significant difference in the variances between groups.
+
+
+## References
+
+1. [One-Way ANOVA Test in R](http://www.sthda.com/english/wiki/one-way-anova-test-in-r)
+2. [How to Perform a One-Way ANOVA by Hand](https://www.statology.org/one-way-anova-by-hand/)
