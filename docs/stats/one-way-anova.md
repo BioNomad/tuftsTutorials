@@ -153,7 +153,7 @@ leveneTest(AGE ~ COUNTRY_OF_ORIGIN, data = countries_ages)
 ```
 Levene's Test for Homogeneity of Variance (center = median)
       Df F value Pr(>F)
-group  3  0.1514 0.9285
+group  3  0.1514 {==0.9285==}
       84  
 ```
 
