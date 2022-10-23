@@ -141,7 +141,7 @@ nav:
         - Analyzing Two Numeric Variables:
             - "Correlation": stats/correlation.md
         - Analyzing Two Or More Groups:
-            - "ANOVA": stats/binomial-test.md
+            - "One-Way ANOVA": stats/one-way-anova.md
     - Machine Learning: 
         - Introduction To Machine Learning: 
             - "Introduction To Machine Learning": machine-learning/intro-machine.md
