@@ -35,6 +35,15 @@ $$Pearson\ Correlation\ Distance = d_{pearson}(x,y) = 1 - \frac{\sum_{i=1}^n{(x 
     - $\mu_x$ mean of variable x
     - $\mu_y$ mean of variable y
     - $n$ number of observations
+    
+$$Spearman\ Correlation\ Distance = d_{spearman}(x,y) = 1 - \frac{\sum{(x\prime - \mu_{x\prime} )(y\prime  - \mu_{y\prime} )}}{\sqrt{\sum{(x\prime  - \mu_{x\prime} )^2} \sum{(y\prime  - \mu_{y\prime} )^2}}}$$
+
+!!! example "Explanation of Terms"
+    - $x$ variable x
+    - $y$ variable y
+    - $\mu_x$ mean of variable x
+    - $\mu_y$ mean of variable y
+    - $n$ number of observations
 
 ## K-means Clustering 
 
