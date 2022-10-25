@@ -111,7 +111,7 @@ which does not make the assumptions we discussed above. This correlation coeffic
 calculated like so:
 
 
-$$ r = \frac{\sum{(x\prime - \mu_x\prime )(y\prime  - \mu_y\prime )}}{\sqrt{\sum{(x\prime  - \mu_x\prime )^2} \sum{(y\prime  - \mu_y\prime )^2}}}  $$ 
+$$ r = \frac{\sum{(x\prime - \mu_{x\prime} )(y\prime  - \mu_{y\prime} )}}{\sqrt{\sum{(x\prime  - \mu_{x\prime} )^2} \sum{(y\prime  - \mu_{y\prime} )^2}}}  $$ 
 
 !!! example "Explanation of Terms"
     - $r$ : spearman rank correlation coefficient
