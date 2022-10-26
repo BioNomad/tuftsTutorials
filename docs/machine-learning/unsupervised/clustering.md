@@ -59,6 +59,8 @@ $$d_{spearman}(x,y) = 1 - \frac{\sum{(x\prime - \mu_{x\prime} )(y\prime  - \mu_{
     - $\mu_y$ mean of variable y
     - $n$ number of observations
 
+Let's try creating a distance matrix 
+
 ## K-means Clustering 
 
 ## Agglomerative Hierarchical Clustering
