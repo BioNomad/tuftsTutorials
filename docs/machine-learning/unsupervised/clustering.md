@@ -6,7 +6,7 @@ Clustering, like the name implies, is a way to group data points to find pattern
 
 Before generating clusters we need to calculate the distance between observations:
 
-![](images/calculate-distance-matrix.png)
+![](images/calc_dist_mat.png)
 
 To do so we have a few different options for distance metrics:
 
