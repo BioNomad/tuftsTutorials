@@ -187,8 +187,8 @@ $$D_{12} = \frac{||\overline{x_1} - \overline{x_2}||^2}{\frac{1}{N_1}+\frac{1}{N
     - $D_{12}$ distance between clusters 1 and 2
     - $N_1$ number of points in cluster 1
     - $N_2$ number of points in cluster 2
-    - \overline{x_1}$$ mean of cluster 1
-    - \overline{x_2}$$ mean of cluster 2
+    - $\overline{x_1}$ mean of cluster 1
+    - $\overline{x_2}$ mean of cluster 2
 
 ### Clustering with Ward's method
 
