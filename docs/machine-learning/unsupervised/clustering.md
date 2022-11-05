@@ -123,7 +123,7 @@ $$total\ within\ cluster\ variation = \sum_{k=1}^k{\sum_{x_i\in{C_k}}{(x_i - \mu
 !!! info
     This total within cluster variation is then minimized to best assign data points to the $k$ number of clusters
     
-### Choosing $k$ Number of Clusters
+### Choosing K Number of Clusters
 
 In R we can use the `fviz_nbclust()` to determine the optimal number of clusters. This will generate a plot and where the plot dips dramatically is our optimal number of $k$!
 
@@ -174,7 +174,12 @@ Given the lackluster cluster plot above it is worth discussing the shortcomings 
 
 ## Agglomerative Hierarchical Clustering
 
+Agglomerative Hierarchical Clustering is a bottom up approach wherein observations are their own cluster and then merged into larger and larger clusters until their is one root cluster:
+
+![](images/hierar_clust_fig.png)
+
 ## References
 
 1. [Clustering Distance Measures](https://www.datanovia.com/en/lessons/clustering-distance-measures/)
 2. [K-Means Clustering in R: Algorithm and Practical Examples](https://www.datanovia.com/en/lessons/k-means-clustering-in-r-algorith-and-practical-examples/)
+3. [Agglomerative Hierarchical Clustering](https://www.datanovia.com/en/lessons/agglomerative-hierarchical-clustering/)
