@@ -123,6 +123,55 @@ $$total\ within\ cluster\ variation = \sum_{k=1}^k{\sum_{x_i\in{C_k}}{(x_i - \mu
 !!! info
     This total within cluster variation is then minimized to best assign data points to the $k$ number of clusters
     
+### Choosing $k$ Number of Clusters
+
+In R we can use the `fviz_nbclust()` to determine the optimal number of clusters. This will generate a plot and where the plot dips dramatically is our optimal number of $k$!
+
+```R
+# k-means clustering
+# choosing k
+fviz_nbclust(counts, kmeans, method = "wss") +
+  geom_point(color="midnightblue")+
+  geom_line(color="midnightblue")+
+  geom_vline(xintercept = 3,color="firebrick")
+```
+
+![](images/opt_k.png)
+
+Here we do not see a drastic dip in our plot so we will choose 3 clusters here.
+
+### Applying K-means
+
+We will now perform k-means clustering and plot the results!
+
+```R
+# applying the k-means function
+km <- kmeans(counts, 3, nstart = 25)
+fviz_cluster(km, 
+             counts,
+             geom = "point",
+             ellipse.type = "norm")+
+  theme_bw()+
+  labs(
+    title = "K-means Cluster Plot with 3 Clusters"
+  )
+```
+
+![](images/kmeans_plot.png)
+
+You will note here that the clusters overlap to a great degree and there isn't great separation between them.
+
+### K-means Shortcomings
+
+Given the lackluster cluster plot above it is worth discussing the shortcomings of k-means clustering:
+
+!!! warning "K-means Shortcomings"
+    - you are going to need to determine the optimal number of clusters ahead of time
+    - the initial center point is chosen at random! And as such your cluster can change depending on that random center point
+    - this approach can rely heavily on the mean of the cluster points and the mean is sensitive to outliers in the data!
+    - k-means clustering can be affected by data order as well
+    
+
 ## Agglomerative Hierarchical Clustering
 
 ## References
