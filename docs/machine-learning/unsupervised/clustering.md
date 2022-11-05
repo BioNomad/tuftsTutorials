@@ -178,10 +178,42 @@ Agglomerative Hierarchical Clustering is a bottom up approach wherein observatio
 
 ![](images/hierar_clust_fig.png)
 
-Here we will discuss Ward's Method for merging these clusters as it is one of the most popular. First 
+Here we will discuss Ward's Method for merging these clusters as it is one of the most popular:
+
+$$D_{12} = \frac{||\overline{x_1} - \overline{x_2}||^2}{\frac{1}{N_1}+\frac{1}{N_2}}$$
+
+!!! example "Explanation of Terms" 
+
+    - $D_{12}$ distance between clusters 1 and 2
+    - $N_1$ number of points in cluster 1
+    - $N_2$ number of points in cluster 2
+    - \overline{x_1}$$ mean of cluster 1
+    - \overline{x_2}$$ mean of cluster 2
+
+### Clustering with Ward's method
+
+Let's apply this in R!
+
+```R
+# apply ward's clustering
+hc <- hclust(d = dist, method = "ward.D2")
+
+# visualizing the dendrogram
+# and color by k number of clusters
+fviz_dend(hc,
+          k = 4, 
+          k_colors = c("#1B9E77", "#D95F02", "#7570B3", "#E7298A"))
+```
+
+![](images/dendrogram.png)
+
+!!! info
+    - here we see each sample starts as its own cluster and is gradually merged into larger clusters
+    - we choose to visualize 4 clusters by this is really up to your discretion
 
 ## References
 
 1. [Clustering Distance Measures](https://www.datanovia.com/en/lessons/clustering-distance-measures/)
 2. [K-Means Clustering in R: Algorithm and Practical Examples](https://www.datanovia.com/en/lessons/k-means-clustering-in-r-algorith-and-practical-examples/)
 3. [Agglomerative Hierarchical Clustering](https://www.datanovia.com/en/lessons/agglomerative-hierarchical-clustering/)
+4. [Distance Method Formulas](https://www.jmp.com/support/help/14/distance-method-formulas.shtml#177809%C2%A0)
