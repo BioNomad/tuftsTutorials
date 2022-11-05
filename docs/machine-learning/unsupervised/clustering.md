@@ -178,7 +178,7 @@ Agglomerative Hierarchical Clustering is a bottom up approach wherein observatio
 
 ![](images/hierar_clust_fig.png)
 
-Here we will discuss Ward's Method for merging these clusters as it is one of the most popular:
+This "hierarchical" view of these clusters is called a dendrogram. Here we will discuss Ward's Method for merging these clusters as it is one of the most popular:
 
 $$D_{12} = \frac{||\overline{x_1} - \overline{x_2}||^2}{\frac{1}{N_1}+\frac{1}{N_2}}$$
 
