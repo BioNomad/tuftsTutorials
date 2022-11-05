@@ -59,7 +59,49 @@ $$d_{spearman}(x,y) = 1 - \frac{\sum{(x\prime - \mu_{x\prime} )(y\prime  - \mu_{
     - $\mu_y$ mean of variable y
     - $n$ number of observations
 
-Let's try creating a distance matrix 
+## Distance Metrics In R
+
+Let's try creating a distance matrix!
+
+```R
+# load the libraries
+.libPaths(c("/cluster/tufts/hpc/tools/R/4.0.0"))
+library(tidyverse)
+library(factoextra)
+
+# load our counts data
+counts <- read.csv(
+  file="data/gbm_cptac_2021/data_mrna_seq_fpkm.txt",
+  header = T,
+  sep = "\t")
+
+# make the genes our rownames
+rownames(counts) <- make.names(counts$Hugo_Symbol,unique = TRUE)
+
+# remove the gene symbol column
+counts <- counts %>%
+  select(-c(Hugo_Symbol)) 
+
+# log2 transform our data 
+# transpose our data so that our patients are rows
+counts <- t(log2(counts + 1))
+
+# Change NA counts to 0
+counts[!is.finite(counts)] <- 0
+
+# generate correlation distance matrix
+dist <- get_dist(counts,method = "pearson")
+
+# plot correlation distance matrix
+fviz_dist(dist) +
+  theme(axis.text = element_text(size = 3)) +
+  labs(
+    title = "Pearson Correlation Distances Between Samples",
+    fill = "Pearson Correlation"
+  )
+```
+
+![](images/sample_corr_mat.png)
 
 ## K-means Clustering 
 
