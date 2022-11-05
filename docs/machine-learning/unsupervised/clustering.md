@@ -105,6 +105,27 @@ fviz_dist(dist) +
 
 ## K-means Clustering 
 
+K-means clustering seeks to derive $k$ number of clusters so that the variation within the cluster is minimized. Additionally, the number of clusters, $k$, is specified by the user. The standard k-means algorithm is the Hartigan-Wong algorithm, which starts by determining the sum of squares for each cluster:
+
+$$W(C_k) = \sum_{x_i\in{C_k}}{(x_i - \mu_k)^2}$$
+    
+Then the total within cluster variation is calculated by:
+
+$total\ within\ cluster\ variation = \sum_{k=1}^k{\sum_{x_i\in{C_k}}{(x_i - \mu_k)^2}}$$
+
+!!! example "Explanation of Terms"
+
+    - $C_k$ cluster number $k$
+    - $x_i$ point in cluster $C_k$
+    - $\mu_k$ mean of points in cluster $C_k$
+    - $k$ number of clusters
+    
+!!! info
+    This total within cluster variation is then minimized to best assign data points to the $k$ number of clusters
+    
 ## Agglomerative Hierarchical Clustering
 
 ## References
+
+1. [Clustering Distance Measures](https://www.datanovia.com/en/lessons/clustering-distance-measures/)
+2. [K-Means Clustering in R: Algorithm and Practical Examples](https://www.datanovia.com/en/lessons/k-means-clustering-in-r-algorith-and-practical-examples/)
