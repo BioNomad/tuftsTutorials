@@ -111,7 +111,7 @@ $$W(C_k) = \sum_{x_i\in{C_k}}{(x_i - \mu_k)^2}$$
     
 Then the total within cluster variation is calculated by:
 
-$total\ within\ cluster\ variation = \sum_{k=1}^k{\sum_{x_i\in{C_k}}{(x_i - \mu_k)^2}}$$
+$$total\ within\ cluster\ variation = \sum_{k=1}^k{\sum_{x_i\in{C_k}}{(x_i - \mu_k)^2}}$$
 
 !!! example "Explanation of Terms"
 
