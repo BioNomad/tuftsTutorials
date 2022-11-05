@@ -178,6 +178,8 @@ Agglomerative Hierarchical Clustering is a bottom up approach wherein observatio
 
 ![](images/hierar_clust_fig.png)
 
+Here we will discuss Ward's Method for merging these clusters as it is one of the most popular. First 
+
 ## References
 
 1. [Clustering Distance Measures](https://www.datanovia.com/en/lessons/clustering-distance-measures/)
