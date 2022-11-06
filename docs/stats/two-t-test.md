@@ -170,9 +170,31 @@ W = 0.95578, {==p-value = 0.09048==}
 
 Given our p-value is **above** 0.05 we do not have enough evidence to reject the null hypothesis of the Shapiro-Wilk Test; that the data are normally distributed. In other words, if the p-value is above 0.05 your data are normally distributed. However, it should be noted that the Shapiro-Wilk test p-value for female ages is rather close to 0.05 so there does seem to be some skey in female ages. 
 
+## Non-Parametric Alternative
+
+A non-parametric test is often used when either the assumptions about the distribution are not met. Additionally, these tests do not depend on the parameter they are assessing. Here, if the assumptions above are not met we can use the non-parametric equivalent, the Wilcoxon signed rank test:
+
+```R
+# run the non-parametric alternative to the unpaired
+# t-test the Wilcoxon signed rank test
+wilcox.test(AGE ~ SEX, 
+            data = meta, 
+            alternative = "two.sided")
+```
+
+```
+	Wilcoxon rank sum test with continuity correction
+
+data:  AGE by SEX
+W = 1278.5, p-value = 0.6318
+alternative hypothesis: true location shift is not equal to 0
+```
+
 ## References
 
 1. [BIOL 202 - Two-Sample T-Test](https://ubco-biology.github.io/BIOL202/twosamp_ttest.html)
 2. [Unpaired Two-Samples T-test in R](http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r)
 3. [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 4. [2 sample test of mean](https://statmagic.info/Content/Help-Content/two-sample-mean.html)
+5. [Unpaired Two-Samples Wilcoxon Test in R](http://www.sthda.com/english/wiki/unpaired-two-samples-wilcoxon-test-in-r)
+6. [Nonparametric statistics](https://en.wikipedia.org/wiki/Nonparametric_statistics)
