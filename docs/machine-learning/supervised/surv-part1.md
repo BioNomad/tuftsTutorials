@@ -130,7 +130,32 @@ ggsurvplot(fit,
     - Given a p-value above 0.05 we do not have enough evidence to rule out the possibility that any difference between the male and female survival curve is due to chance. 
     
     
-## 
+## Log-Rank Test
+
+We can see above that we asked is there any significant difference between these two curves. The test conducted to determine this is called the log rank-test. This test is non-parametric, meaning it does not make any assumptions about the distribution of survival times. If we were solely interested in testing the difference between these two curves we could use the following code:
+
+```R
+survdiff(Surv(PATH_DIAG_TO_DEATH_DAYS, status) ~ SEX, data = meta)
+```
+
+```
+Call:
+survdiff(formula = Surv(PATH_DIAG_TO_DEATH_DAYS, status) ~ SEX, 
+    data = meta)
+
+{==n=62==}, {==37==} observations deleted due to missingness.
+
+            N Observed Expected (O-E)^2/E (O-E)^2/V
+SEX=Female 27       27     22.6     0.876      1.41
+SEX=Male   35       35     39.4     0.501      1.41
+
+ Chisq= {==1.4==}  on 1 degrees of freedom, {==p= 0.2==} 
+```
+
+!!! info "What do these results mean?"
+    - Here we see that we started with 99 observations but ended up with 37 after removing our censored data points
+    - Our chi-square test statistic was 1.4
+    - Our p-value is 0.2, again indicating we do not have enough evidence to rule out the possibility that any difference between the male and female survival curve is due to chance. 
 
 
 ## References
