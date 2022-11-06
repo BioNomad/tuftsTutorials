@@ -81,6 +81,15 @@ fviz_dend(hc,
     - here we see each sample starts as its own cluster and is gradually merged into larger clusters
     - we choose to visualize 4 clusters by this is really up to your discretion
 
+## Hierarchical Clustering Shortcomings
+
+Hierarchical clustering does come with a few issues:
+
+!!! warning "Hierarchical Clustering Shortcomings"
+
+    - Hierarchical clustering is computationally expensive and is much slower than the k-means algorithm
+    - While this method is less sensitive to the shape of the data, given it starts generating clusters from individual data points; The dendrogram can be difficult to interpret and where to draw the line with cluster membership is not necessarily defined.
+
 ## References
 
 1. [Clustering Distance Measures](https://www.datanovia.com/en/lessons/clustering-distance-measures/)
