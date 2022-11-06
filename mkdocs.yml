@@ -154,6 +154,7 @@ nav:
         - Supervised Learning:
             - Linear Models: machine-learning/supervised/linear-model.md
             - Logistic Regression: machine-learning/supervised/logistic-regression.md
+            - Survival Analysis Part 1: machine-learning/supervised/surv-part1.md
             - Multivariate Regression: machine-learning/supervised/multivariate-regression.md
             - Model Performance: machine-learning/supervised/model-performance.md
             - Regularization: machine-learning/unsupervised/clustering.md
