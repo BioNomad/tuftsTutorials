@@ -147,6 +147,26 @@ W = 0.94613, {==p-value = 0.3121==}
 
 Given our p-value is **above** 0.05 we do not have enough evidence to reject the null hypothesis of the Shapiro-Wilk Test; that the data are normally distributed. In other words, if the p-value is above 0.05 your data are normally distributed.
 
+## Non-Parametric Alternative
+
+A non-parametric test is often used when either the assumptions about the distribution are not met. Additionally, these tests do not depend on the *parameter* they are assessing. Here, if the assumptions above are not met we can use the non-parametric equivalent, the Wilcoxon signed rank test:
+
+```R
+# run the non-parametric alternative to the paired
+# t-test the Wilcoxon signed rank test
+wilcox.test(cholesterol ~ group, 
+            data = df, 
+            paired = TRUE,
+            alternative = "two.sided")
+```
+
+```
+	Wilcoxon signed rank exact test
+
+data:  cholesterol by group
+V = 210, p-value = 1.907e-06
+alternative hypothesis: true location shift is not equal to 0
+```
 
 ## References
 
