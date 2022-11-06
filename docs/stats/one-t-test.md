@@ -177,3 +177,5 @@ alternative hypothesis: true location is not equal to 32
 2. [One-Sample T-test in R](http://www.sthda.com/english/wiki/one-sample-t-test-in-r)
 3. [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 4. [One-Sample T-Test using SPSS Statistics](https://statistics.laerd.com/spss-tutorials/one-sample-t-test-using-spss-statistics.php)
+5. [Nonparametric statistics](https://en.wikipedia.org/wiki/Nonparametric_statistics)
+6. [One-Sample Wilcoxon Signed Rank Test in R](http://www.sthda.com/english/wiki/one-sample-wilcoxon-signed-rank-test-in-r)
