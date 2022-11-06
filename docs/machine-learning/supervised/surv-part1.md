@@ -73,6 +73,33 @@ meta$status <- ifelse(
 
 ```
 
+## Creating a Survival Curve
+
+To create our survival curve we will fit a model to determine: What is the survival probability of male and female patients and how do these curves compare?
+
+```R
+# fit our survival curve to our data
+# time is days
+# status is our censor status
+# and SEX is our variable of interest
+fit <- survfit(
+  Surv(PATH_DIAG_TO_DEATH_DAYS, status) ~ SEX,
+  data = meta)
+
+# plot the survival curves
+ggsurvplot(fit,
+           pval = TRUE, # add in a p-value
+           conf.int = TRUE, # add in a confidence interval
+           risk.table = TRUE, # add in a risk table to our plot
+           risk.table.col = "strata", # color the risk table by group
+           linetype = "strata", # ensure lines are made per group
+           surv.median.line = "hv", # add in median survival time line
+           ggtheme = theme_bw(), # set theme to black and white
+           palette = c("#C06C84","#355C7D")) # change colors of lines
+```
+
+![](images/surv-curve-sex.png)
+
 ## References
 
 1. [Survival Analysis Basics](http://www.sthda.com/english/wiki/survival-analysis-basics)
