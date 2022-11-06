@@ -159,8 +159,26 @@ group  3  0.1514 {==0.9285==}
 
 Here we note that the p-value is above 0.05, indicating we don't have enough evidence to say that there is a significant difference in the variances between groups.
 
+## Non-Parametric Alternative
+
+A non-parametric test is often used when either the assumptions about the distribution are not met. Additionally, these tests do not depend on the parameter they are assessing. Here, if the assumptions above are not met we can use the non-parametric equivalent, the Kruskal-Wallis rank sum test:
+
+```R
+# run the non-parametric alternative to the one-way ANOVA
+# the Kruskal-Wallis rank sum test
+kruskal.test(AGE ~ COUNTRY_OF_ORIGIN, 
+             data = countries_ages)
+```
+
+```
+	Kruskal-Wallis rank sum test
+
+data:  AGE by COUNTRY_OF_ORIGIN
+Kruskal-Wallis chi-squared = 9.1676, df = 3, p-value = 0.02714
+```
 
 ## References
 
 1. [One-Way ANOVA Test in R](http://www.sthda.com/english/wiki/one-way-anova-test-in-r)
 2. [How to Perform a One-Way ANOVA by Hand](https://www.statology.org/one-way-anova-by-hand/)
+3. [Nonparametric statistics](https://en.wikipedia.org/wiki/Nonparametric_statistics)
