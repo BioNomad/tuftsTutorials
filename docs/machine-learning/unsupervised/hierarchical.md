@@ -96,3 +96,4 @@ Hierarchical clustering does come with a few issues:
 2. [K-Means Clustering in R: Algorithm and Practical Examples](https://www.datanovia.com/en/lessons/k-means-clustering-in-r-algorith-and-practical-examples/)
 3. [Agglomerative Hierarchical Clustering](https://www.datanovia.com/en/lessons/agglomerative-hierarchical-clustering/)
 4. [Distance Method Formulas](https://www.jmp.com/support/help/14/distance-method-formulas.shtml#177809%C2%A0)
+5. [Hierarchical Clustering — Explained](https://towardsdatascience.com/hierarchical-clustering-explained-e58d2f936323)
