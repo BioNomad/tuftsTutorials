@@ -151,6 +151,26 @@ W = 0.98784, {==p-value = 0.5038==}
 
 Given our p-value is **above** 0.05 we do not have enough evidence to reject the null hypothesis of the Shapiro-Wilk Test; that the data are normally distributed. In other words, if the p-value is above 0.05 your data are normally distributed.
 
+## Non-Parametric Alternative
+
+A non-parametric test is often used when either the assumptions about the distribution are not met. Additionally, these tests do not depend on the *parameter* they are assessing. Here, if the assumptions above are not met we can use the non-parametric equivalent, the one-sample Wilcoxon signed rank test:
+
+```R
+# run the non-parametric alternative to the one-sample
+# t-test the one sample Wilcoxon signed rank test
+wilcox.test(meta$AGE,
+            mu = 32,
+            alternative = "two.sided")
+```
+
+```
+	Wilcoxon signed rank test with continuity correction
+
+data:  meta$AGE
+V = 4936, p-value < 2.2e-16
+alternative hypothesis: true location is not equal to 32
+```
+
 ## References
 
 1. [BIOL 202 - One-Sample T-Test](https://ubco-biology.github.io/BIOL202/onesamp_t_test.html)
