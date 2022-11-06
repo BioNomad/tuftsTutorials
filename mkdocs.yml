@@ -148,7 +148,9 @@ nav:
             - "Tutorial Setup": machine-learning/setup.md
         - Unsupervised Learning:
             - "Dimension Reduction": machine-learning/unsupervised/dimension-reduction.md
-            - "Clustering": machine-learning/unsupervised/clustering.md
+            - "Distance Metrics": machine-learning/unsupervised/clustering.md
+            - "K-Means Clustering": machine-learning/unsupervised/k-means.md
+            - "Hierarchical Clustering": machine-learning/unsupervised/hierarchical.md
         - Supervised Learning:
             - Linear Models: machine-learning/supervised/linear-model.md
             - Logistic Regression: machine-learning/supervised/logistic-regression.md
