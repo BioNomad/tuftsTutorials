@@ -73,7 +73,7 @@ meta$status <- ifelse(
 
 ```
 
-## Creating a Survival Curve
+## Fitting a Survival Curve
 
 To create our survival curve we will fit a model to determine: What is the survival probability of male and female patients and how do these curves compare?
 
@@ -86,6 +86,29 @@ fit <- survfit(
   Surv(PATH_DIAG_TO_DEATH_DAYS, status) ~ SEX,
   data = meta)
 
+# examine our fit
+summary(fit)$table
+```
+
+```
+           records n.max n.start events   *rmean *se(rmean) median 0.95LCL 0.95UCL
+SEX=Female      27    27      27     27 308.0741   47.10662    274     147     401
+SEX=Male        35    35      35     35 399.2286   39.34208    381     294     511
+```
+
+!!! info "What does this table tell us?"
+
+    - First we start off with 27 females and 35 males
+    - We then see that we observe the event (death) 27 times in females and 35 times in males
+    - the mean survival time in days and it's standard error (`*rmean` and `*se(rmean)`)
+    - the median survival time in days (`median`)
+    - the confidence interval around our parameter
+
+## Visualizing Survival Curves 
+
+Now if we want to visualize these survival curves we can use the following code:
+
+```R
 # plot the survival curves
 ggsurvplot(fit,
            pval = TRUE, # add in a p-value
@@ -99,6 +122,16 @@ ggsurvplot(fit,
 ```
 
 ![](images/surv-curve-sex.png)
+
+!!! info "What does this graph tell us?"
+
+    - Here we see time against survival probability
+    - We also note a risk table down below that lists the number of individuals at risk for the event
+    - Given a p-value above 0.05 we do not have enough evidence to rule out the possibility that any difference between the male and female survival curve is due to chance. 
+    
+    
+## 
+
 
 ## References
 
