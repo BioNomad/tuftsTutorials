@@ -43,6 +43,35 @@ $$t_0 = 0$$
     - $d_i$ number of events of interest at $t_i$
     - $t_0 = 0$ your starting time must be 0
     - $S(0) = 1$ your probability of survival at time 0 is 1 
+    
+## Pre-Processing
+
+Let's start by loading our meta data and ensuring that we have a censored column:
+
+```R
+# load the libraries
+.libPaths(c("/cluster/tufts/hpc/tools/R/4.0.0"))
+library("survival")
+library("survminer")
+
+# load in patient meta data
+meta <- read.csv(
+  file = "data/gbm_cptac_2021/data_clinical_patient.txt",
+  skip=4,
+  header = T,
+  sep = "\t"
+)
+
+# create a censored status column
+# 1 being they are censored
+# 2 being they are not censored
+meta$status <- ifelse(
+  (meta$LOST_TO_FOLLOW_UP == "Yes" & meta$VITAL_STATUS == "Living"),
+  1,
+  2
+)
+
+```
 
 ## References
 
