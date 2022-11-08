@@ -55,3 +55,7 @@ However there are 100,000,000 known distinct proteins, each with a unique struct
 
 ![](images/af2_workflow.png)
 
+## Our Data
+
+Today we will be comparing AlphaFold2's structure prediction of Proliferating Cell Nuclear Antigen (PCNA) and DNA ligase 1 (LIG1)!
+
