@@ -1,9 +1,9 @@
 ## Protein Organization
 
-- Primary Structure: amino acid sequence
-- Secondary Structure: amino acid sequences linked by hydrogen bonds
-- Tertiary Structure: organization of secondary structures
-- Quaternary Structure: organization of multiple amino acid chains
+- **Primary Structure**: amino acid sequence
+- **Secondary Structure**: amino acid sequences linked by hydrogen bonds
+- **Tertiary Structure**: organization of secondary structures
+- **Quaternary Structure**: organization of multiple amino acid chains
 
 ![](images/protein_org.jpg)
 
@@ -45,6 +45,7 @@ However there are 100,000,000 known distinct proteins, each with a unique struct
 
 - Google’s DeepMind team Entered AlphaFold 2 in CASP14 
 - Achieved a median Global Distance Test Score of 92.4 
+    - This score essentially says: How close is my predicited structure to the known structure?
 - AlphaFold 2 works by:
     - starts with a user's query protein sequence
     - finding similar sequences to that query
