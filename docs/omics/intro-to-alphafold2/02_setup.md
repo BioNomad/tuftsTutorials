@@ -18,20 +18,21 @@
 
 - To run our analyses we will need to move from the login node to a compute node. We can do this by entering:
 
-```
+```bash
 srun --pty -t 3:00:00 --mem 16G -N 1 --cpus 4 bash
 ```
 
 Where:
 
-|`command`|description|
-|-|-|
-|`srun`|SLURM command to run a parallel job|
-|`--pty`| get a pseudo terminal|
-|`-t` | time we need here we request 3 hours|
-|`--mem` | memory we need here we request 16 Gigabytes|
-|`-N` | number of nodes needed here we requested 1 node|
-|`--cpus` | number of CPUs needed here we requested 4|
+!!! example ""
+
+    - `command`: description
+    - `srun`: SLURM command to run a parallel job
+    - `--pty`: get a pseudo terminal
+    - `-t`: time we need here we request 3 hours
+    - `--mem`:  memory we need here we request 16 Gigabytes
+    - `-N`:  number of nodes needed here we requested 1 node
+    - `--cpus`:  number of CPUs needed here we requested 4
 
 - When you get a compute node you'll note that your prompt will no longer say login and instead say the name of the node:
 
