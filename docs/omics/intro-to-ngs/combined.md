@@ -1,4 +1,4 @@
-# Background
+## Background
 
 Sequencing data analysis typically focuses on either assessing DNA or RNA. As a reminder here is the interplay between DNA, RNA, and protein:
 
@@ -71,7 +71,7 @@ Here we will analyze a DNA sequence using next generation sequencing data. Here 
 
 ![](images/het-homo.jpg)
 
-# Setup
+## Setup
 
 ## Goals
 - Connect to the HPC cluster via On Demand Interface
@@ -182,7 +182,7 @@ Gene: Cyp2c19 on chromosome 10
 
 Sequencing: Illumina, Paired End, Exome
 
-# Quality Control
+## Quality Control
 
 ## Goals
 - Understand FASTQ file format
@@ -481,7 +481,7 @@ The result after trimming is much improved:
 
 ![](images/fastqc_dup.png)
 
-# Read Alignment
+## Read Alignment
 
 ## Goals
 - Align short reads to a references genome with BWA
@@ -800,7 +800,7 @@ In this case, >99% properly paired and mapped indicates a high quality alignment
 
 ![](images/alignment_summary.png)
 
-# Alignment Cleanup
+## Alignment Cleanup
 
 ## Learning Objectives
 
@@ -1076,7 +1076,7 @@ It appear there are two variants next to each other: heterozygous`C>T` at positi
 
 This lesson adapted from [HBC NGS Data Analysis](https://github.com/hbc/NGS_Data_Analysis_Course/blob/master/sessionVI/lessons/01_alignment.md)
 
-# Variant Calling
+## Variant Calling
 
 ## Learning Objectives
 
@@ -1308,7 +1308,7 @@ Hover over the colored blocks on the variant track in order to see the informati
 ## Summary
 ![](images/summary_vcf.png)
 
-# Variant Annotation
+## Variant Annotation
 
 ## Learning Objectives
 
