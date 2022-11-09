@@ -24,7 +24,7 @@ srun --pty -t 3:00:00 --mem 16G -N 1 --cpus 4 bash
 
 Where:
 
-!!! example ""
+!!! example "Explanation of Commands"
 
     - `command`: description
     - `srun`: SLURM command to run a parallel job
