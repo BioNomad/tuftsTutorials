@@ -120,9 +120,12 @@ nav:
             - "Merging, Chimeras & Taxonomy": omics/intro-to-16S/merging-chimeras-taxonomy.md
             - "Diversity Analysis": omics/intro-to-16S/diversity-analysis.md
             - "Differential Abundance": omics/intro-to-16S/differential-abundance.md
-        - Intro To AlphaFold2
-            - "Background": omics/intro-to-alphafold2/background.md
-            - "Setup": omics/intro-to-alphafold2/setup.md
+        - Intro To AlphaFold2:
+            - "Background": omics/intro-to-alphafold2/01_background.md
+            - "Setup": omics/intro-to-alphafold2/02_setup.md
+            - "AlphaFold2 Output": omics/intro-to-alphafold2/03_af2_output.md
+            - "PyMOL Visualization": omics/intro-to-alphafold2/04_pymol_viz.md
+            - "Optional: AlphaFold2 Batch Script": omics/intro-to-alphafold2/05_af2_batch.md
     - Biostatistics:
         - "Introduction To Biostatistics": stats/biostats.md
         - Variables and Sampling:
