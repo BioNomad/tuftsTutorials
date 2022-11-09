@@ -120,6 +120,9 @@ nav:
             - "Merging, Chimeras & Taxonomy": omics/intro-to-16S/merging-chimeras-taxonomy.md
             - "Diversity Analysis": omics/intro-to-16S/diversity-analysis.md
             - "Differential Abundance": omics/intro-to-16S/differential-abundance.md
+        - Intro To AlphaFold2
+            - "Background": omics/intro-to-alphafold2/background.md
+            - "Setup": omics/intro-to-alphafold2/setup.md
     - Biostatistics:
         - "Introduction To Biostatistics": stats/biostats.md
         - Variables and Sampling:
