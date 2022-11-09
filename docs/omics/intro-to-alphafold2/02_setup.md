@@ -44,7 +44,7 @@ Where:
 
 - To get our AlphaFold data we will enter:
 
-```
+```bash
 cp -r /cluster/tufts/bio/tools/tool_examples/af2Workshop ./
 ```
 
