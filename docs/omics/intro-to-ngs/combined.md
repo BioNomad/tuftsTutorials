@@ -4,12 +4,14 @@ Sequencing data analysis typically focuses on either assessing DNA or RNA. As a 
 
 ![](images/dna-rna.jpg)
 
-## DNA Sequencing
+### Types of Sequencing 
+
+**DNA Sequencing**
 
 - Fixed copy of a gene per cell 
 - Analysis goal: Variant calling and interpretation
 
-## RNA Sequencing
+**RNA Sequencing**
 
 - Copy of a transcript per cell depends on gene expression
 - Analysis goal: Differential expression and interpretation
@@ -17,7 +19,7 @@ Sequencing data analysis typically focuses on either assessing DNA or RNA. As a 
 !!! note
     Here we are working with DNA sequencing
     
-## Next Generation Sequencing
+### Next Generation Sequencing
 
 Here we will analyze a DNA sequence using next generation sequencing data. Here are the steps to get that data:
 
@@ -38,18 +40,18 @@ Here we will analyze a DNA sequence using next generation sequencing data. Here 
 ![](images/alignment-data-analysis.png)
 
 
-## Singe End v. Paired End Data
+### Singe End v. Paired End Data
 
 - **single-end** sequence each DNA fragement from one end only
 - **paired-end** sequence each DNA fragement from both sides. Paired-end data is useful when sequencing highly repetitive sequences.
         
 ![](images/single-paired.png)
 
-## Variant Calling
+### Variant Calling
 
 ![](images/variant-overview.png)
 
-## Ploidy 
+### Ploidy 
 
 - When discussing variant calling it is worth mentioning an organism's **ploidy**. Ploidy is the number of copies of each chromosomes.
 
@@ -73,11 +75,12 @@ Here we will analyze a DNA sequence using next generation sequencing data. Here 
 
 ## Setup
 
-## Goals
-- Connect to the HPC cluster via On Demand Interface
-- Download data
+!!! abstract "Goals"
 
-## Log into the HPC cluster's On Demand interface
+    - Connect to the HPC cluster via On Demand Interface
+    - Download data
+
+### Log into the HPC cluster's On Demand interface
 - Open a Chrome browser and enter the URL [https://ondemand.cluster.tufts.edu](https://ondemand.cluster.tufts.edu)
 - Log in with your Tufts Credentials
 - On the top menu bar choose `Clusters->Tufts HPC Shell Access`
@@ -95,7 +98,7 @@ This indicates you are logged in to the login node of the cluster.
 
 ## Set up for the analysis
 
-### Find 500M storage space
+**Find 500M storage space**
 
 - Check how much available storage you have in your home directory by typing `showquota`.
 
@@ -184,13 +187,14 @@ Sequencing: Illumina, Paired End, Exome
 
 ## Quality Control
 
-## Goals
-- Understand FASTQ file format
-- Run FastQC to asses data quality
+!!! abstract "Goals"
 
-## Assess the quality of the raw data
+    - Understand FASTQ file format
+    - Run FastQC to asses data quality
 
-### FASTQ format
+### Assess the quality of the raw data
+
+**FASTQ format**
 
 FASTQ files is the most common way to store biological sequence data.
 Depending on the sequencing protocol, a single FASTQ file can represent an entire flow cell, a single lane, a single sample, or a portion of a sample.
@@ -242,7 +246,7 @@ a sequenced sample.
 
 More information on Quality scores from [Illumina](https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/technote_understanding_quality_scores.pdf)
  
-## FastQC
+### FastQC
 FastQC is widely used tool for both DNA and RNA sequencing data in order to evaluate the quality of the sequencing data.
 
 To use, load the module: 
@@ -308,7 +312,7 @@ The easist way to view the result is to open the `html` files in a web browser.
 ```
 na12878_1_fastqc.html  na12878_1_fastqc.zip  na12878_2_fastqc.html  na12878_2_fastqc.zip
 ```
-## View results in the On Demand browser
+### View results in the On Demand browser
 
 To view the graphical results, return to the tab [ondemand.cluster.tufts.edu](ondemand.cluster.tufts.edu)
 
@@ -435,7 +439,7 @@ This module looks for common adapters in the sequence.
 
 Explanations adapted from [https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf][https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf]
 
-## Optional: Read trimming
+### Optional: Read trimming
 
 In our `Per base sequence quality` we saw that the read quality dropped towards the end of the read.
 In order to ensure alignment and variant calling are as accurate as possible, we can perform quality trimming of reads.
@@ -483,14 +487,16 @@ The result after trimming is much improved:
 
 ## Read Alignment
 
-## Goals
-- Align short reads to a references genome with BWA
-- View alignment using IGV
+!!! abstract "Goals"
+
+    - Align short reads to a references genome with BWA
+    - View alignment using IGV
+
 
 ![](images/workflow_align.png)
 
 
-## BWA Overview
+### BWA Overview
 
 Burrows-Wheeler Aligner ([BWA](http://bio-bwa.sourceforge.net/)) is a software package for mapping low-divergent 
 sequences against a large reference genome, such as the human genome. 
@@ -517,7 +523,7 @@ We'll use BWA-MEM.
 Underlying the BWA index is the [Burrows-Wheeler Transform](http://web.stanford.edu/class/cs262/presentations/lecture4.pdf)
 This is beyond the scope of this course but is an widely used data compression algorithm.
 
-## BWA Index
+### BWA Index
 
 In the following steps we'll create the BWA index. 
 
@@ -611,7 +617,7 @@ chr10.fa.pac  <-- Binary encoded sequence
 chr10.fa.sa   <-- Suffix array index
 ```
 
-## BWA alignment
+### BWA alignment
 Let's check the usage instructions for BWA mem by typing `bwa mem`
 
 ```markdown
@@ -721,7 +727,7 @@ Result:
 na12878.sam
 ```
 ---
-## Sequence Alignment Map (SAM)
+### Sequence Alignment Map (SAM)
 
 Take a look at the output file:
 ```markdown
@@ -761,7 +767,7 @@ Here is a useful site to [decode flags](https://broadinstitute.github.io/picard/
 More information on [SAM format](https://samtools.github.io/hts-specs/SAMv1.pdf).
 
 ---
-## Alignment Quality Control
+### Alignment Quality Control
 
 Next, we'd like to know how well our reads aligned to the reference genome?
 We'll use a tool called `Samtools` to summarize the SAM Flags.
@@ -796,20 +802,20 @@ Result:
 Samtools flagstat is a great way to check to make sure that the aligment meets the quality expected.
 In this case, >99% properly paired and mapped indicates a high quality alignment.
 
-## Summary
+### Summary
 
 ![](images/alignment_summary.png)
 
 ## Alignment Cleanup
 
-## Learning Objectives
 
-- Sort and Index SAM/BAM files
-- Mark duplicate reads in BAM file
+!!! abstract "Goals"
+    - Sort and Index SAM/BAM files
+    - Mark duplicate reads in BAM file
 
 ![](images/workflow_cleanup.png)
 
-## Sort SAM file
+### Sort SAM file
 
 Downstream applications require that reads in SAM files be sorted by reference genome coordinates (fields 3 and 4 in each line of our SAM file).
 This will assist in fast search, display and other functions.
@@ -865,7 +871,7 @@ The result shows that the sorted BAM file has been created:
 na12878.sam  na12878.srt.bam 
 ```
 
-## Mark Duplicates in BAM file
+### Mark Duplicates in BAM file
 Many copies are made of a single DNA fragment during the sequencing process.
 The amount of duplication may not be the same for all sequences and this can cause biases in variant calling.
 Therefore, we mark the duplicates so the variant caller can focus on the unique reads.
@@ -946,7 +952,7 @@ The following is the metrics file `na12878.markdup.txt` generated by Picard Mark
 Normal % duplication for exome sequencing data is 10-30%.
 By scrolling to the left in this table we see that our percent duplication is `0.093214%`.
 
-## Index the BAM file
+### Index the BAM file
 
 In order to view the alignment with the Integrated Genomics Viewer (IGV) we are required to create an index files for our BAM file.
 This facilitates fast lookup of genomics coordinates.
@@ -991,7 +997,7 @@ na12878.markdup.txt
 na12878.srt.markdup.bai     <--- Index file
 ```
 
-## BAM Visualization with IGV
+### BAM Visualization with IGV
 
 1. With a Chrome web browser, visit [https://ondemand.cluster.tufts.edu](https://ondemand.cluster.tufts.edu)
 2. Login with your Tufts credentials
@@ -1078,13 +1084,14 @@ This lesson adapted from [HBC NGS Data Analysis](https://github.com/hbc/NGS_Data
 
 ## Variant Calling
 
-## Learning Objectives
 
-Use Genome Analysis Tool Kit (GATK) to call variants
+!!! abstract "Goals"
+
+    - Use Genome Analysis Tool Kit (GATK) to call variants
 
 ![](images/workflow_vc.png)
 
-## Prepare the reference sequence for GATK
+### Prepare the reference sequence for GATK
 
 GATK requires a Sequence Dictionary for reference genomes used in variant calling.
 The sequence dictionary contains names and lengths of all chromosomes in the reference genome.
@@ -1130,7 +1137,7 @@ chr10.fa.fai
 chr10.dict
 ```
 
-## Variant Calling with GATK HaplotypeCaller
+### Variant Calling with GATK HaplotypeCaller
 
 GATK has two main goals:
 - Separate true variants from sequencing error
@@ -1164,7 +1171,7 @@ These likelihoods are then used to calculate how much evidence there is for indi
 The final step is to determine which sequences were most likely present in the data.
 This step uses Bayes' rule to find the most likely genotype, given the allele likelihoods calculated in the last step.
 
-## Run GATK on our BAM file
+### Run GATK on our BAM file
 To load the module on our system, we'll type:
 
 ```markdown
@@ -1223,7 +1230,7 @@ na12878.vcf
 na12878.vcf.idx
 ```
 
-## VCF format
+### VCF format
 
 We can take a look at the first few lines of our vcf file:
 ```markdown
@@ -1283,14 +1290,14 @@ PL - Genotype liklihoods
 
 For more on the rich VCF format, see [the VCF format specification from Samtools](https://samtools.github.io/hts-specs/VCFv4.2.pdf)
 
-## VCF Quality Control
+### VCF Quality Control
 
 It's always a good idea when writing a new pipeline, to ask: How well did our variant calling perform?
 In this case, the best way to check the performance would be to compare the variants we called in this exercise matched the "known" variants for
 NA12878 in the [NIST callset](https://github.com/ga4gh/benchmarking-tools/blob/master/resources/high-confidence-sets/giab.md
 ). That exercise is beyond the scope of this workshop.
 
-## Add our VCF to IGV
+### Add our VCF to IGV
 
 We can add a VCF track to our IGV windows.
 
@@ -1305,20 +1312,20 @@ Hover over the colored blocks on the variant track in order to see the informati
 
 ![](images/igv_vcf_2.png)
 
-## Summary
+### Summary
 ![](images/summary_vcf.png)
 
 ## Variant Annotation
 
-## Learning Objectives
+!!! abstract "Goals"
 
-- Use the Variant Effect Predictor (VEP) online web server to annotate variants  
-- Identify amino acid changing substitutions in our VCF
+    - Use the Variant Effect Predictor (VEP) online web server to annotate variants  
+    - Identify amino acid changing substitutions in our VCF
 
 ![](images/workflow_ann.png)
 
 
-## VEP overview
+### VEP overview
 VEP will add annotation from a number of sources for each variant that we upload.
 Below is a subset of the most commonly used annotations annotations.
 
@@ -1352,7 +1359,7 @@ For a full mapping to consequence to impact, see [VEP](https://m.ensembl.org/inf
 
 We'll run VEP on the VCF that we produced and analyze the variant consequences.
 
-## Download the VCF
+### Download the VCF
 First, we'll download the VCF from the cluster to our local computer.
 
 1. Go back to [https://ondemand.cluster.tufts.edu](https://ondemand.cluster.tufts.edu)
@@ -1366,7 +1373,7 @@ First, we'll download the VCF from the cluster to our local computer.
 
 4. Click `Download`
 
-## Run VEP
+### Run VEP
 
 1. In web browser tab, navigate to to [https://useast.ensembl.org/Tools/VEP](https://useast.ensembl.org/Tools/VEP)
 Note that VEP can also be run on the command line on our HPC, resulting in a text file (txt or vcf).
@@ -1413,7 +1420,7 @@ Furthermore, there is no ClinVar report associated with this variant.
 Finally, the maximum allele frequency found for this variant in the `1000 Genomes` database is `0.95`, meaning it is a
 very common variant and unlikely to be pathogenic.
 
-## summary
+### summary
 
 ![](images/summary_vep.png)
 
