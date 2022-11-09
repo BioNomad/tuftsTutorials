@@ -1,15 +1,15 @@
-## Background
+# Background
 
 Sequencing data analysis typically focuses on either assessing DNA or RNA. As a reminder here is the interplay between DNA, RNA, and protein:
 
 ![](images/dna-rna.jpg)
 
-### DNA Sequencing
+## DNA Sequencing
 
 - Fixed copy of a gene per cell 
 - Analysis goal: Variant calling and interpretation
 
-### RNA Sequencing
+## RNA Sequencing
 
 - Copy of a transcript per cell depends on gene expression
 - Analysis goal: Differential expression and interpretation
@@ -71,11 +71,7 @@ Here we will analyze a DNA sequence using next generation sequencing data. Here 
 
 ![](images/het-homo.jpg)
 
-## References
-
-- [Illumina](https://www.illumina.com/content/dam/illumina-marketing/documents/products/illumina_sequencing_introduction.pdf)
-- [Ploidy](https://en.wikipedia.org/wiki/Ploidy)
-
+# Setup
 
 ## Goals
 - Connect to the HPC cluster via On Demand Interface
@@ -186,7 +182,7 @@ Gene: Cyp2c19 on chromosome 10
 
 Sequencing: Illumina, Paired End, Exome
 
-Approximate time: 20 minutes
+# Quality Control
 
 ## Goals
 - Understand FASTQ file format
@@ -485,7 +481,7 @@ The result after trimming is much improved:
 
 ![](images/fastqc_dup.png)
 
-Approximate time: 20 minutes
+# Read Alignment
 
 ## Goals
 - Align short reads to a references genome with BWA
@@ -804,7 +800,7 @@ In this case, >99% properly paired and mapped indicates a high quality alignment
 
 ![](images/alignment_summary.png)
 
-Approximate time: 20 minutes
+# Alignment Cleanup
 
 ## Learning Objectives
 
@@ -1080,7 +1076,7 @@ It appear there are two variants next to each other: heterozygous`C>T` at positi
 
 This lesson adapted from [HBC NGS Data Analysis](https://github.com/hbc/NGS_Data_Analysis_Course/blob/master/sessionVI/lessons/01_alignment.md)
 
-Approximate time: 20 minutes
+# Variant Calling
 
 ## Learning Objectives
 
@@ -1312,7 +1308,7 @@ Hover over the colored blocks on the variant track in order to see the informati
 ## Summary
 ![](images/summary_vcf.png)
 
-Approximate time: 20 minutes
+# Variant Annotation
 
 ## Learning Objectives
 
@@ -1420,3 +1416,8 @@ very common variant and unlikely to be pathogenic.
 ## summary
 
 ![](images/summary_vep.png)
+
+## References
+
+- [Illumina](https://www.illumina.com/content/dam/illumina-marketing/documents/products/illumina_sequencing_introduction.pdf)
+- [Ploidy](https://en.wikipedia.org/wiki/Ploidy)
