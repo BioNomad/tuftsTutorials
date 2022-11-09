@@ -1,5 +1,6 @@
 site_name: Tufts Research Technology Bioinformatics
 repo_url: https://github.com/BioNomad/tuftsTutorials
+edit_uri: blob/main/docs/
 
 theme:
   name: material
