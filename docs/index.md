@@ -44,10 +44,8 @@ We also lead in-class sessions, partner on grants, and develop workshops.
 
     Much of this content has been adapted from great tutorials originally created by:
     
-        - **Jason Laird**, Bioinformatics Scientist, TTS Research Technology, Tufts University
-        
-        - **Rebecca Batorsky**, Data Scientist, DISC,  Tufts University
-        
-        - **Adelaide Rhodes**, Senior Bioinformatics Scientist, TTS Research Technology, Tufts University
+    - **Jason Laird**, Bioinformatics Scientist, TTS Research Technology, Tufts University
+    - **Rebecca Batorsky**, Data Scientist, DISC,  Tufts University
+    - **Adelaide Rhodes**, Senior Bioinformatics Scientist, TTS Research Technology, Tufts University
         
     We would also like to thank Kyle Monahan, Klara Chura, Christina Divoll, Kayla Sansevere, and Uku Uustalu for their review of this content!
