@@ -78,7 +78,7 @@ nav:
         - "GitHub": tools/github.md
         - "Containers": tools/containers.md
         - "Parallel": tools/parallel.md 
-    - Software Tutorials:
+    - Unix/R/Python Tutorials:
         - Intro To Unix:
             - "Intro To Linux": basic/intro-to-unix/intro-to-unix.md
             - "Starting with Shell": basic/intro-to-unix/start-w-shell.md
