@@ -12,22 +12,26 @@ We also lead in-class sessions, partner on grants, and develop workshops.
 ## Coming Soon
 
 **HPC Tools:**
+
 - GitHub
 - Containers
 - Parallel
 
 **Omics Tutorials**
+
 - Metagenomics
 - Proteomics
 - Metabolomics
 - Multi-omics
 
 **Biostatistics:**
+
 - Two-Way ANOVA
 - Bayes Rule
 - Bayes Alternatives to Frequentist Statistics
 
 **Machine Learning:**
+
 - Model Performance
 - Regularization
 - Decision Trees/Ensemble Methods
