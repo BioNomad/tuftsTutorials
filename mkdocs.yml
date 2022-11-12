@@ -176,10 +176,5 @@ nav:
             - Survival Analysis Part 2: machine-learning/supervised/surv-part2.md
             - Multivariate Regression: machine-learning/supervised/multivariate-regression.md
             - Model Performance: machine-learning/supervised/model-performance.md
-            - Regularization: machine-learning/unsupervised/clustering.md
-            - Decision Trees/Ensemble Methods: machine-learning/unsupervised/clustering.md
-            - Neural Networks: machine-learning/unsupervised/clustering.md
-            - Deep Learning: machine-learning/unsupervised/clustering.md
-            - Bayesian Modelling: machine-learning/unsupervised/clustering.md
     
         
