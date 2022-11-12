@@ -79,7 +79,16 @@ nav:
         - "Containers": tools/containers.md
         - "Parallel": tools/parallel.md 
     - Software Tutorials:
-        - Intro To Unix: basic/intro-to-unix/unix.md
+        - Intro To Unix:
+            - "Intro To Linux": basic/intro-to-unix/intro-to-unix.md
+            - "Starting with Shell": basic/intro-to-unix/start-w-shell.md
+            - "Bash Parameters": basic/intro-to-unix/bash-parameters.md
+            - "Shell Navigation": basic/intro-to-unix/shell-navigation.md
+            - "Creating & Manipulating Files": basic/intro-to-unix/create-manipulate-files.md
+            - "Going Home": basic/intro-to-unix/going-home.md
+            - "Running an Interactive Session": basic/intro-to-unix/running-interactive.md
+            - "Example with BLAST": basic/intro-to-unix/blast-example.md
+            - "BLAST Batch Script": basic/intro-to-unix/blast-batch.md
         - Intro To R: 
             - "Introduction To R OnDemand": basic/intro-to-r/r-ondemand.md
             - "R Basics": basic/intro-to-r/basics.md
