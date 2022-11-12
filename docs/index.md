@@ -22,6 +22,8 @@ We also lead in-class sessions, partner on grants, and develop workshops.
 - Metagenomics
 - Proteomics
 - Metabolomics
+- DNA Methylation Analysis
+- CHIP-seq Analysis
 - Multi-omics
 
 **Biostatistics:**
