@@ -33,19 +33,21 @@
 
 - We can leverage the `pkl` files to gain insight into our structure predictions. To do so we use a python script provided by the [VIB Bioinformatics Core](https://elearning.bits.vib.be/courses/alphafold/lessons/alphafold-on-the-hpc/topic/alphafold-outputs/) which we call `vizaf2.py`. First we will need to move back up one directory and load the AlphaFold module so that we have the packages needed to run our script.
 
-```
+```bash
 cd ../../
 ```
-```
+
+```bash
 ls
 ```
+
 !!! info ""
 
     ```
     data  lig1  lig1af2.sh  pcna  pcnaaf2.sh  plotaf2.ipynb  vizaf2.py
     ```
 
-```
+```bash
 module load alphafold/2.1.1
 ```
 
@@ -54,7 +56,7 @@ module load alphafold/2.1.1
  - `--output_dir` output directory to put our plots of model information
  - `--name` optional prefix to add to our file names
 
-```
+```bash
 python vizaf2.py --input_dir pcna/1AXC/ --output_dir pcna/visuals/ --name pcna
 ```
 
@@ -72,7 +74,7 @@ python vizaf2.py --input_dir pcna/1AXC/ --output_dir pcna/visuals/ --name pcna
 
 - Now that we have these plots for the PCNA structure prediction, let's run this on the LIG1 prediction as well!
 
-```
+```bash
 python vizaf2.py --input_dir lig1/1X9N/ --output_dir lig1/visuals/ --name lig1
 ```
 ### lig1_coverage_LDDT.png
