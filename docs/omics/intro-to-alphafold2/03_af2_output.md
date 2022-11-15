@@ -29,6 +29,33 @@
 |timings.json|A JSON file w/times taken to run each section of the AlphaFold pipeline.|
 |result_model_\*.pkl| A pickle file w/ a nested dictionary of the various NumPy arrays directly produced by the model: StructureModule Output, Distograms, Per-residue pLDDT scores, predicted TMscore, predicted pairwise aligned errors |
 
+## Assessing AlphaFold2 Accuracy 
+
+- We can assess the accuracy of the AlphaFold prediction using:
+    - **Predicted Local Distance Difference Test (pLDDT)**
+    - **Predicted Alignment Error**b
+
+### Predicted Local Distance Difference Test (pLDDT)
+
+- per-residue confidence metric  ranging from 0-100 (100 being the highest confidence)
+- Regions below 50 could indicate disordered regions
+
+![](images/plddt.png)
+
+### Predicted Alignment Error (PAE)
+
+- The color at (x, y) corresponds to the expected distance error in residue x’s position, when the prediction and true structure are aligned on residue y.
+- So, in the example below:
+    - The darker color indicates a lower error
+    - When we are aligning on residue 300, we are more confident in the position of residue 200 and less confident in the position of residue 600
+
+![](images/pae.png)
+
+- The example in the above came from a multimer prediction
+- Here we see that the error is higher when assessing the position between the two chains:
+
+![](images/pae_multimer.png)
+
 ## Plotting Structure Prediction Information
 
 - We can leverage the `pkl` files to gain insight into our structure predictions. To do so we use a python script provided by the [VIB Bioinformatics Core](https://elearning.bits.vib.be/courses/alphafold/lessons/alphafold-on-the-hpc/topic/alphafold-outputs/) which we call `vizaf2.py`. First we will need to move back up one directory and load the AlphaFold module so that we have the packages needed to run our script.
