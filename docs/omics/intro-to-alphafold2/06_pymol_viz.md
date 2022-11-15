@@ -72,3 +72,33 @@ AlphaFold2 attempts to predict protein structures based on available structure d
 - Proteins can also contain disordered regions (i.e. loops), which are difficult to crystallize and as such AlphaFold’s prediction of these disordered regions is bound to be poor.
         
 AlphaFold2 is indeed a powerful tool but just be aware of what it is prediciting and if any of the items mentioned above interfere with the study question you are using AlphaFold2 to answer!
+
+!!! abstract "References"
+
+    1. https://www.genome.gov/genetics-glossary/Protein
+    2. https://www.nature.com/scitable/topicpage/protein-function-14123348/
+    3. https://www.ncbi.nlm.nih.gov/books/NBK26820/
+    4. https://directorsblog.nih.gov/tag/serial-scanning-3d-electron-microscopy/
+    5. https://www.ncbi.nlm.nih.gov/books/NBK26820/
+    6. https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure
+    7. https://simple.wikipedia.org/wiki/X-ray_crystallography
+    8. https://deepmind.com/research/case-studies/alphafold
+    9. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC48166/
+    10. https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology
+    11. https://predictioncenter.org/
+    12. https://en.wikipedia.org/wiki/Neural_network
+    13. https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+    14. https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+    15. https://towardsdatascience.com/transformer-neural-network-step-by-step-breakdown-of-the-beast-b3e096dc857f
+    16. https://en.wikipedia.org/wiki/FASTA_format
+    17. https://en.wikipedia.org/wiki/Multiple_sequence_alignment
+    18. https://www.pnas.org/content/114/34/9122
+    19. https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/
+    20. https://github.com/deepmind/alphafold
+    21. https://alphafold.com/entry/Q9FX77
+    22. https://blog.cyclicarx.com/limitations-of-alphafold
+    23. https://www.embopress.org/doi/full/10.15252/embr.202154046
+
+
+    
+
