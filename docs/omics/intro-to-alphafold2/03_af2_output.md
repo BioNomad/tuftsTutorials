@@ -41,6 +41,8 @@ cd ../../
 ls
 ```
 
+- You should then see the following output:
+
 !!! info ""
 
     ```
