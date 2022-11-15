@@ -73,31 +73,32 @@ AlphaFold2 attempts to predict protein structures based on available structure d
         
 AlphaFold2 is indeed a powerful tool but just be aware of what it is prediciting and if any of the items mentioned above interfere with the study question you are using AlphaFold2 to answer!
 
+## References
+
 !!! abstract "References"
 
-    1. https://www.genome.gov/genetics-glossary/Protein
-    2. https://www.nature.com/scitable/topicpage/protein-function-14123348/
-    3. https://www.ncbi.nlm.nih.gov/books/NBK26820/
-    4. https://directorsblog.nih.gov/tag/serial-scanning-3d-electron-microscopy/
-    5. https://www.ncbi.nlm.nih.gov/books/NBK26820/
-    6. https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure
-    7. https://simple.wikipedia.org/wiki/X-ray_crystallography
-    8. https://deepmind.com/research/case-studies/alphafold
-    9. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC48166/
-    10. https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology
-    11. https://predictioncenter.org/
-    12. https://en.wikipedia.org/wiki/Neural_network
-    13. https://colah.github.io/posts/2015-08-Understanding-LSTMs/
-    14. https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
-    15. https://towardsdatascience.com/transformer-neural-network-step-by-step-breakdown-of-the-beast-b3e096dc857f
-    16. https://en.wikipedia.org/wiki/FASTA_format
-    17. https://en.wikipedia.org/wiki/Multiple_sequence_alignment
-    18. https://www.pnas.org/content/114/34/9122
-    19. https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/
-    20. https://github.com/deepmind/alphafold
-    21. https://alphafold.com/entry/Q9FX77
-    22. https://blog.cyclicarx.com/limitations-of-alphafold
-    23. https://www.embopress.org/doi/full/10.15252/embr.202154046
+    1. [PROTEIN](https://www.genome.gov/genetics-glossary/Protein)
+    2. [Protein Function](https://www.nature.com/scitable/topicpage/protein-function-14123348/)
+    3. [Analyzing Protein Structure and Function](https://www.ncbi.nlm.nih.gov/books/NBK26820/)
+    4. [serial scanning 3D electron microscopy](https://directorsblog.nih.gov/tag/serial-scanning-3d-electron-microscopy/)
+    5. [AI revolutions in biology](https://www.embopress.org/doi/full/10.15252/embr.202154046)
+    6. [Methods for Determining Atomic Structures](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure)
+    7. [X-ray crystallography](https://simple.wikipedia.org/wiki/X-ray_crystallography)
+    8. [AlphaFold](https://deepmind.com/research/case-studies/alphafold)
+    9. [Levinthal's paradox](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC48166/)
+    10. [AlphaFold: a solution to a 50-year-old grand challenge in biology](https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology)
+    11. [Protein Structure Prediction Center](https://predictioncenter.org/)
+    12. [Neural network](https://en.wikipedia.org/wiki/Neural_network)
+    13. [Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+    14. [Attention Is All You Need](https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
+    15. [Transformer Neural Network: Step-By-Step Breakdown of the Beast](https://towardsdatascience.com/transformer-neural-network-step-by-step-breakdown-of-the-beast-b3e096dc857f)
+    16. [FASTA Format](https://en.wikipedia.org/wiki/FASTA_format)
+    17. [Multiple Sequence Alignment](https://en.wikipedia.org/wiki/Multiple_sequence_alignment)
+    18. [Origins of coevolution between residues distant in protein 3D structures](https://www.pnas.org/content/114/34/9122)
+    19. [AlphaFold 2 is here: what’s behind the structure prediction miracle](https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/)
+    20. [Alphafold Github](https://github.com/deepmind/alphafold)
+    21. [Q9FX77](https://alphafold.com/entry/Q9FX77)
+    22. [Limitations of AlphaFold](https://blog.cyclicarx.com/limitations-of-alphafold)
 
 
     
