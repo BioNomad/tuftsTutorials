@@ -56,3 +56,19 @@ align pcna_ranked_0, 1axc
 
 - In the history window you'll note that when we aligned our structures we were given an RMSD or root mean square deviation value. The smaller this value is, the better our two structures have aligned. 
 - Now that we have aligned the predicted PCNA structure, repeat these steps to align LIG1 (the PDB ID for LIG1 id `1x9n`).
+
+## AlphaFold2 Limitations
+
+AlphaFold2 attempts to predict protein structures based on available structure data in the [PDB](https://www.rcsb.org/). But do these structures in the [PDB](https://www.rcsb.org/) reflect actual protein structures?
+
+
+- PDB structures are usually created from experiments where the context of that structure is specific to the study question. 
+
+!!! info ""
+
+    For example there are lots of studies examining what a particular protein structure looks like when bound to ions, when it’s chemically modified, or when its in larger complexes
+    
+- Protein interactions/multimers might not be captured in the [PDB](https://www.rcsb.org/) database. Given this, AlphaFold2’s multimeric prediction might not be reflective of the true interaction structure.
+- Proteins can also contain disordered regions (i.e. loops), which are difficult to crystallize and as such AlphaFold’s prediction of these disordered regions is bound to be poor.
+        
+AlphaFold2 is indeed a powerful tool but just be aware of what it is prediciting and if any of the items mentioned above interfere with the study question you are using AlphaFold2 to answer!
