@@ -26,7 +26,6 @@ Where:
 
 !!! example "Explanation of Commands"
 
-    - `command`: description
     - `srun`: SLURM command to run a parallel job
     - `--pty`: get a pseudo terminal
     - `-t`: time we need here we request 3 hours
