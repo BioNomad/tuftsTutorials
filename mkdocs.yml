@@ -75,9 +75,10 @@ nav:
             - "R Interactive Session": tools/r-interactive.md
             - "R Batch Jobs": tools/r-batch.md
             - "RStudio OnDemand": tools/r-rstudio.md
-        - "GitHub": tools/github.md
-        - "Containers": tools/containers.md
-        - "Parallel": tools/parallel.md 
+        - Misc:
+            - "GitHub": tools/github.md
+            - "Containers": tools/containers.md
+            - "Parallel": tools/parallel.md 
     - Unix/R/Python Tutorials:
         - Intro To Unix:
             - "Intro To Linux": basic/intro-to-unix/intro-to-unix.md
