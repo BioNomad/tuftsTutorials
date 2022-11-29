@@ -22,6 +22,7 @@ We also lead in-class sessions, partner on grants, and develop workshops.
 - Metagenomics
 - Proteomics
 - Metabolomics
+- GWAS
 - DNA Methylation Analysis
 - CHIP-seq Analysis
 - Multi-omics
