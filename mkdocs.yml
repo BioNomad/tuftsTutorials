@@ -8,6 +8,19 @@ theme:
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.sections
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   logo: 'img/logo3.png'
   icon:
     admonition:
@@ -24,19 +37,7 @@ theme:
       example: octicons/beaker-16
       prerequisite: octicons/beaker-16
       quote: octicons/quote-16
-palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+      
 markdown_extensions:
   - admonition
   - pymdownx.details
