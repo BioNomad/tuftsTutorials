@@ -13,3 +13,10 @@ Proteins are composed of amino acids and the way in which they are arranged dete
 ## Proteomics Data
 
 ![](images/proteomics_exp.png)
+
+## References
+
+1. https://rformassspectrometry.github.io/docs/sec-msintro.html
+2. http://sepsis-omics.github.io/tutorials/modules/xtandem/#references
+3. https://link.springer.com/protocol/10.1385/1-59745-275-0:87
+4. https://www.bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html
