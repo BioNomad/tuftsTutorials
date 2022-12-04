@@ -26,7 +26,14 @@ Currently a popular high-throughput stategy to accomplish this is called **shotg
 
 ## Protein Digestion
 
-Proteins are often complex 3-dimensional structures, with variable sequences. To assess what proteins are present, we need a way of breaking up these proteins into something we can identify. In shotgun proteomics, proteins are denatured (a process in which protein folding is undone) and the resulting polymer is digested with a serine protease called Trypsin. Trypsin will cleaves peptide sequences at the c-terminal of Ariginine (R) and Lysine (K) residues (Unless the next residue is a Proline (P)):
+Proteins are often complex 3-dimensional structures, with variable sequences. To assess what proteins are present, we need a way of breaking up these proteins into something we can identify. In shotgun proteomics:
+
+- Proteins are denatured (a process in which protein folding is undone)
+- The resulting polymer is digested with a serine protease called Trypsin. 
+
+!!! info 
+
+    Trypsin will cleaves peptide sequences at the c-terminal of Ariginine (R) and Lysine (K) residues (Unless the next residue is a Proline (P))
 
 ![](images/trypsin_digestion.png)
 
