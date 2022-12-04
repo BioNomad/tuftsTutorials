@@ -137,6 +137,7 @@ nav:
             - "Pathway Enrichment": omics/intro-to-rnaseq/06_Pathway_Enrichment.md
         - Intro To Proteomics:
             - "Background": omics/intro-to-proteomics/00_background.md
+            - "Setup": omics/intro-to-proteomics/01_setup.md
         - Intro To 16S Metabarcoding: 
             - "Background": omics/intro-to-16S/background.md
             - "Setup": omics/intro-to-16S/setup.md
