@@ -52,7 +52,7 @@ The next step in this process is to separate these peptides and we can accomplis
 
 ## Mass Spetrometry
 
-Now that our peptides have been separated, we need to gather more information to be able to identify these peptides. **Mass Spectrometry** can be used to gain information about the composition of these peptides, where-in:
+Now that our peptides have been separated, we need to gather more information to be able to identify these peptides. **Mass Spectrometry (MS)** can be used to gain information about the composition of these peptides, where-in:
 
 - Analytes are ionized into gas-phase ions
 - The ionized analyates are then separated based on their mass (m) to charge (z) ratio
@@ -60,9 +60,20 @@ Now that our peptides have been separated, we need to gather more information to
 
 ![](images/mass_spectrometer1.png){ width="300" }
 
+!!! example "Tandem MS/MS"
+
+    Often, this process is repeated in what is called **Tandem MS/MS**. After the first round of MS, the precursor ions are heated with neutral molecules (helium, nitrogen or argon) to achieve a more sensitive detection.
+
+
 ## Protein Identification
 
-Now that we have 
+Now that we have spectra assoicated with our peptides we need some way of matching these back to a protein. Luckily, there are several databases that can help! The basic principle is as follows:
+
+- Experimental spectrum are correlated to the theoretical spectrum for a protein in a database
+- A scoring algorithm is used to assess how well each experimental ion matches the theortical one in the database
+- The highest scoring hit is used to then label the peptide
+
+
 ![](images/protein_ident.png)
 
 ## References
@@ -71,7 +82,8 @@ Now that we have
 2. http://sepsis-omics.github.io/tutorials/modules/xtandem/#references
 3. https://link.springer.com/protocol/10.1385/1-59745-275-0:87
 4. https://www.bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html
-5. https://en.wikipedia.org/wiki/Denaturation_(biochemistry)
+5. https://medical-dictionary.thefreedictionary.com/Denaturation+(biochemistry)
 6. https://febs.onlinelibrary.wiley.com/doi/abs/10.1016/0014-5793%2871%2980373-3
 7. https://www.waters.com/nextgen/au/en/education/primers/beginner-s-guide-to-liquid-chromatography/how-does-high-performance-liquid-chromatography-work.html
 8. https://www.nature.com/articles/nature01511
+9. https://www.sciencedirect.com/science/article/abs/pii/S0076687905020057?via%3Dihub
