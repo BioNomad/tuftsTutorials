@@ -58,3 +58,5 @@ The next step in this process is to separate these peptides and we can accomplis
 4. https://www.bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html
 5. https://en.wikipedia.org/wiki/Denaturation_(biochemistry)
 6. https://febs.onlinelibrary.wiley.com/doi/abs/10.1016/0014-5793%2871%2980373-3
+7. https://www.waters.com/nextgen/au/en/education/primers/beginner-s-guide-to-liquid-chromatography/how-does-high-performance-liquid-chromatography-work.html
+8. 
