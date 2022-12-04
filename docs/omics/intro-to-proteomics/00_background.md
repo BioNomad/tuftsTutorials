@@ -50,6 +50,16 @@ The next step in this process is to separate these peptides and we can accomplis
 
 ![](images/hplc.png)
 
+## Mass Spetrometry
+
+Now that our peptides have been separated, we need to gather more information to be able to identify these peptides. **Mass Spectrometry** can be used to gain information about the composition of these peptides, where-in:
+
+- Analytes are ionized into gas-phase ions
+- The ionized analyates are then separated based on their mass (m) to charge (z) ratio
+- The detector marks the number of ions at each m/z value
+
+![](images/mass_spectrometer.png)
+
 ## References
 
 1. https://rformassspectrometry.github.io/docs/sec-msintro.html
@@ -59,4 +69,4 @@ The next step in this process is to separate these peptides and we can accomplis
 5. https://en.wikipedia.org/wiki/Denaturation_(biochemistry)
 6. https://febs.onlinelibrary.wiley.com/doi/abs/10.1016/0014-5793%2871%2980373-3
 7. https://www.waters.com/nextgen/au/en/education/primers/beginner-s-guide-to-liquid-chromatography/how-does-high-performance-liquid-chromatography-work.html
-8. 
+8. https://www.nature.com/articles/nature01511
