@@ -60,6 +60,10 @@ Now that our peptides have been separated, we need to gather more information to
 
 ![](images/mass_spectrometer.png)
 
+## Protein Identification
+
+![](images/protein_ident.png)
+
 ## References
 
 1. https://rformassspectrometry.github.io/docs/sec-msintro.html
