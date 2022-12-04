@@ -22,9 +22,14 @@ Currently a popular high-throughput stategy to accomplish this is called **shotg
 - Those peptides are separated with Liquid Chromatography/Tandem Mass Spectra (LC-MS/MS)
 - These spectra are compared to a protein sequence database to identify the peptides
 
-![](images/proteomics_exp.png)
+![](images/proteomics_exp1.png)
 
 ## Protein Digestion
+
+Proteins are often complex 3-dimensional structures, with variable sequences. To assess what proteins are present, we need a way of breaking up these proteins into something we can identify. In shotgun proteomics, proteins are denatured (a process in which protein folding is undone) and the resulting polymer is digested with a serine protease called Trypsin. Trypsin will cleaves peptide sequences at the c-terminal of Ariginine (R) and Lysine (K) residues (Unless the next residue is a Proline (P)):
+
+![](images/trypsin_digestion.png)
+
 
 
 
@@ -34,3 +39,5 @@ Currently a popular high-throughput stategy to accomplish this is called **shotg
 2. http://sepsis-omics.github.io/tutorials/modules/xtandem/#references
 3. https://link.springer.com/protocol/10.1385/1-59745-275-0:87
 4. https://www.bioconductor.org/packages/release/data/experiment/vignettes/RforProteomics/inst/doc/RforProteomics.html
+5. https://en.wikipedia.org/wiki/Denaturation_(biochemistry)
+6. https://febs.onlinelibrary.wiley.com/doi/abs/10.1016/0014-5793%2871%2980373-3
