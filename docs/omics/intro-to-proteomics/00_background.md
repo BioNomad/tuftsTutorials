@@ -33,12 +33,22 @@ Proteins are often complex 3-dimensional structures, with variable sequences. To
 
 !!! info 
 
-    Trypsin will cleaves peptide sequences at the c-terminal of Ariginine (R) and Lysine (K) residues (Unless the next residue is a Proline (P))
+    Trypsin will cleaves peptide sequences at the c-terminal of **Ariginine (R)** and **Lysine (K)** residues (Unless the next residue is a **Proline (P)**)
 
 ![](images/trypsin_digestion.png)
 
 
+## Liquid Chromatography
 
+The next step in this process is to separate these peptides and we can accomplish this with **liquid chromatography**. Currently, **high-pressure liquid chromatography** is often used to achieve separation where-in:
+
+- A solvent (with our peptides) is pumped through, at high pressure, a column with packing material
+
+    - This packing material ensures that peptides (of different sizes, charges, affinity etc.) move at different rates, separating them into bands
+    
+- As each band passes through a detector at the end of the column, and a peak is created with a height proportional to the concentration of dye in that band.
+
+![](images/hplc.png)
 
 ## References
 
