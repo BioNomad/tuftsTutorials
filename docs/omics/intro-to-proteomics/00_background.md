@@ -58,10 +58,11 @@ Now that our peptides have been separated, we need to gather more information to
 - The ionized analyates are then separated based on their mass (m) to charge (z) ratio
 - The detector marks the number of ions at each m/z value
 
-![](images/mass_spectrometer1.png){ width="500" }
+![](images/mass_spectrometer1.png){ width="300" }
 
 ## Protein Identification
 
+Now that we have 
 ![](images/protein_ident.png)
 
 ## References
