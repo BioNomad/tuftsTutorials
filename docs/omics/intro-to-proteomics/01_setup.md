@@ -22,7 +22,7 @@ We are going to create a new project to begin:
 1. Go to `File` > `New Project`
 2. `New Directory`
 3. `New Project`
-4. Create a name for your project (e.g. `intro-to-16S`)
+4. Create a name for your project (e.g. `intro-to-proteomics`)
 5. `Create Project`
 
 ## File Organization
