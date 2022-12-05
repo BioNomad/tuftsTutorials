@@ -11,12 +11,6 @@ It is often desirable to download your own python packages into a conda environm
     - Load anaconda module
 
 ```
-module load anaconda/3
-```
-
-or
-
-```
 module load anaconda/2021.11
 ```
 
