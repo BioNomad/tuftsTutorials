@@ -17,7 +17,7 @@ module load anaconda/3
 or
 
 ```
-module load anaconda/2021.05
+module load anaconda/2021.11
 ```
 
 The version of conda (anaconda) you use to operate on your environment needs to be
