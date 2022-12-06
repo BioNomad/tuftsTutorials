@@ -1,6 +1,6 @@
 ## Prerequisites
 
-!!! example " "
+!!! example ""
     - [Request an Research Computing Cluster account](http://research.uit.tufts.edu/)
     - [Connect to the VPN](https://access.tufts.edu/vpn) if off campus
 
@@ -9,13 +9,14 @@
 
 - You can access the Tufts HPC in two ways:
 
-- The OnDemand Website:
+### The OnDemand Website:
 
-[OnDemand Website](https://ondemand.pax.tufts.edu){ .md-button .md-button--primary } 
+[OnDemand Website](https://ondemand.pax.tufts.edu){ .md-button .md-button--primary :target="_blank" rel="noopener"} 
 
-    - Log in with your tufts credentials
-    - Once you are logged in you'll notice a few navigation options:
+- Log in with your tufts credentials
+- Once you are logged in you'll notice a few navigation options:
 
 ![](images/ondemand_layout_pic.png)
 
-    - Click on 
+
+- Click on Clusters > Tufts HPC Shell Access
