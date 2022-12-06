@@ -8,7 +8,7 @@
 
 - To Get Storage for a research project visit:
 
-[Tufts Research Technology - High Performance Computing]{:target="_blank" rel="noopener" .md-button .md-button--primary }
+[Tufts Research Technology - High Performance Computing](https://it.tufts.edu/high-performance-computing){:target="_blank" rel="noopener" .md-button .md-button--primary}
 
 -  Where you will see the following options:
 
