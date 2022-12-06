@@ -1,8 +1,8 @@
-## Requirements
+!!! example "Requirements"
 
-- You must complete an online account request form and be approved to use the Tufts Research Cluster.
-- Account requests require a valid Tufts Username and Tufts Password
-- Guest and student accounts require faculty or researcher sponsorship
+    - You must complete an online account request form and be approved to use the Tufts Research Cluster.
+    - Account requests require a valid Tufts Username and Tufts Password
+    - Guest and student accounts require faculty or researcher sponsorship
 
 ## Get Started
 
