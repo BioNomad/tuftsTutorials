@@ -1,20 +1,31 @@
+
+
+!!! example
+    
+    You can transfer files to and from the cluster using:
+    - OnDemand
+    - A File Transfer Client
+    - Command Line
+
 ## OnDemand
 
 !!! note
     Only for transfering files size up to 976MB per file.
 
-Go to **[OnDemand]( https://ondemand.pax.tufts.edu/)** 
+- Go to:
 
-Under **`Files`**
+[OnDemand]( https://ondemand.pax.tufts.edu/){ .md-button .md-button--primary }
 
-![](images/Home.png)
-
-Using the **`Upload`** or **`Download`** buttons to transfer. 
+- Under **`Files`**
 
 ![](images/Home.png)
 
+- Using the **`Upload`** or **`Download`** buttons to transfer. 
 
-### File Transfer Client
+![](images/Home.png)
+
+
+## File Transfer Client
 
 -  Download one of these free file transfer programs:
 
@@ -26,19 +37,21 @@ Using the **`Upload`** or **`Download`** buttons to transfer.
 
 - Then use the following information to connect to the cluster:
 
-```
-Hostname: xfer.cluster.tufts.edu
-Protocol: SCP or SFTP
-Use port 22 for SFTP
-```
+    - Hostname: xfer.cluster.tufts.edu
+    - Protocol: SCP or SFTP
+    - Use port 22 for SFTP
+
 
 ## Command Line
 
-- Terminology:
+!!! example "Terminology"
+
     - **`Local_Path:`** is the path to your files or directory on your local computer
     - **`Cluster_Path:`** is the path to your files or directory on the cluster
-        - `Cluster Home Directory: /cluster/home/your_utln/your_folder`
-        - `Cluster Research Project Storage Space Directory: /cluster/tufts/yourlabname/your_utln/your_folder`
+    - `Cluster Home Directory: /cluster/home/your_utln/your_folder`
+    - `Cluster Home Directory: /cluster/home/your_utln/your_folder`
+    - `Cluster Research Project Storage Space Directory: /cluster/tufts/yourlabname/your_utln/your_folder`
+
 
 - Execute these commands from your local machine terminal using this general format to transfer files:
     
