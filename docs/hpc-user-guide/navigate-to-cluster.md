@@ -11,7 +11,7 @@
 
 ### The OnDemand Website:
 
-[OnDemand Website](https://ondemand.pax.tufts.edu){ .md-button .md-button--primary}{:target="_blank" rel="noopener"} 
+[OnDemand Website](https://ondemand.pax.tufts.edu){ .md-button .md-button--primary}
 
 - Log in with your tufts credentials
 - Once you are logged in you'll notice a few navigation options:
