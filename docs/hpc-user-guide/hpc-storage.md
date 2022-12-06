@@ -17,11 +17,11 @@
 - Your research projet storage (from 50GB and up) path should be `/cluster/tufts/yourlabname/`
 - Each member of the lab group has a dedicated directory:
 
-    - `/cluster/tufts/yourlabname/your_utln`
+`/cluster/tufts/yourlabname/your_utln`
 
 - To see your **research project storage quota** run the following command from **any node on the new cluster Pax**:
 
-`$ df -h /cluster/tufts/yourlabname ` 
+`df -h /cluster/tufts/yourlabname ` 
 
 !!!  note
     Accessing your research project storage space for the __first time__, please make sure you type out the __FULL PATH__ to the directory.
