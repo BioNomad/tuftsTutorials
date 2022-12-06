@@ -1,32 +1,58 @@
 ## Checking Job Status
 
-- Checking your **active** jobs
+- Checking your **active** jobs:
 
 ```bash
-[your_utln@c1cmp044 LS]$ squeue -u $USER
-             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-          24063163     batch      job your_utln  R       0:17      1 c1cmp044 
-            
-[your_utln@c1cmp044 LS]$ squeue -u your_utln
-             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-          24063163     batch      job your_utln  R       0:54      1 c1cmp044 
+squeue -u $USER
 ```
 
-To check your active jobs in the queue:
+!!! info "output"
 
-`$ squeue -u $USER` or `$ squeue -u your_utln`
+    ```
+       JOBID PARTITION     NAME     USER  ST       TIME  NODES NODELIST(REASON) 
+    24063163     batch      job your_utln  R       0:17      1 c1cmp044 
+    ```
+            
+```
+squeue -u your_utln
+```
 
-To cancel a specific job:
+!!! info "output"
 
-`$ scancel JOBID`
+    ```
+       JOBID PARTITION     NAME     USER  ST       TIME  NODES NODELIST(REASON) 
+    24063163     batch      job your_utln  R       0:17      1 c1cmp044 
+    ```
 
-To cancel all of your jobs:
+## Check Acitve Jobs In The Queue
 
-`$ scancel -u $USER` or `$ scancel -u your_utln`
+- To check your active jobs in the queue:
 
-To check details of your active jobs (running "R" or pending "PD"):
+```
+squeue -u $USER` or `$ squeue -u your_utln
+```
 
-`$ scontrol show jobid -dd JOBID`
+## To Cancel A Job
+
+- To cancel a specific job:
+
+```
+scancel JOBID
+```
+
+- To cancel all of your jobs:
+
+```
+scancel -u $USER` or `$ scancel -u your_utln
+```
+
+## To Check The Details Of Your Active Jobs
+
+- To check details of your active jobs (running "R" or pending "PD"):
+
+```
+scontrol show jobid -dd JOBID
+```
 
 ```bash
 [your_utln@c1cmp044 LS]$ scontrol show jobid -dd 24063163
