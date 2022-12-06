@@ -1,8 +1,8 @@
 ## Prerequisites
 
 !!! example ""
-    - [Request an Research Computing Cluster account](http://research.uit.tufts.edu/)
-    - [Connect to the VPN](https://access.tufts.edu/vpn) if off campus
+    - [Request an Research Computing Cluster account](http://research.uit.tufts.edu/){:target="_blank" rel="noopener"}
+    - [Connect to the VPN](https://access.tufts.edu/vpn){:target="_blank" rel="noopener"} if off campus
 
 
 ## Navigate to the Cluster
@@ -29,6 +29,6 @@
 - For more information on how to access an interactive app take a look at our tutorials on RStudio and JupyterLab:
 
 
-[:octicons-info-16: RStudio Interactive Session](https://bionomad.github.io/tuftsTutorials/tools/r-rstudio/){.md-button .md-button--primary }
+[:octicons-info-16: RStudio Interactive Session](https://bionomad.github.io/tuftsTutorials/tools/r-rstudio/){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
-[:octicons-info-16: JupyterLab Interactive Session](https://bionomad.github.io/tuftsTutorials/tools/python-jupyter/){.md-button .md-button--primary }
+[:octicons-info-16: JupyterLab Interactive Session](https://bionomad.github.io/tuftsTutorials/tools/python-jupyter/){:target="_blank" rel="noopener" .md-button .md-button--primary }
