@@ -23,7 +23,8 @@
 
 `df -h /cluster/tufts/yourlabname ` 
 
-!!!  note
+!!! note
+
     Accessing your research project storage space for the __first time__, please make sure you type out the __FULL PATH__ to the directory.
 
 - If your group has existing HPC research project storage space set up, please use the same link to request access. 
