@@ -6,96 +6,148 @@
 - Modules can also be bundled into metamodules that will load an entire **set of different applications (dependencies)**. 
 
 
-### Module  Commands
+!!! example "Module  Commands"
 
     - `module av` : to check all available modules
     - `module load` : to load a particular module
     - `module list` : to list modules that are loaded
     - `module purge` : purge any loaded modules
 
-To check **ALL available modules** installed on the cluster:
+### Check All Available Modules
 
+- To check **ALL available modules** installed on the cluster:
 
-`[your_utln@login-prod-01 ~]$ module av`
-
-
-Upon login, environment `PATH` is set for the system to search executables:
-
-
-`[your_utln@login-prod-01 ~]$ echo $PATH`
-  
 ```
-/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/cluster/home/your_utln/bin:/cluster/home/your_utln/.local/bin
+module av
 ```
 
-For example, I would like to use `blast`, to **check** what versions of blast are available, **load** the version I would like to use, and use it:
+- Upon login, environment `PATH` is set for the system to search executables:
 
-
-`[your_utln@login-prod-01 ~]$ module av blast`
-  
 ```
----------------------- /opt/shared/Modules/modulefiles-rhel6 ----------------------
-blast/2.2.24 blast/2.2.31 blast/2.3.0  blast/2.8.1
+echo $PATH
+```
+ 
+!!! info "output"
 
----------------------- /cluster/tufts/hpc/tools/module ----------------------------
-blast-plus/2.11.0
+    ```
+    /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/cluster/home/your_utln/bin:/cluster/home/your_utln/.local/bin
+    ```
+
+- For example, I would like to use `blast`, to **check** what versions of blast are available:
+
+
+```
+module av blast
 ```
 
+!!! info "output"
 
-`[your_utln@login-prod-01 ~]$ module load blast-plus/2.11.0`
-  
-`[your_utln@login-prod-01 ~]$ module list`
-  
+    ```
+    ---------------------- /opt/shared/Modules/modulefiles-rhel6 ----------------------
+    blast/2.2.24 blast/2.2.31 blast/2.3.0  blast/2.8.1
+
+    ---------------------- /cluster/tufts/hpc/tools/module ----------------------------
+    blast-plus/2.11.0
+    ```
+
+### Load Desired Module
+
+- To **load** the version I would like to use, and use it:
+
 ```
-Currently Loaded Modulefiles:
-    1) use.own     2) blast-plus/2.11.0
+module load blast-plus/2.11.0
+```
+ 
+### Check Which Modules Are Loaded
+
+- To **check** which modules are loaded:
+
+```
+module list
+```
+
+!!! info "output"
+
+    ```
+    Currently Loaded Modulefiles:
+        1) use.own     2) blast-plus/2.11.0
     
+    ```
+
+### Check The Tool Version
+
+- To determine the tool **version**:
+ 
+```
+blastp -version
 ```
 
+!!! info "output"
 
-`[your_utln@login-prod-01 ~]$ which blastp`
+    ```
+    blastp: 2.11.0+
+     Package: blast 2.11.0, build Aug 17 2021 06:29:22 
+    ```
+
+
+### Check Module Paths
+
+- To determine the **module paths**:
+
+```
+which blastp
+```
+
+!!! info "output"
+ 
+    ```
+    /cluster/tufts/hpc/tools/spack/linux-rhel7-ivybridge/gcc-9.3.0/blast-plus-2.11.0-ip4jcqabi3a2jscgusnkipvib6goy5mv/bin/blastp
+    ```
+
+
+```
+echo $PATH
+```
+
+!!! info "output"
+
+    ```
+    /cluster/tufts/bio/tools/edirect:/cluster/tufts/hpc/tools/spack/linux-rhel7-ivybridge/gcc-9.3.0/blast-plus-2.11.0-ip4jcqabi3a2jscgusnkipvib6goy5mv/bin:/cluster/home/your_utln/.iraf/bin:/cluster/home/your_utln/.iraf/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/cluster/home/your_utln/bin:/cluster/home/your_utln/.local/bin 
+    ```
+  
+## To Unload Modules
+
+- To **unload** a loaded module:
+
+
+```
+module unload blast-plus/2.11.0
+```
   
 ```
-/cluster/tufts/hpc/tools/spack/linux-rhel7-ivybridge/gcc-9.3.0/blast-plus-2.11.0-ip4jcqabi3a2jscgusnkipvib6goy5mv/bin/blastp
+echo $PATH
+```
+
+!!! info "output"
+
+    ```
+    /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/cluster/home/your_utln/bin:/cluster/home/your_utln/.local/bin
+    ```
+
+- To **unload ALL** of the loaded modules:
+
 
 ```
-`[your_utln@login-prod-01 ~]$ echo $PATH`
-
+module purge
 ```
-/cluster/tufts/bio/tools/edirect:/cluster/tufts/hpc/tools/spack/linux-rhel7-ivybridge/gcc-9.3.0/blast-plus-2.11.0-ip4jcqabi3a2jscgusnkipvib6goy5mv/bin:/cluster/home/your_utln/.iraf/bin:/cluster/home/your_utln/.iraf/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/cluster/home/your_utln/bin:/cluster/home/your_utln/.local/bin
   
 ```
-  
-
-`[your_utln@login-prod-01 ~]$ blastp -version`
-  
-```
-blastp: 2.11.0+
- Package: blast 2.11.0, build Aug 17 2021 06:29:22
-  
+module list
 ```
 
-I can also **unload** a loaded modules:
+!!! info "output"
 
-
-`[your_utln@login-prod-01 ~]$ module unload blast-plus/2.11.0`
-  
-`[your_utln@login-prod-01 ~]$ echo $PATH`
-
-```
-/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/cluster/home/your_utln/bin:/cluster/home/your_utln/.local/bin
-  
-```
-
-I can **unload ALL** of the loaded modules:
-
-
-`[your_utln@login-prod-01 ~]$ module purge`
-  
-`[your_utln@login-prod-01 ~]$ module list`
-
-```
-No Modulefiles Currently Loaded.
-
-```
+    ```
+    No Modulefiles Currently Loaded.
+    ```
 
