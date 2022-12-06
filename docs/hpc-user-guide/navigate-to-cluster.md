@@ -1,6 +1,6 @@
 ## Prerequisites
 
-!!! ""
+!!! example ""
 
     - [Request an Research Computing Cluster account](http://research.uit.tufts.edu/)
     - [Connect to the VPN](https://access.tufts.edu/vpn) if off campus
@@ -18,3 +18,5 @@
     - Once you are logged in you'll notice a few navigation options:
 
 ![](images/ondemand_layout_pic.png)
+
+    - Click on 
