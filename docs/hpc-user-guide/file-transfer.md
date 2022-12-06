@@ -49,9 +49,9 @@
 
     - **`Local_Path:`** is the path to your files or directory on your local computer
     - **`Cluster_Path:`** is the path to your files or directory on the cluster
-    - `Cluster Home Directory: /cluster/home/your_utln/your_folder`
-    - `Cluster Home Directory: /cluster/home/your_utln/your_folder`
-    - `Cluster Research Project Storage Space Directory: /cluster/tufts/yourlabname/your_utln/your_folder`
+    - **`Cluster Home Directory`:** /cluster/home/your_utln/your_folder
+    - **`Cluster Home Directory`:** /cluster/home/your_utln/your_folder
+    - **`Cluster Research Project Storage Space Directory`:** /cluster/tufts/yourlabname/your_utln/your_folder
 
 
 - Execute these commands from your local machine terminal using this general format to transfer files:
