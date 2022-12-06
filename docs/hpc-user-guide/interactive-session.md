@@ -1,48 +1,63 @@
 ## Interactive Session
 
-- Particularly good for debugging and working with software GUI. 
+- An interactive session is a way to temporarily grab resources on the Tufts HPC.
+    
+    - Particularly good for debugging and working with software GUI. 
 
-  `$ srun [options] --pty [command]`
+- The following is the basic layout of the command to get an interactive session:
 
-- Command 
+``` 
+srun [options] --pty [command]
+```
 
-  - command to run an application, given the module is already loaded.
-  - `bash` for a bash shell
+!!! example "What does this mean?"
 
-- Options
+    - Command 
 
-  - Pseudo terminal `--pty`
-  - Partition `-p` 
-    - Default batch if not specified
-    - You can start interactive sessions on any partition you have access to
-  - Time `-t` or `--time=`
-    - Default 15 minutes if not specified on non-"interactive" partition
-  - Number of CPU cores `-n` 
-    - Default 1 if not specified
-  - Memory `--mem=`
-    - Default 2GB if not specified
-  - GPU `--gres=`
-    - Default none
-  - X Window `--x11=first`
-    - Default none	
+        - command to run an application, given the module is already loaded.
+        - `bash` for a bash shell
 
-  Starting an interactive session of bash shell on preempt partition with 2 CPU cores and 2GB of RAM, with X11 forwarding for 1 day, 2 hours, and 30 minutes (use `exit` to end session and release resources).
+    - Options
+
+        - Pseudo terminal `--pty`
+        - Partition `-p` 
+            - Default batch if not specified
+        - You can start interactive sessions on any partition you have access to
+        - Time `-t` or `--time=`
+            - Default 15 minutes if not specified on non-"interactive" partition
+        - Number of CPU cores `-n` 
+            - Default 1 if not specified
+        - Memory `--mem=`
+            - Default 2GB if not specified
+        - GPU `--gres=`
+            - Default none
+        - X Window `--x11=first`
+            - Default none	
+
+### Example of Getting an Interactive Session
 
 ```
-[your_utln@login-prod-01 ~]$ srun -p batch --time=1-2:10:00 -n 2 --mem=8g --reservation=bioworkshop --pty bash
-[your_utln@c1cmp044 ~]$
-
+srun -p batch --time=1-2:10:00 -n 2 --mem=8g --pty bash
 ```
-You will be placed on one of the reserved nodes for the workshop `c1cmp[044-045,047-048]`
 
-The reservation will expire after the workshop. You will no longer have access to the reservation `bioworkshop`. 
+!!! example "What does this mean?"
+    Starting an interactive session of bash shell on preempt partition with 2 CPU cores and 2GB of RAM, with X11 forwarding for 1 day, 2 hours, and 30 minutes (use `exit` to end session and release resources).
+ 
+You will have notice that your prompt changed from:
 
-In that case, you can simply omit the `--reservation=bioworkshop` option in the srun command
+!!! info ""
 
-```
-[your_utln@login-prod-01 ~]$ srun -p batch --time=1-2:10:00 -n 2 --mem=8g --pty bash
+    ```
+    [your_utln@login-prod-01 ~]$
+    ```
 
-[your_utln@i2cmp003 ~]$ exit
+To:
 
-```
+!!! info ""
+
+    ```
+    [your_utln@c1cmp044 ~]$
+    ```
+    
+- This means you have been placed on a compute node!
 
