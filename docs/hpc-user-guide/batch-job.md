@@ -1,6 +1,7 @@
-## Submitting A Batch Job
+## Batch Scripts
 
-Write a batch submission script e.g. **sbatch.sh**
+- When we want to run a script on the Tufts HPC cluster we need to submit it as a batch script.
+- Here is an example of a batch script called **sbatch.sh**:
 
 ```sh
 #!/bin/bash
@@ -30,13 +31,21 @@ blastp -query mm-second.faa -db zebrafish.1.protein.faa -out mm-second.x.zebrafi
 
 ```
 
-**Submit** the job using the following command from command line interface:
+## Submitting a Batch Job
 
-`$ sbatch sbatch.sh`
+- **Submit** the job using the following command from command line interface:
 
-**Sample Scripts** including R, conda, matlab, gaussian, .etc
+```
+sbatch sbatch.sh
+```
 
-`/cluster/tufts/hpc/tools/slurm_scripts`
+!!! question "Looking for a sample batch script?"
+
+    **Sample Scripts** including R, conda, matlab, gaussian, etc. can be found here:
+
+    ```
+    /cluster/tufts/hpc/tools/slurm_scripts
+    ```
 
 
 
