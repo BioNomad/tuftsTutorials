@@ -10,7 +10,7 @@ To request a Research Computing Cluster account:
 
 - Use the following link:
 
-[:material-form-select: Reuest Account](http://research.uit.tufts.edu/){ .md-button .md-button--primary }
+[:material-form-select: Reuest Account](http://research.uit.tufts.edu/){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
 - Log in with your Tufts Username and Tufts Password.
 - The form will auto-fill as much of your user information as possible. Double-check to make sure it’s correct, selecting the down arrow to adjust the affiliation information if it’s incorrect.
@@ -20,5 +20,5 @@ To request a Research Computing Cluster account:
 
 ## Help and Use Cases
 
-- [Research Cluster FAQ](https://wikis.uit.tufts.edu/confluence/display/TuftsUITResearchComputing/High+Performance+Compute+Cluster)
-- [See how some of your peers are making use of the Research Cluster and its resources.](https://wikis.uit.tufts.edu/confluence/display/TuftsUITResearchComputing/Cluster+Research+use+cases)
+- [Research Cluster FAQ](https://wikis.uit.tufts.edu/confluence/display/TuftsUITResearchComputing/High+Performance+Compute+Cluster){:target="_blank" rel="noopener"}
+- [See how some of your peers are making use of the Research Cluster and its resources.](https://wikis.uit.tufts.edu/confluence/display/TuftsUITResearchComputing/Cluster+Research+use+cases){:target="_blank" rel="noopener"}
