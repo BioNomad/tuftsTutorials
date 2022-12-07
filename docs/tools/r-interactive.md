@@ -1,64 +1,78 @@
-## Running R on the HPC cluster
-
-!!! note
-    R version 3.5.0 is no longer usable on the new cluster Pax
-
 ## R Interactive Session
 
-- 1. Login to the HPC cluster (new cluster Pax)
+- Login to the HPC cluster either by Command Line or the OnDemand Website:
 
-     `ssh your_username@login.pax.tufts.edu`
+!!! info ""
 
-  2. From the login node, load R module 
+    For information on how to log into the cluster check out:
+    
+    [Navigate To The Cluster :octicons-info-16: ](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
-     `$ module load R/4.0.0`
+- From the login node, load R module 
 
-  3. If you need to install some packages, a lot of times, you may need a C compiler
+```
+module load R/4.0.0
+```
 
-     `$ module load gcc/7.3.0`
+- If you need to install R packages, you may need a C compiler:
 
-     Additional modules may need to be loaded, such as `sf/R_4.0.0` 
+```
+module load gcc/7.3.0
+```
 
-  4. Allocate computing resources. Start an interactive session with your desired number of cores and memory, here we are using 2 cores with 4GB of memory 
+- Additional modules may need to be loaded, such as `sf/R_4.0.0` 
 
-     `$ srun -p interactive -n 2 --mem=4g --pty bash`
+- Allocate computing resources. Start an interactive session with your desired number of cores and memory, here we are using 2 cores with 4GB of memory: 
 
-     Note: Interactive partition has a default 4-hour time limit 
+```
+srun -p interactive -n 2 --mem=4g --pty bash
+```
 
-     For more information on how to allocate resources on Tufts HPC cluster, please reference: [Pax User Guide](https://tufts.box.com/v/Pax-User-Guide)
+!!! note
+    Interactive partition has a default 4-hour time limit. For more information on how to allocate resources on Tufts HPC cluster, check out:
+    
+    [Compute Resources :octicons-info-16:](../hpc-user-guide/compute-resources.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
-  5. Within the interactive session, you can start R 
+- Within the interactive session, you can start R 
 
-     `$ R`
+```R
+R
+```
 
-  6. 
+## Installing R packages
 
-     1. In R, you can install the packages you need in your home directory with:
+- In R, you can install the packages you need in your home directory with:
 
-        `> install.packages("XXX")`. 
+```R
+install.packages("XXX")
+```
 
-     2.  You can also use the packages installed in HPC Tools R package repo:
+- You can also use the packages installed in HPC Tools R package repo:
 
-        `> LIB='/cluster/tufts/hpc/tools/R/4.0.0' `
+```R
+LIB='/cluster/tufts/hpc/tools/R/4.0.0' 
+.libPaths(c("",LIB))
+```
 
-        `>.libPaths(c("",LIB)) `
+- You can also use packages installed in BioTools R package repo:
 
-     3. You can also use packages installed in BioTools R package repo:
+```R
+LIB='/cluster/tufts/bio/tools/R_libs/4.0.0' 
+.libPaths(c("",LIB)) 
+```
 
-        `> LIB='/cluster/tufts/bio/tools/R_libs/4.0.0' `
-
-        `>.libPaths(c("",LIB)) `
-
-     4.  If you are having trouble installing the packages you need, please contact tts-research@tufts.edu.
+- If you are having trouble installing the packages you need, please contact [tts-research@tufts.edu](tts-research@tufts.edu).
 
      
+- To exit from R command line interface:
 
-  7. Exit from R command line interface:
+```
+q()
+```
+- To terminate interactive session 
 
-     `> q()`
-
-  8. To terminate interactive session 
-
-     `$ exit` 
+```
+exit
+```
 
 
