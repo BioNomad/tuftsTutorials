@@ -40,7 +40,6 @@ theme:
 
 plugins:
   - search
-  - git-revision-date-localized
   - blogging:
         dirs:
             - news
