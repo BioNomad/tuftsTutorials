@@ -57,7 +57,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  
+
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true  
+      
 extra_css:
     - stylesheets/extra.css
     
