@@ -15,7 +15,7 @@
 
 - Go to:
 
-[OnDemand]( https://ondemand.pax.tufts.edu/){ .md-button .md-button--primary }
+[:material-play: OnDemand]( https://ondemand.pax.tufts.edu/){ :target="_blank" rel="noopener" .md-button .md-button--primary }
 
 - Under **`Files`**
 
