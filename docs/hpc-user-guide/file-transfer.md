@@ -15,7 +15,7 @@
 
 - Go to:
 
-[:material-play: OnDemand]( https://ondemand.pax.tufts.edu/){ :target="_blank" rel="noopener" .md-button .md-button--primary }
+[:fontawesome-brands-google-play: OnDemand]( https://ondemand.pax.tufts.edu/){ :target="_blank" rel="noopener" .md-button .md-button--primary }
 
 - Under **`Files`**
 
