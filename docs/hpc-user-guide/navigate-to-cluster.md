@@ -57,6 +57,6 @@ ssh your_utln@login.pax.tufts.edu
     ```
     
 !!! danger ""
-    While on a login node please do not run any programs. For this you will need to get compute resources. See the following to get compute resources: [Compute Resources](./compute-resources/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+    While on a login node please do not run any programs. For this you will need to get compute resources. See the following to get compute resources: [Compute Resources](./compute-resources.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
     
     
