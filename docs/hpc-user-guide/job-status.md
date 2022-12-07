@@ -145,6 +145,6 @@ sacct --format=partition,state,time,start,end,elapsed,MaxRss,ReqMem,MaxVMSize,nn
 
 - For more SLURM options check out:
 
-[SLURM Workload Manager](https://slurm.schedmd.com/man_index.html){:target="_blank" rel="noopener" .md-button .md-button--primary }
+[:fontawesome-brands-google-play: SLURM Workload Manager](https://slurm.schedmd.com/man_index.html){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
 
