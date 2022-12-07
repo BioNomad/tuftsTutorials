@@ -1,5 +1,3 @@
-Here we offer asynchronous content that covers applications of Unix, R, and Python.
-
 ## Unix Tutorials
 
 [:fontawesome-brands-google-play: Intro To Unix](./intro-to-unix/intro-to-unix.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
