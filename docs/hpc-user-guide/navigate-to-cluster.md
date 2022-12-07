@@ -7,7 +7,7 @@
 
 ## Navigate to the Cluster
 
-- You can access the Tufts HPC in two ways:
+- You can access the Tufts HPC in two ways, either the OnDemand website, or command line.
 
 ### The OnDemand Website:
 
@@ -32,3 +32,31 @@
 [RStudio Interactive Session :octicons-info-16: ](https://bionomad.github.io/tuftsTutorials/tools/r-rstudio/){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
 [JupyterLab Interactive Session :octicons-info-16: ](https://bionomad.github.io/tuftsTutorials/tools/python-jupyter/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+
+
+### Command Line:
+
+- You can access the Tufts HPC Cluster via command line with:
+
+    - The Terminal app on a Mac or Linux machine
+    - PuTTy or Cygwin SSH or SecureCRT or other SSH clients on a Windows machine
+
+- To Log in open one of the aformentioned apps and enter:
+
+```
+ssh your_utln@login.pax.tufts.edu
+```
+
+- Next log in with your Tufts Credentials
+- At this point you are on a login node and should see something like the following:
+
+!!! info "output"
+
+    ```
+    [your_utln@login-prod-02 ~]
+    ```
+    
+!!! danger ""
+    While on a login node please do not run any programs. For this you will need to get compute resources. See the following to get compute resources: [Compute Resources](./compute-resources/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+    
+    
