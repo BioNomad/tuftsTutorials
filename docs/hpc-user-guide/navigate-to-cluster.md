@@ -43,8 +43,8 @@
 
 - To Log in open one of the aformentioned apps and enter:
 
-!!! note "Bash"
-```
+
+```sh
 ssh your_utln@login.pax.tufts.edu
 ```
 
@@ -53,7 +53,7 @@ ssh your_utln@login.pax.tufts.edu
 
 !!! info "output"
 
-    ```
+    ```sh
     [your_utln@login-prod-02 ~]
     ```
     
