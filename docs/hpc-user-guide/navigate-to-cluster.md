@@ -11,7 +11,7 @@
 
 ### The OnDemand Website:
 
-[OnDemand Website](https://ondemand.pax.tufts.edu){:target="_blank" rel="noopener" .md-button .md-button--primary}
+[:material-play: OnDemand Website](https://ondemand.pax.tufts.edu){:target="_blank" rel="noopener" .md-button .md-button--primary}
 
 - Log in with your tufts credentials
 - Once you are logged in you'll notice a few navigation options:
@@ -29,6 +29,6 @@
 - For more information on how to access an interactive app take a look at our tutorials on RStudio and JupyterLab:
 
 
-[:octicons-info-16: RStudio Interactive Session](https://bionomad.github.io/tuftsTutorials/tools/r-rstudio/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+[RStudio Interactive Session :octicons-info-16: ](https://bionomad.github.io/tuftsTutorials/tools/r-rstudio/){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
-[:octicons-info-16: JupyterLab Interactive Session](https://bionomad.github.io/tuftsTutorials/tools/python-jupyter/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+[JupyterLab Interactive Session :octicons-info-16: ](https://bionomad.github.io/tuftsTutorials/tools/python-jupyter/){:target="_blank" rel="noopener" .md-button .md-button--primary }
