@@ -29,9 +29,9 @@
 - For more information on how to access an interactive app take a look at our tutorials on RStudio and JupyterLab:
 
 
-[RStudio Interactive Session :octicons-info-16: ](https://bionomad.github.io/tuftsTutorials/tools/r-rstudio/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+[RStudio Interactive Session :octicons-info-16: ](../tools/r-rstudio.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
-[JupyterLab Interactive Session :octicons-info-16: ](https://bionomad.github.io/tuftsTutorials/tools/python-jupyter/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+[JupyterLab Interactive Session :octicons-info-16: ](../tools/python-jupyter.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
 
 ### Command Line:
