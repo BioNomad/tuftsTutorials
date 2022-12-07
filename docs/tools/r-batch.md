@@ -1,14 +1,23 @@
 ## R batch jobs
 
-- 1. Login to the HPC cluster 
+Sometimes an R script will take to long to either run via an interactive session or RStudio. In these cases we can submit the R script as a batch job.
 
-  2. Upload your R script to the HPC cluster
+- Login to the HPC cluster either by Command Line or the OnDemand Website:
 
-  3. Go to the directory/folder which contains your R script
+!!! info ""
 
-  4. Open your favorite text editor and write a slurm submission script similar to the following one `batchjob.sh` (name your own)
+    For information on how to log into the cluster check out:
+    
+    [Navigate To The Cluster :octicons-info-16: ](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
-     ```
+- Upload your R script to the HPC cluster
+
+- Go to the directory/folder which contains your R script
+
+- Open your favorite text editor and write a slurm submission script similar to the following one `batchjob.sh` (name your own)
+
+!!! info "batchjob.sh"
+    ```
      #!/bin/bash
      #SBATCH -J myRjob  #job name
      #SBATCH --time=00-00:20:00 #requested time
@@ -22,8 +31,10 @@
      module load R/4.0.0
      Rscript --no-save your_rscript_name.R
      ```
-5. Submit it with 
+- Submit it with: 
   
-   `$ sbatch batchjob.sh`
+```
+sbatch batchjob.sh
+```
    
-6. If you are submitting multiple batch jobs to run the same script on different datasets, please make sure they are saving results to different files inside of your R script.
+- If you are submitting multiple batch jobs to run the same script on different datasets, please make sure they are saving results to different files inside of your R script.
