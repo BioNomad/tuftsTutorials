@@ -37,16 +37,6 @@ theme:
       example: octicons/beaker-16
       prerequisite: octicons/beaker-16
       quote: octicons/quote-16
-
-plugins:
-  - search
-  - blog:
-        dirs:
-            - news
-        show_total: false  # Remove 'total pages' label
-        size: 5
-        time_format: '%B %d, %Y'
-        meta_time_format: '%Y-%m-%d'
         
 markdown_extensions:
   - admonition
@@ -79,7 +69,7 @@ extra_javascript:
 nav:
     - About : 
         - Introduction: index.md
-        - news.md
+        - News: news/2022_12.md
     - HPC User Guide : 
         - Introduction To The Cluster:
             - "What Is The Cluster?": hpc-user-guide/what-is-the-cluster.md
