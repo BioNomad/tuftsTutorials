@@ -77,7 +77,9 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-    - About : index.md
+    - About : 
+        - Introduction: index.md
+        - news.md
     - HPC User Guide : 
         - Introduction To The Cluster:
             - "What Is The Cluster?": hpc-user-guide/what-is-the-cluster.md
