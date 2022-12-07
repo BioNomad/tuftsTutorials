@@ -102,7 +102,7 @@ nav:
             - "Containers": tools/containers.md
             - "Parallel": tools/parallel.md 
     - Unix/R/Python Tutorials:
-        - Intro To Unix:
+        - Intro To Unix: basic/unix_r_python.md
             - "Intro To Linux": basic/intro-to-unix/intro-to-unix.md
             - "Starting with Shell": basic/intro-to-unix/start-w-shell.md
             - "Bash Parameters": basic/intro-to-unix/bash-parameters.md
