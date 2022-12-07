@@ -40,7 +40,7 @@ theme:
 
 plugins:
   - search
-  - blogging:
+  - blog:
         dirs:
             - news
         show_total: false  # Remove 'total pages' label
