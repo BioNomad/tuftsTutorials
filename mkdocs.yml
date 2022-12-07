@@ -69,7 +69,9 @@ extra_javascript:
 nav:
     - About : 
         - Introduction: index.md
-        - News: news/2023_news.md
+        - News: 
+            - "2023": news/2023_news.md
+            - "2022": news/2022_news.md
     - HPC User Guide : 
         - Introduction To The Cluster:
             - "What Is The Cluster?": hpc-user-guide/what-is-the-cluster.md
