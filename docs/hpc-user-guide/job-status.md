@@ -57,6 +57,7 @@ scontrol show jobid -dd 24063163
 
 !!! info "output"
 
+    ```
     JobId=24063163 JobName=job
        UserId=your_utln(31003) GroupId=your_utln(5343) MCS_label=N/A
        Priority=12833 Nice=0 Account=normal QOS=normal
