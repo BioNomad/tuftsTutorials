@@ -86,6 +86,8 @@ nav:
             - "Interactive Session": hpc-user-guide/interactive-session.md
             - "Submitting A Batch Job": hpc-user-guide/batch-job.md
             - "Checking Job Status": hpc-user-guide/job-status.md
+        - HPC Services:
+            - "HPC Services": hpc-user-guide/hpc_services.md
     - HPC Tools: 
         - Python: 
             - "Python Interactive Session": tools/python-modules.md
