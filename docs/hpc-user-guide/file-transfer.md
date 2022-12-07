@@ -55,39 +55,60 @@
 
 
 - Execute these commands from your local machine terminal using this general format to transfer files:
-    
-    - `scp From_Path To_Path`
 
-    - `rsync From_Path To_Path`
+
+```sh
+scp From_Path To_Path
+```
+
+```sh
+rsync From_Path To_Path
+```
 
 !!! note
     If you are transfering very large files that could take hours to finish, we would suggest using `rsync` as it has ability to restart from where it left if interrupted.
 
 ### Download from cluster
 
-    `scp your_utln@xfer.cluster.tufts.edu:Cluster_Path Local_Path  `
+```sh
+scp your_utln@xfer.cluster.tufts.edu:Cluster_Path Local_Path
+```
 
-    `rsync your_utln@xfer.cluster.tufts.edu:Cluster_Path Local_Path`
+```sh
+rsync your_utln@xfer.cluster.tufts.edu:Cluster_Path Local_Path
+```
 
 ### Upload to cluster
 
-    `scp Local_Path your_utln@xfer.cluster.tufts.edu:Cluster_Path `
+```sh
+scp Local_Path your_utln@xfer.cluster.tufts.edu:Cluster_Path 
+```
 
-    `rsync Local_Path your_utln@xfer.cluster.tufts.edu:Cluster_Path`
+```sh
+rsync Local_Path your_utln@xfer.cluster.tufts.edu:Cluster_Path
+```
 
 !!! tip
     If you are transfering a directory use `scp -r` or `rsync -azP`
 
 ### Download from cluster
 
-    `scp -r your_utln@xfer.cluster.tufts.edu:Cluster_Path Local_Path  `
+```sh
+scp -r your_utln@xfer.cluster.tufts.edu:Cluster_Path Local_Path  
+```
 
-    `rsync -azP your_utln@xfer.cluster.tufts.edu:Cluster_Path Local_Path`
+```sh
+rsync -azP your_utln@xfer.cluster.tufts.edu:Cluster_Path Local_Path
+```
 
 ### Upload to cluster
 
-    `scp -r Local_Path your_utln@xfer.cluster.tufts.edu:Cluster_Path`
+```sh
+scp -r Local_Path your_utln@xfer.cluster.tufts.edu:Cluster_Path
+```
 
-    `rsync -azP Local_Path your_utln@xfer.cluster.tufts.edu:Cluster_Path`
+```sh
+rsync -azP Local_Path your_utln@xfer.cluster.tufts.edu:Cluster_Path
+```
     
 
