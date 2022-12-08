@@ -2,7 +2,13 @@
 
 It is often desirable to download your own python packages into a conda environment. We will quickly go through how to create one and add packages to that conda environment.
 
-## Allocate Resources
+- Login to the HPC cluster either by Command Line or the OnDemand Website:
+
+!!! info ""
+
+    For information on how to log into the cluster check out:
+    
+    [Navigate To The Cluster :octicons-info-16: ](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
 - Start an interactive session on the Tufts HPC Cluster to work on a compute node.
 
