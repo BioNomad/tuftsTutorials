@@ -166,7 +166,8 @@ nav:
             - "PyMOL Visualization": omics/intro-to-alphafold2/06_pymol_viz.md
             - "Optional: AlphaFold2 Batch Script": omics/intro-to-alphafold2/07_af2_batch.md
     - Biostatistics:
-        - "Introduction To Biostatistics": stats/biostats.md
+        - "Introduction To Biostatistics": stats/stats.md
+        - "Setup": stats/biostats.md
         - Variables and Sampling:
             - "Quantitative Variables": stats/quant.md
             - "Qualitative Variables": stats/qual.md
