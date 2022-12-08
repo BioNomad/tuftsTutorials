@@ -1,6 +1,6 @@
 ## Python Interactive Session
 
-1. Login to the HPC cluster either by Command Line or the OnDemand Website:
+- Login to the HPC cluster either by Command Line or the OnDemand Website:
 
 !!! info ""
 
@@ -8,7 +8,7 @@
     
     [Navigate To The Cluster :octicons-info-16: ](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
-2. From the login node, load the python module 
+- From the login node, load the python module 
 
 ```
 module load python/3.8.8
@@ -17,7 +17,7 @@ module load python/3.8.8
 !!! tip
     To check out different python modules enter the command `module av python` 
 
-3. Allocate computing resources. Start an interactive session with your desired number of cores and memory, here we are using 2 cores with 4GB of memory: 
+- Allocate computing resources. Start an interactive session with your desired number of cores and memory, here we are using 2 cores with 4GB of memory: 
 
 ```
 srun -p interactive -n 2 --mem=4g --pty bash
