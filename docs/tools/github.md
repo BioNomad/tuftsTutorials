@@ -40,7 +40,7 @@ git commit -m "Initial Commit"
 ```
 # configure your user name/email
 git config --global user.name "Your Name"
-git config --global user.email "your.email@yale.edu"
+git config --global user.email "[email address]"
 ```
 
 ## Push To GitHub
