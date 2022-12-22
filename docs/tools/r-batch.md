@@ -17,6 +17,7 @@ Sometimes an R script will take to long to either run via an interactive session
 - Open your favorite text editor and write a slurm submission script similar to the following one `batchjob.sh` (name your own)
 
 !!! info "batchjob.sh"
+
     ```
      #!/bin/bash
      #SBATCH -J myRjob  #job name
