@@ -99,6 +99,7 @@ nav:
             - "RStudio OnDemand": tools/r-rstudio.md
         - Misc:
             - "GitHub": tools/github.md
+            - "Rclone": tools/rclone.md
             - "Containers": tools/containers.md
             - "Parallel": tools/parallel.md 
     - Unix/R/Python Tutorials:
