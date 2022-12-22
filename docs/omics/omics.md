@@ -12,5 +12,4 @@
 ## Proteomics
 
 !!! info ""
-    [:fontawesome-brands-google-play: Intro To Proteomics](./intro-to-proteomics/00_background.md){ .md-button .md-button--primary }  
-    [:fontawesome-brands-google-play: Intro To AlphaFold2](./intro-to-alphafold2/01_background.md){ .md-button .md-button--primary }
+    [:fontawesome-brands-google-play: Intro To Proteomics](./intro-to-proteomics/00_background.md){ .md-button .md-button--primary } [:fontawesome-brands-google-play: Intro To AlphaFold2](./intro-to-alphafold2/01_background.md){ .md-button .md-button--primary }
