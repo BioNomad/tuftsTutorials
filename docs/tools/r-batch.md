@@ -19,19 +19,20 @@ Sometimes an R script will take to long to either run via an interactive session
 !!! info "batchjob.sh"
 
     ```
-     #!/bin/bash
-     #SBATCH -J myRjob  #job name
-     #SBATCH --time=00-00:20:00 #requested time
-     #SBATCH -p batch  #running on "batch" partition/queue
-     #SBATCH -n 2  #2 cores total
-     #SBATCH --mem=2g #requesting 2GB of RAM total
-     #SBATCH --output=myRjob.%j.out #saving standard output to file
-     #SBATCH --error=myRjob.%j.err  #saving standard error to file
-     #SBATCH --mail-type=ALL  #email optitions
-     #SBATCH --mail-user=Your_Tufts_Email @tufts.edu
-     module load R/4.0.0
-     Rscript --no-save your_rscript_name.R
-     ```
+    #!/bin/bash
+    #SBATCH -J myRjob  #job name
+    #SBATCH --time=00-00:20:00 #requested time
+    #SBATCH -p batch  #running on "batch" partition/queue
+    #SBATCH -n 2  #2 cores total
+    #SBATCH --mem=2g #requesting 2GB of RAM total
+    #SBATCH --output=myRjob.%j.out #saving standard output to file
+    #SBATCH --error=myRjob.%j.err  #saving standard error to file
+    #SBATCH --mail-type=ALL  #email optitions
+    #SBATCH --mail-user=Your_Tufts_Email @tufts.edu
+    module load R/4.0.0
+    Rscript --no-save your_rscript_name.R
+    ```
+    
 - Submit it with: 
   
 ```
