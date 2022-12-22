@@ -11,7 +11,7 @@ module load singularity/3.6.1
 module load squashfs
 ```
 
-- Now, search [docker hub](https://hub.docker.com/) for the tool of your choice. You will be using this image to build a singularity container or sif file. In this case we will be demonstrating biobakery:
+- Now, search [docker hub](https://hub.docker.com/) for the tool of your choice. You will be using this image to build a singularity container or sif file. In this case we will be demonstrating how to download the [biobakery workflows docker image](https://hub.docker.com/r/biobakery/workflows):
 
 ```
 singularity build bioBakery.sif docker://biobakery/workflows
