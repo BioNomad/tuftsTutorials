@@ -17,7 +17,7 @@ module load squashfs
 singularity build bioBakery.sif docker://biobakery/workflows
 ```
 
-## Using A Container
+## Using The Container
 
 - To use this tool you will need to reference the sif file you created. So to run the humann3 command you would use the following:
 
