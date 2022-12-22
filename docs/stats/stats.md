@@ -1,8 +1,7 @@
 ## Variables and Sampling
 
 !!! note ""
-    [:fontawesome-brands-google-play: Quantitative Variables](./quant.md){.md-button .md-button--primary } [:fontawesome-brands-google-play: Qualitative Variables](./qual.md){.md-button .md-button--primary} [:fontawesome-brands-google-play: Sampling](./sampling.md){.md-button .md-button--primary} 
-[:fontawesome-brands-google-play: Confidence Intervals](./confidence-interval.md){.md-button .md-button--primary}
+    [:fontawesome-brands-google-play: Quantitative Variables](./quant.md){.md-button .md-button--primary } [:fontawesome-brands-google-play: Qualitative Variables](./qual.md){.md-button .md-button--primary} [:fontawesome-brands-google-play: Sampling](./sampling.md){.md-button .md-button--primary}[:fontawesome-brands-google-play: Confidence Intervals](./confidence-interval.md){.md-button .md-button--primary}
 
 ## Analyzing One Categorial Variable
 
