@@ -1,8 +1,5 @@
 ## Introduction to GitHub
 
-!!! warning "GitHub and the Tufts HPC"
-    Unfortunately, there is no clean way to connect GitHub and the Tufts HPC. However, this tutorial is applicable if you are working on a personal machine.
-
 The power in GitHub lies in version control. Code is often changed and in doing so previous versions of files can easily be lost. GitHub saves changes to files so that one can go back and restore previous versions if needed. Additionally, there is a plethora of functionality to: update code collaboratively, publish static website pages, report issues with code, etc..
 
 ## Creating a Git Repository
