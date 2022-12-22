@@ -24,3 +24,8 @@ singularity build bioBakery.sif docker://biobakery/workflows
 ```
 singularity exec bioBakery.sif humann3 --help
 ```
+
+## References
+
+!!! abstract ""
+    1. [CHPC - Research Computing and Data Support for the University - Singularity](https://www.chpc.utah.edu/documentation/software/singularity.php)
