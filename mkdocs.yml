@@ -8,8 +8,20 @@ theme:
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.sections
-        - toc.follow
-  logo: 'img/logo2.png'
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: 'img/logo3.png'
   icon:
     admonition:
       note: octicons/tag-16
