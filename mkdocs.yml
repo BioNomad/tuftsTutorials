@@ -8,6 +8,7 @@ theme:
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.sections
+        - toc.follow
   logo: 'img/logo2.png'
   icon:
     admonition:
