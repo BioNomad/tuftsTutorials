@@ -4,11 +4,15 @@ edit_uri: blob/main/docs/
 
 theme:
   name: material
+  icon:
+    edit: material/pencil 
+    view: material/eye
   features:
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.sections
         - content.action.edit
+        - navigation.footer
   palette:
     - scheme: default
       primary: indigo
