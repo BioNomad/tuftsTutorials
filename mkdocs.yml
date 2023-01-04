@@ -104,6 +104,7 @@ nav:
             - "Rclone": tools/rclone.md
             - "Containers": tools/containers.md
             - "Parallel": tools/parallel.md 
+            - "API (Application Programming Interface)": tools/api.md
     - Unix/R/Python Tutorials:
         - Introduction: basic/unix_r_python.md
         - Intro To Unix: 
