@@ -6,12 +6,6 @@ We also lead in-class sessions, partner on grants, and develop workshops.
 
 ## Coming Soon
 
-**HPC Tools:**
-
-- GitHub
-- Containers
-- Parallel
-
 **Omics Tutorials**
 
 - Metagenomics
