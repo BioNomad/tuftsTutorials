@@ -6,11 +6,9 @@
 
 ## Get Started
 
-To request a Research Computing Cluster account:
-
-- Use the following link:
-
-[:material-form-select: Reuest Account](http://research.uit.tufts.edu/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+- To request a Research Computing Cluster account use the following link:
+    
+    - [Cluster Account Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj){:target="_blank" rel="noopener"}
 
 - Log in with your Tufts Username and Tufts Password.
 - The form will auto-fill as much of your user information as possible. Double-check to make sure it’s correct, selecting the down arrow to adjust the affiliation information if it’s incorrect.
