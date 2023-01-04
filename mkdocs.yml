@@ -8,8 +8,7 @@ theme:
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.sections
-        - content.action.edit:
-            icon: material/pencil  
+        - content.action.edit 
         - navigation.footer
   palette:
     - scheme: default
@@ -91,7 +90,7 @@ nav:
             - "Checking Job Status": hpc-user-guide/job-status.md
         - HPC Services:
             - "HPC Services": hpc-user-guide/hpc_services.md
-    - HPC Tools: 
+    - HPC Software/Tools: 
         - Python: 
             - "Python Interactive Session": tools/python-modules.md
             - "JupyterLab": tools/python-jupyter.md
