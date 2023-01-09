@@ -8,16 +8,10 @@
     
     [Navigate To The Cluster :octicons-info-16: ](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
 
-- From the login node, load R module 
+- From the login node, load R module and associated modules
 
 ```
-module load R/4.0.0
-```
-
-- If you need to install R packages, you may need a C compiler:
-
-```
-module load gcc/7.3.0
+module load R/4.0.0 boost/1.63.0-python3 java/1.8.0_60 gsl/2.6
 ```
 
 - Additional modules may need to be loaded, such as `sf/R_4.0.0` 
