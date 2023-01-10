@@ -73,11 +73,11 @@ exit
 
 **Suggestion 1: Try installing the R package from command line instead of RStudio OnDemand**
 
-    - The RStudio OnDemand interface is not perfect and can store things like different libPaths between sessions. To be safe, it is always best to install new R package from the command line when on the Tufts HPC.
+- The RStudio OnDemand interface is not perfect and can store things like different libPaths between sessions. To be safe, it is always best to install new R package from the command line when on the Tufts HPC.
     
 **Suggestion 2: You may need to load more modules**
 
-    - On the Tufts HPC you load modules of software that might already be installed on your machine. This is why it can be easier to install R packages on your local machine rather than the Tufts HPC. If you are unsuccessful at installing an R package, try loading the following modules:
+- On the Tufts HPC you load modules of software that might already be installed on your machine. This is why it can be easier to install R packages on your local machine rather than the Tufts HPC. If you are unsuccessful at installing an R package, try loading the following modules:
     
 ```
 module load curl/7.47.1 gcc/7.3.0 hdf5/1.10.4 boost/1.63.0-python3 libpng/1.6.37 java/1.8.0_60 libxml2/2.9.10 libiconv/1.16 fftw/3.3.2 gsl/2.6 R/4.0.0
@@ -85,7 +85,7 @@ module load curl/7.47.1 gcc/7.3.0 hdf5/1.10.4 boost/1.63.0-python3 libpng/1.6.37
 
 **Suggestion 3: Take a look at the last few lines of the error message**
 
-    - The error message will give you a clue as to what is going wrong. For example a common example:
+- The error message will give you a clue as to what is going wrong. For example a common example:
     
 ```
 Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
@@ -93,7 +93,7 @@ Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[
 Error: package or namespace load failed for ‘ggplot2’
 ```
 
-    - Here you might need to install a dependency beforehand with either:
+- Here you might need to install a dependency beforehand with either:
     
 ```
 install.packages("Rcpp")
@@ -107,7 +107,7 @@ install.packages("ggplot2",dependencies = TRUE)
 
 **Suggestion 4: Install the package from the Repository**
 
-    - Dependant on the R module you are loading, you may be working with an older version of a package manager, like BiocManager. As such some of the packages might have dependencies that are deprecated. For example, when installing `APAlyzer`:
+- Dependant on the R module you are loading, you may be working with an older version of a package manager, like BiocManager. As such some of the packages might have dependencies that are deprecated. For example, when installing `APAlyzer`:
     
 ```
 {==ERROR: dependency ‘DESeq’ is not available for package ‘APAlyzer’==}
@@ -127,7 +127,7 @@ In install.packages(...) :
   installation of package ‘APAlyzer’ had non-zero exit status
 ```
 
-    - We can try installing `APAlyzer` like so:
+- We can try installing `APAlyzer` like so:
     
 ```
 BiocManager::install('RJWANGbioinfo/APAlyzer')
