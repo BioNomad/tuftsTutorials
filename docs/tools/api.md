@@ -21,30 +21,36 @@ Each website (with an available API) should have more specific documentation on 
 
 === "R"
 
-    We will first need to load the R packages necessary to handle API requests:
+    - We will first need to load the R packages necessary to handle API requests:
     
     ```
     library(httr)
     library(jsonlite)
     ```
     
-    Now we will need to take a look at the API documentation on the [STRINGDB website](https://string-db.org/help/api/). Typically, we have a base url that we pull from, and in this case is is:
+    - Now we will need to take a look at the API documentation on the [STRINGDB website](https://string-db.org/help/api/). Typically, we have a base url that we pull from, and in this case is is:
     
     https://string-db.org/
     
-    We then need to plug in the information we would like to pull by adding to the url. So to get an image of the  information we will add the following to the url:
+    - We then need to plug in the information we would like to pull by adding to the url. So to get an image of the  information we will add the following to the url:
     
+    ```
     api/json/interaction_partners?
+    ```
     
-    To point to specific genes, say PTCH1, we will add the following:
+    - To point to specific genes, say PTCH1, we will add the following:
     
+    ```
     identifiers=PTCH1
+    ```
     
-    Now the full url will be:
+    - Now the full url will be:
     
+    ```
     https://string-db.org/api/json/interaction_partners?identifiers=PTCH1
+    ```
     
-    We can now plug this url into the `GET` function!
+    - We can now plug this url into the `GET` function!
     
     ```
     res <- GET("https://string-db.org/api/json/interaction_partners?identifiers=PTCH1")
@@ -61,7 +67,7 @@ Each website (with an available API) should have more specific documentation on 
           Size: 2.72 kB
         ```
           
-    Here we see that our request did come through. However, the data is in json format. We can convert this json data to tabular data with:
+    - Here we see that our request did come through. However, the data is in json format. We can convert this json data to tabular data with:
     
     ```
     data = fromJSON(rawToChar(res$content))
@@ -81,7 +87,7 @@ Each website (with an available API) should have more specific documentation on 
         ```
           
     
-    Congratulations! You have pulled data using an API!
+    - Congratulations! You have pulled data using an API!
 
 === "Python"
 
