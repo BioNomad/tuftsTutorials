@@ -1,12 +1,8 @@
 ## R Interactive Session
 
-- Login to the HPC cluster either by Command Line or the OnDemand Website:
-
-!!! info ""
-
-    For information on how to log into the cluster check out:
+- Login to the HPC cluster either by Command Line or the OnDemand Website. For information on how to log into the cluster check out:
     
-    [Navigate To The Cluster :octicons-info-16: ](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[Navigate To The Cluster](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener"}"
 
 - From the login node, load R module and associated modules
 
@@ -22,10 +18,11 @@ module load R/4.0.0 boost/1.63.0-python3 java/1.8.0_60 gsl/2.6
 srun -p interactive -n 2 --mem=4g --pty bash
 ```
 
-!!! note
-    Interactive partition has a default 4-hour time limit. For more information on how to allocate resources on Tufts HPC cluster, check out:
+- The Interactive partition has a default 4-hour time limit. 
+
+- For more information on how to allocate resources on Tufts HPC cluster, check out:
     
-    [Compute Resources :octicons-info-16:](../hpc-user-guide/compute-resources.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[Compute Resources](../hpc-user-guide/compute-resources.md){:target="_blank" rel="noopener"}"
 
 - Within the interactive session, you can start R 
 
