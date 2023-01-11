@@ -8,9 +8,6 @@
 
 - To request a Research Computing Cluster account use the following link:
     
-!!! info "[:fontawesome-brands-google-play: Cluster Account Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj){:target="_blank" rel="noopener" .md-button .md-button--primary }"
-    
-
 !!! info "[Cluster Account Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj){:target="_blank" rel="noopener"}"
 
 
