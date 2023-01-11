@@ -1,8 +1,6 @@
 ## Cluster Storage Increase
 
-If you need more storage, we are happy to give an increase. But please be mindful and clean up any data that is not needed once you are done with data analysis.
-
-To submit an official request for Cluster Storage Increase, please do the following and consider how much data you will generate or work with in the next 12 months.
+If you need more storage, we are happy to give an increase. But please be mindful and clean up any data that is not needed once you are done with data analysis. To submit an official request for Cluster Storage Increase, please do the following and consider how much data you will generate or work with in the next 12 months.
 
 1. Use the following link to request an increase in cluster storage:
 
