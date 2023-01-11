@@ -2,20 +2,13 @@
 
 It is often desirable to download your own python packages into a conda environment. We will quickly go through how to create one and add packages to that conda environment.
 
-- Login to the HPC cluster either by Command Line or the OnDemand Website:
-
-!!! info ""
-
-    For information on how to log into the cluster check out:
+- Login to the HPC cluster either by Command Line or the OnDemand Website. For information on how to log into the cluster check out:
     
-    [Navigate To The Cluster :octicons-info-16: ](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[Navigate To The Cluster](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener"}"
 
-- Start an interactive session on the Tufts HPC Cluster to work on a compute node.
-
-!!! tip 
-    To learn more about how to set up an interactive session visit:
+- Start an interactive session on the Tufts HPC Cluster to work on a compute node. To learn more about how to set up an interactive session visit:
     
-    [Start an Interative Session :octicons-info-16:](../hpc-user-guide/interactive-session.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[Start an Interative Session](../hpc-user-guide/interactive-session.md){:target="_blank" rel="noopener"}"
 
 - Load relevant modules:
 
@@ -96,9 +89,6 @@ pip install ipykernel
 ```
 python -m ipykernel install --user --name=myenvname 
 ```
-
-!!! tip
-    use the name of your environment in the place of "myenvname"
     
 - Restart Jupyter from OnDemand 
  
