@@ -11,7 +11,7 @@
 
 ### The OnDemand Website:
 
-[:fontawesome-brands-google-play: OnDemand Website](https://ondemand.pax.tufts.edu){:target="_blank" rel="noopener" .md-button .md-button--primary}
+!!! info "[OnDemand Website](https://ondemand.pax.tufts.edu){:target="_blank" rel="noopener"}"
 
 - Log in with your tufts credentials
 - Once you are logged in you'll notice a few navigation options:
@@ -29,9 +29,9 @@
 - For more information on how to access an interactive app take a look at our tutorials on RStudio and JupyterLab:
 
 
-[RStudio Interactive Session :octicons-info-16: ](../tools/r-rstudio.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[RStudio Interactive Session](../tools/r-rstudio.md){:target="_blank" rel="noopener"}"
 
-[JupyterLab Interactive Session :octicons-info-16: ](../tools/python-jupyter.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[JupyterLab Interactive Session](../tools/python-jupyter.md){:target="_blank" rel="noopener"}"
 
 
 ### Command Line:
@@ -57,9 +57,10 @@ ssh your_utln@login.pax.tufts.edu
     [your_utln@login-prod-02 ~]
     ```
     
-!!! danger ""
-    While on a login node please do not run any programs. For this you will need to get compute resources. See the following to get compute resources: 
+!!! danger "Warning "
+
+While on a login node please do not run any programs. For this you will need to get compute resources. See the following to get compute resources: 
     
-    [Compute Resources :octicons-info-16:](./compute-resources.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info [Compute Resources](./compute-resources.md){:target="_blank" rel="noopener"}
     
     
