@@ -4,7 +4,7 @@ Please do the following to submit an official request for new Cluster Storage fo
 
 1. Use the following the link to request a cluster storage account:
 
-!!! abstract "[Cluster Storage Account Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj)"
+!!! abstract "[Cluster Storage Account Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj){:target="_blank" rel="noopener"}"
 
 2. Login with your Tufts credentials
 3. Fill out blank fields
