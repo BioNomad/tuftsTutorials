@@ -2,13 +2,9 @@
 
 Sometimes an R script will take to long to either run via an interactive session or RStudio. In these cases we can submit the R script as a batch job.
 
-- Login to the HPC cluster either by Command Line or the OnDemand Website:
-
-!!! info ""
-
-    For information on how to log into the cluster check out:
+- Login to the HPC cluster either by Command Line or the OnDemand Website. For information on how to log into the cluster check out:
     
-    [Navigate To The Cluster :octicons-info-16: ](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[Navigate To The Cluster](../hpc-user-guide/navigate-to-cluster.md){:target="_blank" rel="noopener"}"
 
 - Upload your R script to the HPC cluster
 
