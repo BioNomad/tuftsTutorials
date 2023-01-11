@@ -54,7 +54,7 @@ git push -u origin master
 
 - GitHub has much more functionality than what has been described here. To learn more, check out:
 
-[:fontawesome-brands-google-play: GitHub Docs](https://docs.github.com/en){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[GitHub Docs](https://docs.github.com/en){:target="_blank" rel="noopener"}"
 
 ## References
 
