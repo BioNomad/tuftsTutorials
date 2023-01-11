@@ -83,6 +83,7 @@ nav:
             - "File Transfer": hpc-user-guide/file-transfer.md
         - Cluster Resources:
             - "Cluster Storage Request": hpc-user-guide/new_cluster_storage.md
+            - "Cluster Storage Increase Request": hpc-user-guide/cluster_storage_increase.md
             - "Compute Resources": hpc-user-guide/compute-resources.md
             - "Software On The Cluster": hpc-user-guide/software-cluster.md
         - Introduction To SLURM:
