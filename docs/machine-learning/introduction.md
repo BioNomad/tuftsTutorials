@@ -1,14 +1,19 @@
 ## Setup For Machine Learning Tutorials
 
-!!! note ""
-    [:fontawesome-brands-google-play: Setup](./setup.md){.md-button .md-button--primary }
+- [Setup](./setup.md)
     
 ## Unsupervised Learning
 
-!!! abstract ""
-    [:fontawesome-brands-google-play: Dimension Reduction](./unsupervised/dimension-reduction.md){.md-button .md-button--primary } [:fontawesome-brands-google-play: Dimension Reduction](./unsupervised/clustering.md){.md-button .md-button--primary} [:fontawesome-brands-google-play: Dimension Reduction](./unsupervised/k-means.md){.md-button .md-button--primary }[:fontawesome-brands-google-play: Dimension Reduction](./unsupervised/hierarchical.md){.md-button .md-button--primary }
+- [Dimension Reduction](./unsupervised/dimension-reduction.md)
+- [Clustering](./unsupervised/clustering.md)
+- [K-means Clustering](./unsupervised/k-means.md)
+- [Hierarchical Clustering](./unsupervised/hierarchical.md)
 
 ## Supervised Learning
 
-!!! info ""
-    [:fontawesome-brands-google-play: Linear Models](./supervised/linear-model.md){.md-button .md-button--primary} [:fontawesome-brands-google-play: Logistic Regression](./supervised/logistic-regression.md){.md-button .md-button--primary} [:fontawesome-brands-google-play: Survival Analysis Part 1](./supervised/surv-part1.md){.md-button .md-button--primary} [:fontawesome-brands-google-play: Survival Analysis Part 2](./supervised/surv-part2.md){.md-button .md-button--primary} [:fontawesome-brands-google-play: Multivariate Regression](./supervised/multivariate-regression.md){.md-button .md-button--primary} [:fontawesome-brands-google-play: Model Performance](./supervised/model-performance.md){.md-button .md-button--primary}
+- [Linear Models](./supervised/linear-model.md)
+- [Logistic Regression](./supervised/logistic-regression.md)
+- [Survival Analysis Part 1](./supervised/surv-part1.md)
+- [Survival Analysis Part 2](./supervised/surv-part2.md)
+- [Multivariate Regression](./supervised/multivariate-regression.md)
+- [Model Performance](./supervised/model-performance.md)
