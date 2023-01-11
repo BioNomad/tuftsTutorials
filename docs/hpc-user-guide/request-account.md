@@ -8,8 +8,10 @@
 
 - To request a Research Computing Cluster account use the following link:
     
-!!! info "[Cluster Account Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj){:target="_blank" rel="noopener"}"
+!!! info "[:fontawesome-brands-google-play: Cluster Account Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj){:target="_blank" rel="noopener" .md-button .md-button--primary }"
     
+
+!!! info "[Cluster Account Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj){:target="_blank" rel="noopener"}"
 
 
 - Log in with your Tufts Username and Tufts Password.
