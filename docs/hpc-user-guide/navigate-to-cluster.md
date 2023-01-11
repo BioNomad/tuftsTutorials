@@ -61,6 +61,6 @@ ssh your_utln@login.pax.tufts.edu
 
 While on a login node please do not run any programs. For this you will need to get compute resources. See the following to get compute resources: 
     
-!!! info [Compute Resources](./compute-resources.md){:target="_blank" rel="noopener"}
+!!! info "[Compute Resources](./compute-resources.md){:target="_blank" rel="noopener"}"
     
     
