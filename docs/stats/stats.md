@@ -22,7 +22,7 @@
 
 ## Analyzing Numeric Variable With Two Groups
 
-- Paired T-Test](./paired-t-test.md)
+- [Paired T-Test](./paired-t-test.md)
 - [Two Sample T-Test](./two-t-test.md)
 
 ## Analyzing Two Numeric Variables
