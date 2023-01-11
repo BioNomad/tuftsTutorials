@@ -7,7 +7,7 @@ you will need to install it on your local machine to set up your access token an
 
 - To set up Rclone on your local machine follow the instructions for your machine type:
 
-[:fontawesome-brands-google-play: Rclone Installation](https://rclone.org/install/){:target="_blank" rel="noopener" .md-button .md-button--primary }
+!!! info "[Rclone Installation](https://rclone.org/install/){:target="_blank" rel="noopener"}"
 
 ## Rclone Configuration
 
