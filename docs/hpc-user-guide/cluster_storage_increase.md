@@ -6,7 +6,7 @@ To submit an official request for Cluster Storage Increase, please do the follow
 
 1. Use the following link to request an increase in cluster storage:
 
-!!! abstract "[Cluster Storage Increase Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj)"
+!!! abstract "[Cluster Storage Increase Request](https://tufts.qualtrics.com/jfe/form/SV_5bUmpFT0IXeyEfj){:target="_blank" rel="noopener"}"
 
 2. Login with your Tufts credentials
 3. Fill out blank fields
