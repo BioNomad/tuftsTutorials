@@ -76,6 +76,12 @@ Now that we have spectra assoicated with our peptides we need some way of matchi
 
 ![](images/protein_ident.png)
 
+!!! warning "Protein Identification Considerations"
+
+    It should be noted that when identifying peptides, most algorithms will attempt to match non-unique peptides (shared/razor peptides) to a protein that has a unique peptide/ or the most other peptides. In this way the algorithm attempts to safe-gaurd against false positives. In the following example, the second peptide would be assigned to protein 1:
+    
+    ![](images/protein_ident_drawbacks.png)
+
 ## References
 
 1. https://rformassspectrometry.github.io/docs/sec-msintro.html
