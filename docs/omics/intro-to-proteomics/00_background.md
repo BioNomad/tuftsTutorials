@@ -93,3 +93,4 @@ Now that we have spectra assoicated with our peptides we need some way of matchi
 7. https://www.waters.com/nextgen/au/en/education/primers/beginner-s-guide-to-liquid-chromatography/how-does-high-performance-liquid-chromatography-work.html
 8. https://www.nature.com/articles/nature01511
 9. https://www.sciencedirect.com/science/article/abs/pii/S0076687905020057?via%3Dihub
+10. https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/introduction/slides-plain.html
