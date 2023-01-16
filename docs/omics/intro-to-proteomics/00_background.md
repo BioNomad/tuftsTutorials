@@ -82,6 +82,26 @@ Now that we have spectra assoicated with our peptides we need some way of matchi
     
     ![](images/protein_ident_drawbacks.png)
 
+## Labelling
+
+When quantifying proteins with mass spectrometry, there are a few options:
+
+![](images/protein_quant_methods.png)
+
+Targeted methods assess a narrow, pre-defined, set of proteins. Alternatively, one could take an explorative approach and assess all possible proteins. Exploratory methods can include labelled and label-free methods. Labelling invovles adding a specific mass tag to peptides. In this way it is easier to trace the origins of different peptides:
+
+![](images/label_label_free.png)
+
+The following table briefly covers the pros and cons of labelled v. label-free techniques. For a more in-depth explanation, check out the following [Galaxy Article](https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/labelfree-vs-labelled/tutorial.html):
+
+|category|	label-free|	labelled|
+|-|-|-|
+|machine time|	more|	less|
+|wet lab complexity & time|	little|	medium|
+|comparability of samples|	difficult|	easy|
+|data analysis|	complex|	complex|
+|study design|	flexible|	fixed|
+
 ## References
 
 1. https://rformassspectrometry.github.io/docs/sec-msintro.html
