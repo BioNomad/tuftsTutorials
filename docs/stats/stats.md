@@ -4,6 +4,7 @@
 - [Qualitative Variables](./qual.md)
 - [Sampling](./sampling.md)
 - [Confidence Intervals](./confidence-interval.md)
+- [Probability Distributions](./distributions.md)
 
 ## Analyzing One Categorial Variable
 
