@@ -14,7 +14,9 @@ Random variables are some quantity derived from a random process. Think about dr
 - If you are measure a variable that is limited to integers, the variable is called a **discrete random variable**. Think of count data like number of shoes, where you cannot have values in between values (2,4,5, etc.)
 - If you are measuring a variable that is limited to true or false values, the variable is called a **boolean random variable**. Think of marital status, where the values are limited to yes/no or true/false (True, False)
 
-![](images/variable_types.png)
+!!! info ""
+
+    ![](images/variable_types.png)
 
 ## Probability Distributions
 
