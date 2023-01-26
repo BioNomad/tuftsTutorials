@@ -43,3 +43,4 @@ For each value in a random variable there is some probability of getting that va
 ## References
 
 1. [A Gentle Introduction to Probability Distributions](https://machinelearningmastery.com/what-are-probability-distributions/)
+2. [Connecting the CDF and the PDF](https://demonstrations.wolfram.com/ConnectingTheCDFAndThePDF/)
