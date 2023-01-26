@@ -2,6 +2,8 @@
 
 Probability can be used to assess the likelihood of getting a value. Multiple values make up a variable, like a set of biomarker values, temperature values, etc.. This variable is related to the probability of getting the value by the probability distribution. Before we get to probability distributions we will talk a bit more about variables, specifically random variables!
 
+![](images/variable_prob_distribution.png)
+
 ## Random Variables
 
 Random variables are some quantity derived from a random process. Think about drawing some random value from a bag of possible values. That set of possible values can change depending on what you are measuring:
