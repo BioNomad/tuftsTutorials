@@ -4,7 +4,7 @@ Probability can be used to assess the likelihood of getting a value. Multiple va
 
 !!! info ""
 
-    ![](images/variable_prob_distribution.png)
+    ![](images/variable_prob_distribution.png){ width="500" }
 
 ## Random Variables
 
@@ -16,7 +16,7 @@ Random variables are some quantity derived from a random process. Think about dr
 
 !!! info ""
 
-    ![](images/variable_types.png)
+    ![](images/variable_types.png){ width="500" }
 
 ## Probability Distributions
 
