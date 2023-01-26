@@ -4,7 +4,11 @@ Probability can be used to assess the likelihood of getting a value. Multiple va
 
 !!! info ""
 
-    ![](images/variable_prob_distribution.png){ width="500", align=center}
+    <figure markdown>
+      ![](images/variable_prob_distribution.png){ width="500"}
+      <figcaption></figcaption>
+    </figure>
+
 
 ## Random Variables
 
@@ -16,7 +20,10 @@ Random variables are some quantity derived from a random process. Think about dr
 
 !!! info ""
 
-    ![](images/variable_types.png){ width="300",align=center}
+    <figure markdown>
+      ![](images/variable_types.png){ width="300"}
+      <figcaption></figcaption>
+    </figure>
 
 ## Probability Distributions
 
@@ -25,7 +32,14 @@ For each value in a random variable there is some probability of getting that va
 - **Probability Mass Function** - What is the probabilty of getting that exact value?
 - **Cumulative Distribution Function** - What is the probability of getting a value less than or equal to that value?
 
+!!! info ""
 
+    <figure markdown>
+      ![](images/pdf_v_cdf.png)
+      <figcaption></figcaption>
+    </figure>
+    
+    
 ## References
 
 1. [A Gentle Introduction to Probability Distributions](https://machinelearningmastery.com/what-are-probability-distributions/)
