@@ -35,7 +35,7 @@ For each value in a random variable there is some probability of getting that va
 !!! info ""
 
     <figure markdown>
-      ![](images/pdf_v_cdf.png)
+      ![](images/pdf_v_cdf.png){width="500"}
       <figcaption></figcaption>
     </figure>
     
