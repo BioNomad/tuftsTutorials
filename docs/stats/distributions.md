@@ -16,3 +16,8 @@ For each value in a random variable there is some probability of getting that va
 
 - **Probability Mass Function** - What is the probabilty of getting that exact value?
 - **Cumulative Distribution Function** - What is the probability of getting a value less than or equal to that value?
+
+
+## References
+
+1. [A Gentle Introduction to Probability Distributions](https://machinelearningmastery.com/what-are-probability-distributions/)
