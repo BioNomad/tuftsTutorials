@@ -179,6 +179,7 @@ nav:
             - "Qualitative Variables": stats/qual.md
             - "Sampling": stats/sampling.md
             - "Confidence Intervals": stats/confidence-interval.md
+            - "Probability Distributions" :stats/distributions.md
         - Analyzing One Categorial Variable:
             - "Binomial Test": stats/binomial-test.md
         - Analyzing Two Categorical Variables:
