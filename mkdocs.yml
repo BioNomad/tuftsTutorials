@@ -109,68 +109,73 @@ nav:
             - "API (Application Programming Interface)": tools/api.md
     - Unix/R/Python Tutorials:
         - Introduction: basic/unix_r_python.md
-        - Intro To Unix: 
-            - "Intro To Linux": basic/intro-to-unix/intro-to-unix.md
-            - "Starting with Shell": basic/intro-to-unix/start-w-shell.md
-            - "Bash Parameters": basic/intro-to-unix/bash-parameters.md
-            - "Shell Navigation": basic/intro-to-unix/shell-navigation.md
-            - "Creating & Manipulating Files": basic/intro-to-unix/create-manipulate-files.md
-            - "Going Home": basic/intro-to-unix/going-home.md
-            - "Running an Interactive Session": basic/intro-to-unix/running-interactive.md
-            - "Example with BLAST": basic/intro-to-unix/blast-example.md
-            - "BLAST Batch Script": basic/intro-to-unix/blast-batch.md
-        - Intro To R: 
+        - Unix:
+            - Intro To Unix: 
+                - "Intro To Linux": basic/intro-to-unix/intro-to-unix.md
+                - "Starting with Shell": basic/intro-to-unix/start-w-shell.md
+                - "Bash Parameters": basic/intro-to-unix/bash-parameters.md
+                - "Shell Navigation": basic/intro-to-unix/shell-navigation.md
+                - "Creating & Manipulating Files": basic/intro-to-unix/create-manipulate-files.md
+                - "Going Home": basic/intro-to-unix/going-home.md
+                - "Running an Interactive Session": basic/intro-to-unix/running-interactive.md
+                - "Example with BLAST": basic/intro-to-unix/blast-example.md
+                - "BLAST Batch Script": basic/intro-to-unix/blast-batch.md
+        - R:
+            - Intro To R: 
                 - "Introduction To R OnDemand": basic/intro-to-r/r-ondemand.md
                 - "R Basics": basic/intro-to-r/basics.md
                 - "Data Structures": basic/intro-to-r/data-structures.md
                 - "Functions & Flow": basic/intro-to-r/functions-flow.md
                 - "Inspecting/Manipulating Data": basic/intro-to-r/inspecting-manipulating-data.md
                 - "Visualization": basic/intro-to-r/visualization.md
-        - Intro To Python:
-            - "Introduction To Python OnDemand": basic/intro-to-python/python-ondemand.md
-            - "Variables & Data Types": basic/intro-to-python/variables-data-types.md
-            - "Libraries & Data Frames": basic/intro-to-python/libraries-data-frames.md
-            - "Plotting with Plotly": basic/intro-to-python/plotting-plotly.md
-            - "Lists": basic/intro-to-python/lists.md
-            - "Loops & Conditionals": basic/intro-to-python/loops-conditionals.md
-            - "Functions & Scope": basic/intro-to-python/functions-scope.md
+        - Python:
+            - Intro To Python:
+                - "Introduction To Python OnDemand": basic/intro-to-python/python-ondemand.md
+                - "Variables & Data Types": basic/intro-to-python/variables-data-types.md
+                - "Libraries & Data Frames": basic/intro-to-python/libraries-data-frames.md
+                - "Plotting with Plotly": basic/intro-to-python/plotting-plotly.md
+                - "Lists": basic/intro-to-python/lists.md
+                - "Loops & Conditionals": basic/intro-to-python/loops-conditionals.md
+                - "Functions & Scope": basic/intro-to-python/functions-scope.md
     - Omics Tutorials:
         - Introduction: omics/omics.md
-        - Intro To NGS: 
-            - "Background": omics/intro-to-ngs/background.md
-            - "Setup": omics/intro-to-ngs/01_Setup.md
-            - "Quality Control": omics/intro-to-ngs/02_Quality_Control.md
-            - "Alignment": omics/intro-to-ngs/03_Alignment.md
-            - "Alignment Cleanup": omics/intro-to-ngs/04_Alignment_Cleanup.md
-            - "Variant Calling": omics/intro-to-ngs/05_Variant_Calling.md
-            - "Variant Annotation": omics/intro-to-ngs/06_Variant_Annotation.md
-        - Intro To RNA-Seq: 
-            - "Background": omics/intro-to-rnaseq/background.md
-            - "Setup": omics/intro-to-rnaseq/01_Setup.md
-            - "Quality Control": omics/intro-to-rnaseq/02_Quality_Control.md
-            - "Read Alignment": omics/intro-to-rnaseq/03_Read_Alignment.md
-            - "Gene Quantification": omics/intro-to-rnaseq/04_Gene_Quantification.md
-            - "Differential Expression": omics/intro-to-rnaseq/05_Differential_Expression.md
-            - "Pathway Enrichment": omics/intro-to-rnaseq/06_Pathway_Enrichment.md
-        - Intro To Proteomics:
-            - "Background": omics/intro-to-proteomics/00_background.md
-            - "Setup": omics/intro-to-proteomics/01_setup.md
-        - Intro To 16S Metabarcoding: 
-            - "Background": omics/intro-to-16S/background.md
-            - "Setup": omics/intro-to-16S/setup.md
-            - "Quality Control": omics/intro-to-16S/quality-control.md
-            - "Error Model & ASVs": omics/intro-to-16S/error-asv.md
-            - "Merging, Chimeras & Taxonomy": omics/intro-to-16S/merging-chimeras-taxonomy.md
-            - "Diversity Analysis": omics/intro-to-16S/diversity-analysis.md
-            - "Differential Abundance": omics/intro-to-16S/differential-abundance.md
-        - Intro To AlphaFold2:
-            - "Background": omics/intro-to-alphafold2/01_background.md
-            - "Setup": omics/intro-to-alphafold2/02_setup.md
-            - "AlphaFold2 Pre-Processing": omics/intro-to-alphafold2/03_af2_preprocess.md
-            - "AlphaFold2 Evoformer/Structure Module": omics/intro-to-alphafold2/04_af2_evoformer_structure.md
-            - "AlphaFold2 Output": omics/intro-to-alphafold2/05_af2_output.md
-            - "PyMOL Visualization": omics/intro-to-alphafold2/06_pymol_viz.md
-            - "Optional: AlphaFold2 Batch Script": omics/intro-to-alphafold2/07_af2_batch.md
+        - Genomics:
+            - Intro To NGS: 
+                - "Background": omics/intro-to-ngs/background.md
+                - "Setup": omics/intro-to-ngs/01_Setup.md
+                - "Quality Control": omics/intro-to-ngs/02_Quality_Control.md
+                - "Alignment": omics/intro-to-ngs/03_Alignment.md
+                - "Alignment Cleanup": omics/intro-to-ngs/04_Alignment_Cleanup.md
+                - "Variant Calling": omics/intro-to-ngs/05_Variant_Calling.md
+                - "Variant Annotation": omics/intro-to-ngs/06_Variant_Annotation.md
+            - Intro To RNA-Seq: 
+                - "Background": omics/intro-to-rnaseq/background.md
+                - "Setup": omics/intro-to-rnaseq/01_Setup.md
+                - "Quality Control": omics/intro-to-rnaseq/02_Quality_Control.md
+                - "Read Alignment": omics/intro-to-rnaseq/03_Read_Alignment.md
+                - "Gene Quantification": omics/intro-to-rnaseq/04_Gene_Quantification.md
+                - "Differential Expression": omics/intro-to-rnaseq/05_Differential_Expression.md
+                - "Pathway Enrichment": omics/intro-to-rnaseq/06_Pathway_Enrichment.md
+            - Intro To 16S Metabarcoding: 
+                - "Background": omics/intro-to-16S/background.md
+                - "Setup": omics/intro-to-16S/setup.md
+                - "Quality Control": omics/intro-to-16S/quality-control.md
+                - "Error Model & ASVs": omics/intro-to-16S/error-asv.md
+                - "Merging, Chimeras & Taxonomy": omics/intro-to-16S/merging-chimeras-taxonomy.md
+                - "Diversity Analysis": omics/intro-to-16S/diversity-analysis.md
+                - "Differential Abundance": omics/intro-to-16S/differential-abundance.md
+        - Proteomics:
+            - Intro To Proteomics:
+                - "Background": omics/intro-to-proteomics/00_background.md
+                - "Setup": omics/intro-to-proteomics/01_setup.md
+            - Intro To AlphaFold2:
+                - "Background": omics/intro-to-alphafold2/01_background.md
+                - "Setup": omics/intro-to-alphafold2/02_setup.md
+                - "AlphaFold2 Pre-Processing": omics/intro-to-alphafold2/03_af2_preprocess.md
+                - "AlphaFold2 Evoformer/Structure Module": omics/intro-to-alphafold2/04_af2_evoformer_structure.md
+                - "AlphaFold2 Output": omics/intro-to-alphafold2/05_af2_output.md
+                - "PyMOL Visualization": omics/intro-to-alphafold2/06_pymol_viz.md
+                - "Optional: AlphaFold2 Batch Script": omics/intro-to-alphafold2/07_af2_batch.md
     - Biostatistics:
         - "Introduction To Biostatistics": stats/stats.md
         - "Setup": stats/biostats.md
