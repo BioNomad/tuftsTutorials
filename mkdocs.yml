@@ -140,7 +140,8 @@ nav:
     - Omics Tutorials:
         - Introduction: omics/omics.md
         - Genomics:
-            - "NGS Tips & Tricks": omics/ngsTipsAndTricks/ngsTipsAndTricks.md
+            - NGS Tips & Tricks: 
+                - "Fastq Manipulation": omics/ngsTipsAndTricks/fastq/fastq.md
             - Intro To NGS: 
                 - "Background": omics/intro-to-ngs/background.md
                 - "Setup": omics/intro-to-ngs/01_Setup.md
