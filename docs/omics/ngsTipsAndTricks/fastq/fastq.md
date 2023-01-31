@@ -70,3 +70,17 @@ source activate /cluster/tufts/bio/tools/conda_envs/seqtk/1.3
 # convert fastq to fasta
 seqtk seq -a someData.fastq.gz > someData.fasta
 ```
+
+### Extract Sequences in Regions from a BED File
+
+
+```bash
+# load the anaconda module
+module load anaconda/2021.11
+
+# activate the conda environment
+source activate /cluster/tufts/bio/tools/conda_envs/seqtk/1.3
+
+# extract sequences from bed file
+seqtk subseq fullData.fasta filterdBed.bed > filteredData.fasta
+```
