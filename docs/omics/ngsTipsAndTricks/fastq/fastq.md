@@ -1,6 +1,6 @@
 ## NGS Tips & Tricks
 
-NGS data is widely used to assess RNA/DNA by providing insight into genome sequences, RNA transcription activity, and analyze epigenetic activity -  just to name a few applications. Manipulating this data can be difficult, so here we provide a few tips and tricks for doing doing just that!
+NGS data is widely used to assess RNA/DNA by providing insight into genome sequences, RNA transcription activity, and analyze epigenetic activity -  just to name a few applications. Manipulating this data can be difficult, so here we provide a few tips and tricks for manipulating Fastq data. 
 
 ### Subsampling a Fastq File
 
