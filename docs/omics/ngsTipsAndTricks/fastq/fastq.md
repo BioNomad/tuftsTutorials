@@ -19,8 +19,10 @@ zcat Mock_12hr_rep1.fastq.gz | echo "$((`wc -l` / 4))"
 
 ### Subsampling a Fastq File
 
+
 - Subsampling 10,000 sequences from paired fastq files using the same random seed (`-s100`) so that the same sequences are grabbed from each file:
-- 
+
+
 ```bash
 # load the anaconda module
 module load anaconda/2021.11
