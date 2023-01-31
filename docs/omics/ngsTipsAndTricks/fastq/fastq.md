@@ -4,13 +4,13 @@ NGS data is widely used to assess RNA/DNA by providing insight into genome seque
 
 ### Counting Sequences in a Fastq File
 
-- For a non-compressed Fastq file:
+- Counting sequences in a non-compressed fastq file:
 
 ```bash
 cat Mock_12hr_rep1.fastq | echo "$((`wc -l` / 4))"
 ```
 
-- For a compressed Fastq file:
+- Counting sequences in a compressed fastq file:
 
 ```bash
 zcat Mock_12hr_rep1.fastq.gz | echo "$((`wc -l` / 4))"
@@ -19,6 +19,8 @@ zcat Mock_12hr_rep1.fastq.gz | echo "$((`wc -l` / 4))"
 
 ### Subsampling a Fastq File
 
+- Subsampling 10,000 sequences from paired fastq files using the same random seed (`-s100`) so that the same sequences are grabbed from each file:
+- 
 ```bash
 # load the anaconda module
 module load anaconda/2021.11
@@ -31,28 +33,9 @@ seqtk sample -s100 fullData_R1.fastq.gz 10000 > subsampledData_R1.fastq.gz
 seqtk sample -s100 fullData_R2.fastq.gz 10000 > subsampledData_R2.fastq.gz
 ```
 
-!!! example "Explanation of Arguments"
-
-    - `seqtk sample` subsample data
-    - `-s100` random seed, so that the same lines are subsampled if working with paired data
-    - `fullData_R1.fastq.gz`  full data, Forward reads
-    - `fullData_R2.fastq.gz`  full data, Reverse reads
-    - `10000` how many lines to subsample
-    - `> subsampledData_R1.fastq.gz` assign to a new file
-
 ### Quality Control
 
-You can perform FastQC on your files and then MulitQC to aggregate these reports"
-
-```bash
-ls
-```
-
-!!! info "output"
-
-    ```bash
-    HIV_12hr_rep1.fastq.gz  HIV_12hr_rep2.fastq.gz  HIV_24hr_rep1.fastq.gz  HIV_24hr_rep2.fastq.gz  Mock_12hr_rep1.fastq.gz  Mock_12hr_rep2.fastq.gz
-    ```
+- Perform FastQC on your files and then MulitQC to aggregate these reports:
     
 ```bash
 # make directory for output
@@ -65,23 +48,7 @@ module load fastqc
 fastqc *fastq.gz -o fastqc
 ```
 
-!!! example "Explanation of Arguments"
-
-    - `fastqc` run fastqc
-    - `*fastq.gz` run fastqc on all fastq files in this directory
-    - `-o fastqc`  output the results to the fastqc directory
-    
 - To collate these reports into one report:
-
-```bash
-ls
-```
-
-!!! info "output"
-
-    ```bash
-    fastqc  HIV_12hr_rep1.fastq.gz  HIV_12hr_rep2.fastq.gz  HIV_24hr_rep1.fastq.gz  HIV_24hr_rep2.fastq.gz  Mock_12hr_rep1.fastq.gz  Mock_12hr_rep2.fastq.gz
-    ```
     
 ```bash
 # make multiqc directory
@@ -91,8 +58,15 @@ mkdir multiqc
 multiqc fastqc/ -o multiqc/
 ```
 
-!!! example "Explanation of Arguments"
+### Convert Fastq to Fasta
 
-    - `multiqc` run multiqc
-    - `fastqc/ ` input directory with fastqc results
-    - `-o multiqc/`  output the results to the multiqc directory
+```bash
+# load the anaconda module
+module load anaconda/2021.11
+
+# activate the conda environment
+source activate /cluster/tufts/bio/tools/conda_envs/seqtk/1.3
+
+# convert fastq to fasta
+seqtk seq -a someData.fastq.gz > someData.fasta
+```
