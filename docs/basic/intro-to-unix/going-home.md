@@ -1,4 +1,3 @@
-!!! abstract "Content Developed By Adelaide Rhodes, PhD"
 
 ## Going Home
 ---------------------------
