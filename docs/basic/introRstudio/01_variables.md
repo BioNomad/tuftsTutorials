@@ -103,3 +103,32 @@ What did we do:
 
 
 - You'll also note we add text inside our code block by putting a hashtag in front of it. This is called a comment and they are very useful in giving your code context. 
+
+## Accessing/Manipulating Values in a Vector
+
+- Suppose we want to access one value in our vector `combined`
+- We can do this by specifying the value number in that vector.
+- Let's try grabbing the second value in `combined`
+
+```{r}
+# call the second value in combined
+combined[2]
+
+# replace second value in combined
+combined[2] <- 10
+combined[2]
+```
+
+!!! info "output"
+    
+    ```
+    [1] 4
+    
+    [1] 10
+    ```
+
+What did we do:
+
+- grabbed the second value in `combined` by specifying the vector and then the number value we want in brackets
+- vectors in R are one-indexed meaning that when you want the first value in a vector you use `[1]`, second value you would use `[2]` and so on
+- we also replaced the second value of `combined` by calling `combined[2]` and reassigning it to `10`
