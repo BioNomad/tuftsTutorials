@@ -1,6 +1,6 @@
-!!! abstract "Content Developed By Adelaide Rhodes, PhD"
+## Intro to Command Line
 
-# Intro to Command Line
+**Content Developed By Adelaide Rhodes, PhD**
 
 This short workshop provides some basic training on bash and shell scripting on the command line on the Linux-based Tufts HPC cluster.
 
