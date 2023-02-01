@@ -1,3 +1,5 @@
+!!! abstract "Content Developed By Adelaide Rhodes, PhD"
+
 ## Writing a BASH Script and Running it as "Batch" 
 --------------------------------------------------
 
