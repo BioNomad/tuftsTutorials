@@ -1,3 +1,5 @@
+!!! abstract "Content Developed By Adelaide Rhodes, PhD"
+
 ### Return to the workshop directory
 
 ```
