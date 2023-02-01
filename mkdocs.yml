@@ -107,6 +107,7 @@ nav:
             - "Containers": tools/containers.md
             - "Parallel": tools/parallel.md 
             - "API (Application Programming Interface)": tools/api.md
+            - "dbGAP Downloads": tools/dbgap.md
     - Unix/R/Python Tutorials:
         - Introduction: basic/unix_r_python.md
         - Unix:
