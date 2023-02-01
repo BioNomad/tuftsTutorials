@@ -42,9 +42,14 @@ vdb-config --interactive
     #SBATCH --error=%j.err
     #SBATCH --mail-type=ALL
     #SBATCH --mail-user=Your.Email@tufts.edu
-
-
+    
+    module load sra/2.10.8 parallel
+    
+    # not using parallel
     fastq-dump --ngc /path/to/projectNgcFile.ngc --gzip $(</path/to/accessionList.txt)
+    
+    # using parallel
+    parallel --jobs 4 "fastq-dump --ngc /path/to/projectNgcFile.ngc --split-files --gzip {}" < /path/to/accessionList.txt
     ```
     
 7. To run your script, enter the following:
