@@ -1,28 +1,45 @@
-# Introduction To R OnDemand
+# Introduction To RStudio For Life Sciences
 
-## Setup
+!!! example "Prerequisites"
+    - [Request an account](http://research.uit.tufts.edu/) on the Tufts HPC Cluster
+    - Connect to the [VPN](https://access.tufts.edu/vpn) or the Tufts Secure Network
 
-Before getting started you will need:
+---
 
-- Account on [Tufts HPC](https://access.tufts.edu/research-cluster-account){target=_blank}
-- [VPN](https://access.tufts.edu/vpn){target=_blank} if accessing the HPC from off campus
+## Learning objectives
+
+!!! abstract "Today we are going to learn about"
+
+    - project organization
+    - R packages and how to access them on the tufts HPC
+    - working with variables and data frames
+    - visualizing data
+    - and finally writing a markdown report of our findings
+
+---
 
 ## Navigate To The Cluster
 
-Once you have an account and are connected to the VPN/Tufts Network, navigate to the [OnDemand Website](https://ondemand.pax.tufts.edu/) and log in with your tufts credentials. Once you are logged in you'll notice a few navigation options:
+Once you have an account and are connected to the VPN/Tufts Network, navigate to the [OnDemand Website](https://ondemand.pax.tufts.edu/){:target="_blank" rel="noopener"} and log in with your tufts credentials. Once you are logged in you'll notice a few navigation options:
 
-![](images/ondemandLayout.png)
+![](images/ondemand_layout_pic.png)
 
 Click on `Interactive Apps > RStudio Pax` and you will see a form to fill out to request compute resources to use RStudio on the Tufts HPC cluster. We will fill out the form with the following entries:
 
 - `Number of hours` : `3`
 - `Number of cores` : `1`
-- `Amount of memory` : `32GB`
+- `Amount of memory` : `4GB`
 - `R version` : `4.0.0`
-- `Reservation for class, training, workshop` : `Default`
-- `Load Supporting Modules`: `curl/7.47.1 gcc/7.3.0 hdf5/1.10.4 boost/1.63.0-python3 libpng/1.6.37 java/1.8.0_60 libxml2/2.9.10 libiconv/1.16 fftw/3.3.2 gsl/2.6`
+- `Reservation for class, training, workshop` : `Bioinformatics Workshops`---> NOTE: This reservation closed on Nov 9, 2022, use Default if running through the materials after that date.
+- `Load Supporting Modules`: `boost/1.63.0-python3 java/1.8.0_60 gsl/2.6`
 
-Click `Lauch` and wait until your session is ready. Click `Connect To RStudio Server`, and you will notice a new window will pop up with RStudio. 
+Click `Launch` and wait until your session is ready. Click `Connect To RStudio Server`, and you will notice a new window will pop up with RStudio. 
+
+??? question "Are you connected to RStudio?"
+    - Yes (put up a green check mark in zoom)
+    - No (raise hand in zoom)
+    
+---
 
 ## Introduction To RStudio
 
@@ -34,13 +51,21 @@ RStudio is what is known as an Integrated Development Environment or IDE. Here y
 
 ![](images/rstudio1.png)
 
-# Project Management
+## Project Management
 
 Before we dive into R it is worth taking a moment to talk about project management. Often times data analysis is incremental and files build up over time resulting in messy directories:
 
 ![](images/messy.png)
 
-Sifting through a non-organized file system can make it difficult to find files, share data/scripts, and identify different versions of scripts. To remedy this, It is reccomended to work within an R Project.
+Sifting through a non-organized file system can make it difficult to find files, share data/scripts, and identify different versions of scripts. To remedy this, It is reccomended to work within an R Project. Before we make this project, we should make sure you are in your home directory. To do this click on the three dots in the files tab:
+
+![](images/three_dots.png)
+
+Then enter in a ~ symbol to go home!
+
+![](images/getting_home.png)
+
+---
 
 ## R Project
 
@@ -49,7 +74,7 @@ To Create a new R project:
 1. Go to `File` > `New Project`
 2. `New Directory`
 3. `New Project`
-4. Create a name for your project (e.g. `new-project`)
+4. Create a name for your project (e.g. `R-Practice`)
 5. `Create Project`
 
 You will notice that your RStudio console switches to this project directory. When you log out of RStudio you can open this project again by clicking the `.Rproj` file in the project directory. 
@@ -57,62 +82,60 @@ You will notice that your RStudio console switches to this project directory. Wh
 !!! note
     The paths will be relative to this project directory as a safe guard against referencing data from outside sources. 
 
+??? question "Have you created the project?"
+    - Yes (put up a green check mark in zoom)
+    - No (raise hand in zoom)
+
+--- 
+
 ## File Organization
 
-When working on a scientific project it is recommended that you put each project in its own directory and give it a name that is descriptive. Similarly, when naming scripts it is recommended that you also name these scripts after the function they are performing. When it comes to file structure within your project try following this folder structure:
+- You noticed now that you are inside your project folder
+- Let's start by creating some folders to you organize our files
+- In the files window click new folder and enter scripts
+- Let's do this again to create a data folder and a results folder
 
-- `doc` : folder for text documents associated with the project
-- `data` : folder for your raw data/metadata
-- `results` : folder for files generated from data/metadata
-- `src` : folder for project's custom scripts/programs
-- `bin` : folder for outside programs used in project
+---
 
 ## Data Principles
 
-When you deal with data treat it as read-only. Working with data files in something like excel can modify your original data source without any record of what was done to it. That being said, often times you will need to do some data cleaning. When you need to significantly modify your data source make a separate folder withing `data` for the `raw_data` and the `cleaned_data`. Also ensure that the scripts you used to clean the data are placed in a separate folder (e.g. `src/data_cleaning_scripts/`). Data that is generated from this raw data should be deposited in your `results` folder and should be treated as disposable. These files should be reproducible from your raw data using your scripts and are good candidate files to cut if you are getting low on storage.
+- Treat data as read-only
+- Store raw data separately from cleaned data if you do need to manipulate it
+- Ensure scripts to clean data are kept in a separate `scripts` folder
+- Treat reproducible results as disposable
 
-## Script Management
+!!! tip
+    Result files are good candidate files to cut if you are getting low on storage.
 
-When performing analyses you'll note that some code blocks are useful in multiple scenarios. It is a good idea to store these reusable chunks in a separate folder to use in other analysis scripts. 
+---
 
-## Setting The Directory
+## Getting Data
 
-When we create a project all the paths are now relative to the project. This helps when you need to specify where a file is. So for example instead of:
+![](images/data_summary.png)
 
-```
-cluster/home/user/new-project/data/file.txt
-```
+- Today we will be using a fake dataset assessing the taxa count on the mouse microbiome before and after antibiotic usage.
+- To copy over this data we will use an R function called file.copy. 
+- A function takes some input and delivers an output. 
+- In this case we specify two inputs the location of our file and where we want to copy it to. 
+- The function's output is copying over this file. So let's try it copy over using the following commands:
 
-We only need to specify where things are with respect to our project:
 
-```
-data/file.txt
-```
 
-We can tell where we are using `getwd()`, so if we were in `new-project`:
-
-```R
-getwd()
-```
-
-```
-cluster/home/user/new-project/
+```{r data.copy,warning=F,message=F}
+file.copy(from="/cluster/tufts/bio/tools/training/intro-to-r/data/meta.tsv", to="./data/")
+file.copy(from="/cluster/tufts/bio/tools/training/intro-to-r/data/meta2.tsv", to="./data/")
 ```
 
-If we want to specify a **new** base directory we can use `setwd()`:
+So here you'll note we copied over the file metadata.tsv to the data folder. Let's copy over our script:
 
-```R
-setwd("cluster/home/user/new-project/data")
+```{r script.copy,warning=F,message=F}
+file.copy(from="/cluster/tufts/bio/tools/training/intro-to-r/scripts/intro-to-r.Rmd", to="./scripts")
 ```
 
-Here we set it to `data` so that if we were to pull that file again, the path would be:
+Here we copy over our script intro-to-r to the scripts folder.
 
-```
-file.txt
-```
+---
 
-But let's set it back to the project directory for now:
+## Opening the Script
 
-```R
-setwd("cluster/home/user/new-project")
-```
+Now let's start by opening our script. Go to scripts and then double click on intro-to-r.Rmd!
