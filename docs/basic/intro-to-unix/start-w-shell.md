@@ -1,3 +1,5 @@
+!!! abstract "Content Developed By Adelaide Rhodes, PhD"
+
 # Starting with the Shell
 
 We will spend most of our time learning about the basics of the shell by manipulating some experimental data that we download from the internet.
