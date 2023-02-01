@@ -1,5 +1,3 @@
-!!! abstract "Content Developed By Adelaide Rhodes, PhD"
-
 ## Reading File Contents
 ---------------------------
 
