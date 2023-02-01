@@ -1,12 +1,10 @@
-!!! abstract "Content Developed By Adelaide Rhodes, PhD"
-
-### Return to the workshop directory
+## Return to the workshop directory
 
 ```
 cd ~/Oct22Workshop
 ```
 
-### Loading Modules
+## Loading Modules
 
 Many common programs are pre-loaded into the Tufts HPC using a system called "modules".
 
@@ -45,7 +43,7 @@ If other programs are loaded with the module, they may also show up with this co
 
 
 
-### Bringing in Files from the Internet
+## Bringing in Files from the Internet
 
 We need some data!  Let's grab the mouse and zebrafish RefSeq protein data sets from NCBI, and put them in our home directory. (this example is adapted from a lesson from [Titus Brown's summer institute](https://angus.readthedocs.io/en/2019/running-command-line-blast.html){:target="_blank" rel="noopener"}. These lessons contain a lot of command line examples.
 
