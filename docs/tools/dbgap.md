@@ -29,7 +29,9 @@ vdb-config --interactive
 
 6. Now set up the following batch script:
 
-!!! info "dbGAP_download.sh"
+=== "Using Parallel"
+
+    !!! info "dbGAP_download.sh"
 
     ```bash
     #!/bin/bash
@@ -45,11 +47,30 @@ vdb-config --interactive
     
     module load sra/2.10.8 parallel
     
-    # not using parallel
-    fastq-dump --ngc /path/to/projectNgcFile.ngc --gzip $(</path/to/accessionList.txt)
-    
     # using parallel
     parallel --jobs 4 "fastq-dump --ngc /path/to/projectNgcFile.ngc --split-files --gzip {}" < /path/to/accessionList.txt
+    ```
+
+=== "Not Using Parallel"
+
+    !!! info "dbGAP_download.sh"
+
+    ```bash
+    #!/bin/bash
+    #SBATCH --job-name=dbGap
+    #SBATCH --time=07-00:00:00
+    #SBATCH --partition=largemem
+    #SBATCH --nodes=1
+    #SBATCH --mem=110Gb
+    #SBATCH --output=%j.out
+    #SBATCH --error=%j.err
+    #SBATCH --mail-type=ALL
+    #SBATCH --mail-user=Your.Email@tufts.edu
+    
+    module load sra/2.10.8 
+    
+    # not using parallel
+    fastq-dump --ngc /path/to/projectNgcFile.ngc --gzip $(</path/to/accessionList.txt)
     ```
     
 7. To run your script, enter the following:
