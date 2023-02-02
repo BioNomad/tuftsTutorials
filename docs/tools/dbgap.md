@@ -39,6 +39,7 @@ vdb-config --interactive
     #SBATCH --time=07-00:00:00
     #SBATCH --partition=largemem
     #SBATCH --nodes=1
+    #SBATCH -c 8
     #SBATCH --mem=110Gb
     #SBATCH --output=%j.out
     #SBATCH --error=%j.err
@@ -61,6 +62,7 @@ vdb-config --interactive
     #SBATCH --time=07-00:00:00
     #SBATCH --partition=largemem
     #SBATCH --nodes=1
+    #SBATCH -c 8
     #SBATCH --mem=110Gb
     #SBATCH --output=%j.out
     #SBATCH --error=%j.err
