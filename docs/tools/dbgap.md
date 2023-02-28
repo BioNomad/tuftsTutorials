@@ -8,7 +8,7 @@ dbGAP is a repository of data assessing the connection between genotypes and phe
 
     ![](images/ngc_file.jpeg)
 
-2. Now, navigate to the [dbGAP SRA RUN Selector](https://www.ncbi.nlm.nih.gov/Traces/study/), login with your credentials, select the files you'd like to download, and click Accession List:
+2. Now, navigate to the [dbGAP SRA RUN Selector](https://www.ncbi.nlm.nih.gov/Traces/study/), login with your credentials, select the files you'd like to download, and click **Accession List**:
 
 ![](images/accList.png)
 
@@ -97,7 +97,7 @@ squeue -u $USER
 
     ![](images/ngc_file.jpeg)
 
-2. Now, navigate to the [dbGAP SRA RUN Selector](https://www.ncbi.nlm.nih.gov/Traces/study/), login with your credentials, select the files you'd like to download, and click Cart File:
+2. Now, navigate to the [dbGAP SRA RUN Selector](https://www.ncbi.nlm.nih.gov/Traces/study/), login with your credentials, select the files you'd like to download, and click **Cart File**:
 
 ![](images/accList.png)
 
