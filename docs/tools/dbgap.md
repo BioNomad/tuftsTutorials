@@ -49,7 +49,7 @@ vdb-config --interactive
         module load sra/2.10.8 parallel
     
         # using parallel
-        parallel --jobs 4 "fastq-dump --ngc /path/to/projectNgcFile.ngc --split-files --gzip {}" < /path/to/accessionList.txt
+        parallel --jobs 4 "fastq-dump -X 9999999999999 --ngc /path/to/projectNgcFile.ngc --split-files --gzip {}" < /path/to/accessionList.txt
         ```
 
 === "Not Using Parallel"
@@ -72,7 +72,7 @@ vdb-config --interactive
         module load sra/2.10.8 
         
         # not using parallel
-        fastq-dump --ngc /path/to/projectNgcFile.ngc --gzip $(</path/to/accessionList.txt)
+        fastq-dump -X 9999999999999 --ngc /path/to/projectNgcFile.ngc --gzip $(</path/to/accessionList.txt)
         ```
     
 7. To run your script, enter the following:
