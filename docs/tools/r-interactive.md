@@ -129,3 +129,7 @@ In install.packages(...) :
 ```
 BiocManager::install('RJWANGbioinfo/APAlyzer')
 ```
+
+**Suggestion 5: Restarting R**
+
+- The old IT addage of turning it on and off again is not just all talk. The way you set your libPath or the packages you already have loaded may interrupt your ability to install packages. You can restart R to wipe the proverbial slate clean by going to `Session > Restart R`. Now try to install your package! 
