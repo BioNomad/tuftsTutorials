@@ -130,6 +130,30 @@ In install.packages(...) :
 BiocManager::install('RJWANGbioinfo/APAlyzer')
 ```
 
-**Suggestion 5: Restarting R**
+**Suggestion 5: Try updating the packages it asks to update**
+
+- R usually tries to tells you what it needs to proceed. Oftentimes when you install a package, you will be prompted to update the packages you have:
+
+```R
+These packages have more recent versions available.
+It is recommended to update all of them.
+Which would you like to update?
+
+ 1: All                                           
+ 2: CRAN packages only                            
+ 3: None                                          
+ 4: sitmo        (2.0.1      -> 2.0.2     ) [CRAN]
+ 5: BH           (1.75.0-0   -> 1.81.0-1  ) [CRAN]
+ 6: dqrng        (0.2.1      -> 0.3.0     ) [CRAN]
+ 7: irlba        (2.3.3      -> 2.3.5.1   ) [CRAN]
+ ...
+ ...
+ ...
+ Enter one or more numbers, or an empty line to skip updates: 1
+```
+
+- Some packages require specific/updated versions of the packages you have. Package installation issues can be circumvented when you enter `1` to update all packkages. 
+
+**Suggestion 6: Restarting R**
 
 - The old IT addage of turning it on and off again is not just all talk. The way you set your libPath or the packages you already have loaded may interrupt your ability to install packages. You can restart R to wipe the proverbial slate clean by going to `Session > Restart R`. Now try to install your package! 
