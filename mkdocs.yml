@@ -93,6 +93,7 @@ nav:
         - HPC Services:
             - "HPC Services": hpc-user-guide/hpc_services.md
     - HPC Software/Tools: 
+        - Available HPC Tools: tools/all_hpc_tools.md
         - Python: 
             - "Python Interactive Session": tools/python-modules.md
             - "JupyterLab": tools/python-jupyter.md
