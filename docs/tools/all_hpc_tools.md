@@ -1,6 +1,12 @@
 ## Available Tufts HPC Tools
 
-There are a number of modules available on the Tufts HPC. Here we link out to the NIH's documentation for these tools, which will provide descriptions and how to create a batch script to use that tool. Note that this will not perfectly line up with how to use this tool on the HPC as we have different reservation, node, and partition names. However, it is a good start to get you going on how to use the tool in a batch script. For more information on how to create a batch script to work with the Tufts Cluster, check out the following tutorial: [How to Create a Batch Script](../hpc-user-guide/batch-job.md)
+There are a number of modules available on the Tufts HPC. Here we link out to the NIH's documentation for these tools, which will provide descriptions and how to create a batch script to use that tool. 
+
+!!! info "Note about NIH HPC Documentation"
+
+    Note that this will not perfectly line up with how to use this tool on the HPC as we have different reservation, node, and partition names. However, it is a good start to get you going on how to use the tool in a batch script. 
+
+For more information on how to create a batch script to work with the Tufts Cluster, check out the following tutorial: [How to Create a Batch Script](../hpc-user-guide/batch-job.md)
 
 
 
