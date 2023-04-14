@@ -109,6 +109,7 @@ nav:
             - "GitHub": tools/github.md
             - "Rclone": tools/rclone.md
             - "Containers": tools/containers.md
+            - "Nextflow": tools/nextflow.md
             - "Parallel": tools/parallel.md 
             - "API (Application Programming Interface)": tools/api.md
             - "dbGAP Downloads": tools/dbgap.md
