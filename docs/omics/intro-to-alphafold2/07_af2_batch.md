@@ -20,7 +20,7 @@ A batch script can be broken into two parts - the header section with informatio
 
 ```
 #!/bin/bash
-#SBATCH -p ccgpu                            # partition we submit to
+#SBATCH -p preempt                          # partition we submit to
 #SBATCH -n 8                                # The number of cpu cores we would like
 #SBATCH --mem=64g                           # The amount of RAM we would like
 #SBATCH --time=2-0:00:00                    # The time we think our job will take       
